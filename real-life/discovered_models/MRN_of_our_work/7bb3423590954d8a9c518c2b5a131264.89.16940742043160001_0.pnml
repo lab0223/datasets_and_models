@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>7bb3423590954d8a9c518c2b5a131264.89.16940742043160001_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="PGET:/api/v1/adminorderservice/adminorder_ts-admin-order-service_/api/v1/orderservice/order_ts-admin-order-service"/>
+      <place id="P/api/v1/orderservice/order_ts-admin-order-service_GET:/api/v1/orderservice/order_ts-order-service"/>
+      <place id="PGET:/api/v1/orderservice/order_ts-order-service_/api/v1/orderservice/order_ts-admin-order-service_End"/>
+      <place id="P/api/v1/orderservice/order_ts-admin-order-service_End_/api/v1/orderOtherService/orderOther_ts-admin-order-service"/>
+      <place id="P/api/v1/orderOtherService/orderOther_ts-admin-order-service_GET:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <place id="PGET:/api/v1/orderOtherService/orderOther_ts-order-other-service_/api/v1/orderOtherService/orderOther_ts-admin-order-service_End"/>
+      <place id="PPUT:/api/v1/adminorderservice/adminorder_ts-admin-order-service_/api/v1/orderservice/order/admin_ts-admin-order-service"/>
+      <place id="P/api/v1/orderservice/order/admin_ts-admin-order-service_PUT:/api/v1/orderservice/order/admin_ts-order-service"/>
+      <place id="PPUT:/api/v1/orderservice/order/admin_ts-order-service_/api/v1/orderservice/order/admin_ts-admin-order-service_End"/>
+      <place id="P/api/v1/orderservice/order_ts-admin-order-service_/api/v1/orderservice/order_ts-admin-order-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther_ts-admin-order-service_/api/v1/orderOtherService/orderOther_ts-admin-order-service_End"/>
+      <place id="P/api/v1/orderservice/order/admin_ts-admin-order-service_/api/v1/orderservice/order/admin_ts-admin-order-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="GET:/api/v1/adminorderservice/adminorder_ts-admin-order-service"/>
+      <transition id="/api/v1/orderservice/order_ts-admin-order-service"/>
+      <transition id="GET:/api/v1/orderservice/order_ts-order-service"/>
+      <transition id="/api/v1/orderservice/order_ts-admin-order-service_End"/>
+      <transition id="/api/v1/orderOtherService/orderOther_ts-admin-order-service"/>
+      <transition id="GET:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther_ts-admin-order-service_End"/>
+      <transition id="PUT:/api/v1/adminorderservice/adminorder_ts-admin-order-service"/>
+      <transition id="/api/v1/orderservice/order/admin_ts-admin-order-service"/>
+      <transition id="PUT:/api/v1/orderservice/order/admin_ts-order-service"/>
+      <transition id="/api/v1/orderservice/order/admin_ts-admin-order-service_End"/>
+      <arc id="a0" source="GET:/api/v1/adminorderservice/adminorder_ts-admin-order-service" target="PGET:/api/v1/adminorderservice/adminorder_ts-admin-order-service_/api/v1/orderservice/order_ts-admin-order-service"/>
+      <arc id="a1" source="PGET:/api/v1/adminorderservice/adminorder_ts-admin-order-service_/api/v1/orderservice/order_ts-admin-order-service" target="/api/v1/orderservice/order_ts-admin-order-service"/>
+      <arc id="a2" source="/api/v1/orderservice/order_ts-admin-order-service" target="P/api/v1/orderservice/order_ts-admin-order-service_GET:/api/v1/orderservice/order_ts-order-service"/>
+      <arc id="a3" source="P/api/v1/orderservice/order_ts-admin-order-service_GET:/api/v1/orderservice/order_ts-order-service" target="GET:/api/v1/orderservice/order_ts-order-service"/>
+      <arc id="a4" source="GET:/api/v1/orderservice/order_ts-order-service" target="PGET:/api/v1/orderservice/order_ts-order-service_/api/v1/orderservice/order_ts-admin-order-service_End"/>
+      <arc id="a5" source="PGET:/api/v1/orderservice/order_ts-order-service_/api/v1/orderservice/order_ts-admin-order-service_End" target="/api/v1/orderservice/order_ts-admin-order-service_End"/>
+      <arc id="a6" source="/api/v1/orderservice/order_ts-admin-order-service_End" target="P/api/v1/orderservice/order_ts-admin-order-service_End_/api/v1/orderOtherService/orderOther_ts-admin-order-service"/>
+      <arc id="a7" source="P/api/v1/orderservice/order_ts-admin-order-service_End_/api/v1/orderOtherService/orderOther_ts-admin-order-service" target="/api/v1/orderOtherService/orderOther_ts-admin-order-service"/>
+      <arc id="a8" source="/api/v1/orderOtherService/orderOther_ts-admin-order-service" target="P/api/v1/orderOtherService/orderOther_ts-admin-order-service_GET:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <arc id="a9" source="P/api/v1/orderOtherService/orderOther_ts-admin-order-service_GET:/api/v1/orderOtherService/orderOther_ts-order-other-service" target="GET:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <arc id="a10" source="GET:/api/v1/orderOtherService/orderOther_ts-order-other-service" target="PGET:/api/v1/orderOtherService/orderOther_ts-order-other-service_/api/v1/orderOtherService/orderOther_ts-admin-order-service_End"/>
+      <arc id="a11" source="PGET:/api/v1/orderOtherService/orderOther_ts-order-other-service_/api/v1/orderOtherService/orderOther_ts-admin-order-service_End" target="/api/v1/orderOtherService/orderOther_ts-admin-order-service_End"/>
+      <arc id="a12" source="PUT:/api/v1/adminorderservice/adminorder_ts-admin-order-service" target="PPUT:/api/v1/adminorderservice/adminorder_ts-admin-order-service_/api/v1/orderservice/order/admin_ts-admin-order-service"/>
+      <arc id="a13" source="PPUT:/api/v1/adminorderservice/adminorder_ts-admin-order-service_/api/v1/orderservice/order/admin_ts-admin-order-service" target="/api/v1/orderservice/order/admin_ts-admin-order-service"/>
+      <arc id="a14" source="/api/v1/orderservice/order/admin_ts-admin-order-service" target="P/api/v1/orderservice/order/admin_ts-admin-order-service_PUT:/api/v1/orderservice/order/admin_ts-order-service"/>
+      <arc id="a15" source="P/api/v1/orderservice/order/admin_ts-admin-order-service_PUT:/api/v1/orderservice/order/admin_ts-order-service" target="PUT:/api/v1/orderservice/order/admin_ts-order-service"/>
+      <arc id="a16" source="PUT:/api/v1/orderservice/order/admin_ts-order-service" target="PPUT:/api/v1/orderservice/order/admin_ts-order-service_/api/v1/orderservice/order/admin_ts-admin-order-service_End"/>
+      <arc id="a17" source="PPUT:/api/v1/orderservice/order/admin_ts-order-service_/api/v1/orderservice/order/admin_ts-admin-order-service_End" target="/api/v1/orderservice/order/admin_ts-admin-order-service_End"/>
+      <arc id="a18" source="/api/v1/orderservice/order_ts-admin-order-service" target="P/api/v1/orderservice/order_ts-admin-order-service_/api/v1/orderservice/order_ts-admin-order-service_End"/>
+      <arc id="a19" source="P/api/v1/orderservice/order_ts-admin-order-service_/api/v1/orderservice/order_ts-admin-order-service_End" target="/api/v1/orderservice/order_ts-admin-order-service_End"/>
+      <arc id="a20" source="/api/v1/orderOtherService/orderOther_ts-admin-order-service" target="P/api/v1/orderOtherService/orderOther_ts-admin-order-service_/api/v1/orderOtherService/orderOther_ts-admin-order-service_End"/>
+      <arc id="a21" source="P/api/v1/orderOtherService/orderOther_ts-admin-order-service_/api/v1/orderOtherService/orderOther_ts-admin-order-service_End" target="/api/v1/orderOtherService/orderOther_ts-admin-order-service_End"/>
+      <arc id="a22" source="/api/v1/orderservice/order/admin_ts-admin-order-service" target="P/api/v1/orderservice/order/admin_ts-admin-order-service_/api/v1/orderservice/order/admin_ts-admin-order-service_End"/>
+      <arc id="a23" source="P/api/v1/orderservice/order/admin_ts-admin-order-service_/api/v1/orderservice/order/admin_ts-admin-order-service_End" target="/api/v1/orderservice/order/admin_ts-admin-order-service_End"/>
+      <arc id="a24" source="Start" target="GET:/api/v1/adminorderservice/adminorder_ts-admin-order-service"/>
+      <arc id="a25" source="/api/v1/orderOtherService/orderOther_ts-admin-order-service_End" target="End"/>
+      <arc id="a26" source="Start" target="PUT:/api/v1/adminorderservice/adminorder_ts-admin-order-service"/>
+      <arc id="a27" source="/api/v1/orderservice/order/admin_ts-admin-order-service_End" target="End"/>
+    </page>
+  </net>
+</pnml>

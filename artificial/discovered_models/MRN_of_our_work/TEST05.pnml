@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>TEST05-1_1-Trace01_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="Pt00_t01"/>
+      <place id="Pt01_t10"/>
+      <place id="Pt01_t02"/>
+      <place id="Pt10_t11"/>
+      <place id="Pt11_t20"/>
+      <place id="Pt02_t30"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="t00"/>
+      <transition id="t01"/>
+      <transition id="t10"/>
+      <transition id="t11"/>
+      <transition id="t20"/>
+      <transition id="t02"/>
+      <transition id="t30"/>
+      <arc id="a0" source="t00" target="Pt00_t01"/>
+      <arc id="a1" source="Pt00_t01" target="t01"/>
+      <arc id="a2" source="t01" target="Pt01_t10"/>
+      <arc id="a3" source="Pt01_t10" target="t10"/>
+      <arc id="a4" source="t01" target="Pt01_t02"/>
+      <arc id="a5" source="Pt01_t02" target="t02"/>
+      <arc id="a6" source="t10" target="Pt10_t11"/>
+      <arc id="a7" source="Pt10_t11" target="t11"/>
+      <arc id="a8" source="t11" target="Pt11_t20"/>
+      <arc id="a9" source="Pt11_t20" target="t20"/>
+      <arc id="a10" source="t02" target="Pt02_t30"/>
+      <arc id="a11" source="Pt02_t30" target="t30"/>
+      <arc id="a12" source="Start" target="t00"/>
+      <arc id="a13" source="t02" target="End"/>
+    </page>
+  </net>
+</pnml>

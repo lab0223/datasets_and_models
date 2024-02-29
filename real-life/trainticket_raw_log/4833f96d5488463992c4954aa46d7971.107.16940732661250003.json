@@ -1,0 +1,550 @@
+{
+  "traceId": "4833f96d5488463992c4954aa46d7971.107.16940732661250003",
+  "traceSegmentId": "4833f96d5488463992c4954aa46d7971.107.16940732661250002",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694073266127",
+    "endTime": "1694073266127",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694073266128",
+    "endTime": "1694073266129",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select trip0_.id as id1_0_, trip0_.end_time as end_time2_0_, trip0_.route_id as route_id3_0_, trip0_.start_station_name as start_st4_0_, trip0_.start_time as start_ti5_0_, trip0_.stations_name as stations6_0_, trip0_.terminal_station_name as terminal7_0_, trip0_.train_type_name as train_ty8_0_, trip0_.number as number9_0_, trip0_.type as type10_0_ from trip trip0_"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694073266130",
+    "endTime": "1694073266130",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694073266130",
+    "endTime": "1694073266161",
+    "operationName": "/api/v1/basicservice/basic/travels",
+    "peer": "ts-basic-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-basic-service/api/v1/basicservice/basic/travels"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694073266163",
+    "endTime": "1694073266163",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694073266125",
+    "endTime": "1694073266163",
+    "operationName": "POST:/api/v1/travelservice/trips/left",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/travelservice/trips/left"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-travel-service",
+  "serviceInstance": "634f782615694ec6ab24d18f57ecaf9a@10.100.0.130"
+}
+
+{
+  "traceId": "4833f96d5488463992c4954aa46d7971.107.16940732661250003",
+  "traceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.93.16940732661320006",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694073266133",
+    "endTime": "1694073266140",
+    "operationName": "/api/v1/stationservice/stations/idlist",
+    "peer": "ts-station-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-station-service/api/v1/stationservice/stations/idlist"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 2,
+    "startTime": "1694073266140",
+    "endTime": "1694073266148",
+    "operationName": "/api/v1/trainservice/trains/byNames",
+    "peer": "ts-train-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-train-service/api/v1/trainservice/trains/byNames"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694073266149",
+    "endTime": "1694073266159",
+    "operationName": "/api/v1/routeservice/routes/byIds/",
+    "peer": "ts-route-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-route-service/api/v1/routeservice/routes/byIds/"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694073266132",
+    "endTime": "1694073266161",
+    "refs": [{
+      "traceId": "4833f96d5488463992c4954aa46d7971.107.16940732661250003",
+      "parentTraceSegmentId": "4833f96d5488463992c4954aa46d7971.107.16940732661250002",
+      "parentSpanId": 4,
+      "parentService": "ts-travel-service",
+      "parentServiceInstance": "634f782615694ec6ab24d18f57ecaf9a@10.100.0.130",
+      "parentEndpoint": "POST:/api/v1/travelservice/trips/left",
+      "networkAddressUsedAtPeer": "ts-basic-service:80"
+    }],
+    "operationName": "POST:/api/v1/basicservice/basic/travels",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.254:15680/api/v1/basicservice/basic/travels"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-basic-service",
+  "serviceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254"
+}
+
+{
+  "traceId": "4833f96d5488463992c4954aa46d7971.107.16940732661250003",
+  "traceSegmentId": "d8b9b1a22a9f405db61b32bdd096d42b.173.16940732661350008",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694073266138",
+    "endTime": "1694073266138",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694073266138",
+    "endTime": "1694073266138",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "SELECT * from station where name in (?, ?)"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694073266140",
+    "endTime": "1694073266140",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694073266135",
+    "endTime": "1694073266140",
+    "refs": [{
+      "traceId": "4833f96d5488463992c4954aa46d7971.107.16940732661250003",
+      "parentTraceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.93.16940732661320006",
+      "parentSpanId": 1,
+      "parentService": "ts-basic-service",
+      "parentServiceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254",
+      "parentEndpoint": "POST:/api/v1/basicservice/basic/travels",
+      "networkAddressUsedAtPeer": "ts-station-service:80"
+    }],
+    "operationName": "POST:/api/v1/stationservice/stations/idlist",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.166:12345/api/v1/stationservice/stations/idlist"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-station-service",
+  "serviceInstance": "f612cdf3781f4d4793009618071a4f80@10.100.0.166"
+}
+
+{
+  "traceId": "4833f96d5488463992c4954aa46d7971.107.16940732661250003",
+  "traceSegmentId": "b6b1c409080b4d7f89d56f6cefd3cd34.104.16940732661420008",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694073266145",
+    "endTime": "1694073266145",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694073266146",
+    "endTime": "1694073266146",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "SELECT * from train_type where name in (?, ?, ?)"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694073266147",
+    "endTime": "1694073266147",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694073266142",
+    "endTime": "1694073266148",
+    "refs": [{
+      "traceId": "4833f96d5488463992c4954aa46d7971.107.16940732661250003",
+      "parentTraceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.93.16940732661320006",
+      "parentSpanId": 2,
+      "parentService": "ts-basic-service",
+      "parentServiceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254",
+      "parentEndpoint": "POST:/api/v1/basicservice/basic/travels",
+      "networkAddressUsedAtPeer": "ts-train-service:80"
+    }],
+    "operationName": "POST:/api/v1/trainservice/trains/byNames",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.147:14567/api/v1/trainservice/trains/byNames"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-train-service",
+  "serviceInstance": "b31aaa06c0ed42de8f9ef0cb986c9dde@10.100.0.147"
+}
+
+{
+  "traceId": "4833f96d5488463992c4954aa46d7971.107.16940732661250003",
+  "traceSegmentId": "ee494ded0c4e423f872c427869ebd1ca.103.16940732661500002",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694073266152",
+    "endTime": "1694073266152",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694073266152",
+    "endTime": "1694073266153",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "SELECT * from route where id in (?, ?, ?, ?, ?)"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694073266154",
+    "endTime": "1694073266154",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select stations0_.route_id as route_id1_2_0_, stations0_.stations as stations2_2_0_, stations0_.stations_order as stations3_0_ from route_stations stations0_ where stations0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694073266154",
+    "endTime": "1694073266154",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select distances0_.route_id as route_id1_1_0_, distances0_.distances as distance2_1_0_, distances0_.distances_order as distance3_0_ from route_distances distances0_ where distances0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694073266155",
+    "endTime": "1694073266155",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select stations0_.route_id as route_id1_2_0_, stations0_.stations as stations2_2_0_, stations0_.stations_order as stations3_0_ from route_stations stations0_ where stations0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694073266155",
+    "endTime": "1694073266155",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select distances0_.route_id as route_id1_1_0_, distances0_.distances as distance2_1_0_, distances0_.distances_order as distance3_0_ from route_distances distances0_ where distances0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 7,
+    "startTime": "1694073266156",
+    "endTime": "1694073266156",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select stations0_.route_id as route_id1_2_0_, stations0_.stations as stations2_2_0_, stations0_.stations_order as stations3_0_ from route_stations stations0_ where stations0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 8,
+    "startTime": "1694073266156",
+    "endTime": "1694073266156",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select distances0_.route_id as route_id1_1_0_, distances0_.distances as distance2_1_0_, distances0_.distances_order as distance3_0_ from route_distances distances0_ where distances0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 9,
+    "startTime": "1694073266156",
+    "endTime": "1694073266157",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select stations0_.route_id as route_id1_2_0_, stations0_.stations as stations2_2_0_, stations0_.stations_order as stations3_0_ from route_stations stations0_ where stations0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 10,
+    "startTime": "1694073266157",
+    "endTime": "1694073266157",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select distances0_.route_id as route_id1_1_0_, distances0_.distances as distance2_1_0_, distances0_.distances_order as distance3_0_ from route_distances distances0_ where distances0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 11,
+    "startTime": "1694073266157",
+    "endTime": "1694073266158",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select stations0_.route_id as route_id1_2_0_, stations0_.stations as stations2_2_0_, stations0_.stations_order as stations3_0_ from route_stations stations0_ where stations0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 12,
+    "startTime": "1694073266158",
+    "endTime": "1694073266158",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select distances0_.route_id as route_id1_1_0_, distances0_.distances as distance2_1_0_, distances0_.distances_order as distance3_0_ from route_distances distances0_ where distances0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 13,
+    "startTime": "1694073266158",
+    "endTime": "1694073266159",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694073266150",
+    "endTime": "1694073266159",
+    "refs": [{
+      "traceId": "4833f96d5488463992c4954aa46d7971.107.16940732661250003",
+      "parentTraceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.93.16940732661320006",
+      "parentSpanId": 3,
+      "parentService": "ts-basic-service",
+      "parentServiceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254",
+      "parentEndpoint": "POST:/api/v1/basicservice/basic/travels",
+      "networkAddressUsedAtPeer": "ts-route-service:80"
+    }],
+    "operationName": "POST:/api/v1/routeservice/routes/byIds",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.155:11178/api/v1/routeservice/routes/byIds/"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-route-service",
+  "serviceInstance": "18568b4f1fd24484979df9cad0ed9136@10.100.0.155"
+}
+

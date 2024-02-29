@@ -1,0 +1,120 @@
+{
+  "traceId": "c101df2891b94a18b6c1a618d90fff48.95.16940747091840001",
+  "traceSegmentId": "c101df2891b94a18b6c1a618d90fff48.95.16940747091840000",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694074709190",
+    "endTime": "1694074709199",
+    "operationName": "/api/v1/userservice/users",
+    "peer": "ts-user-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-user-service/api/v1/userservice/users"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694074709184",
+    "endTime": "1694074709202",
+    "operationName": "GET:/api/v1/adminuserservice/users",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/adminuserservice/users"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-admin-user-service",
+  "serviceInstance": "6e0b4e8b39324d57be8c1110ad1081c2@10.100.0.174"
+}
+
+{
+  "traceId": "c101df2891b94a18b6c1a618d90fff48.95.16940747091840001",
+  "traceSegmentId": "7b480ac1b9dc4733a3e591b33581ca31.158.16940747091920000",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694074709194",
+    "endTime": "1694074709195",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694074709196",
+    "endTime": "1694074709196",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select user0_.user_id as user_id1_0_, user0_.document_num as document2_0_, user0_.document_type as document3_0_, user0_.email as email4_0_, user0_.gender as gender5_0_, user0_.password as password6_0_, user0_.user_name as user_nam7_0_ from user user0_"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694074709197",
+    "endTime": "1694074709197",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694074709198",
+    "endTime": "1694074709198",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694074709192",
+    "endTime": "1694074709198",
+    "refs": [{
+      "traceId": "c101df2891b94a18b6c1a618d90fff48.95.16940747091840001",
+      "parentTraceSegmentId": "c101df2891b94a18b6c1a618d90fff48.95.16940747091840000",
+      "parentSpanId": 1,
+      "parentService": "ts-admin-user-service",
+      "parentServiceInstance": "6e0b4e8b39324d57be8c1110ad1081c2@10.100.0.174",
+      "parentEndpoint": "GET:/api/v1/adminuserservice/users",
+      "networkAddressUsedAtPeer": "ts-user-service:80"
+    }],
+    "operationName": "GET:/api/v1/userservice/users",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.255:12342/api/v1/userservice/users"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-user-service",
+  "serviceInstance": "d7e78082d0164ca09ab807ced686d4c1@10.100.0.255"
+}
+

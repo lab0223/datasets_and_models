@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>c101df2891b94a18b6c1a618d90fff48.103.16940748788960001_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="PGET:/api/v1/adminuserservice/users_ts-admin-user-service_/api/v1/userservice/users_ts-admin-user-service"/>
+      <place id="P/api/v1/userservice/users_ts-admin-user-service_GET:/api/v1/userservice/users_ts-user-service"/>
+      <place id="PGET:/api/v1/userservice/users_ts-user-service_/api/v1/userservice/users_ts-admin-user-service_End"/>
+      <place id="P/api/v1/userservice/users_ts-admin-user-service_/api/v1/userservice/users_ts-admin-user-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="GET:/api/v1/adminuserservice/users_ts-admin-user-service"/>
+      <transition id="/api/v1/userservice/users_ts-admin-user-service"/>
+      <transition id="GET:/api/v1/userservice/users_ts-user-service"/>
+      <transition id="/api/v1/userservice/users_ts-admin-user-service_End"/>
+      <arc id="a0" source="GET:/api/v1/adminuserservice/users_ts-admin-user-service" target="PGET:/api/v1/adminuserservice/users_ts-admin-user-service_/api/v1/userservice/users_ts-admin-user-service"/>
+      <arc id="a1" source="PGET:/api/v1/adminuserservice/users_ts-admin-user-service_/api/v1/userservice/users_ts-admin-user-service" target="/api/v1/userservice/users_ts-admin-user-service"/>
+      <arc id="a2" source="/api/v1/userservice/users_ts-admin-user-service" target="P/api/v1/userservice/users_ts-admin-user-service_GET:/api/v1/userservice/users_ts-user-service"/>
+      <arc id="a3" source="P/api/v1/userservice/users_ts-admin-user-service_GET:/api/v1/userservice/users_ts-user-service" target="GET:/api/v1/userservice/users_ts-user-service"/>
+      <arc id="a4" source="GET:/api/v1/userservice/users_ts-user-service" target="PGET:/api/v1/userservice/users_ts-user-service_/api/v1/userservice/users_ts-admin-user-service_End"/>
+      <arc id="a5" source="PGET:/api/v1/userservice/users_ts-user-service_/api/v1/userservice/users_ts-admin-user-service_End" target="/api/v1/userservice/users_ts-admin-user-service_End"/>
+      <arc id="a6" source="/api/v1/userservice/users_ts-admin-user-service" target="P/api/v1/userservice/users_ts-admin-user-service_/api/v1/userservice/users_ts-admin-user-service_End"/>
+      <arc id="a7" source="P/api/v1/userservice/users_ts-admin-user-service_/api/v1/userservice/users_ts-admin-user-service_End" target="/api/v1/userservice/users_ts-admin-user-service_End"/>
+      <arc id="a8" source="Start" target="GET:/api/v1/adminuserservice/users_ts-admin-user-service"/>
+      <arc id="a9" source="/api/v1/userservice/users_ts-admin-user-service_End" target="End"/>
+    </page>
+  </net>
+</pnml>

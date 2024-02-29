@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>cf5c0009be3b4798a3821b8426cf02af.88.16940748595540001_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="PGET:/api/v1/adminbasicservice/adminbasic/prices_ts-admin-basic-info-service_/api/v1/priceservice/prices_ts-admin-basic-info-service"/>
+      <place id="P/api/v1/priceservice/prices_ts-admin-basic-info-service_GET:/api/v1/priceservice/prices_ts-price-service"/>
+      <place id="PGET:/api/v1/priceservice/prices_ts-price-service_/api/v1/priceservice/prices_ts-admin-basic-info-service_End"/>
+      <place id="P/api/v1/stationservice/stations_ts-admin-basic-info-service_GET:/api/v1/stationservice/stations_ts-station-servicePOST:/api/v1/stationservice/stations_ts-station-service"/>
+      <place id="PGET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-servicePOST:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service_/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+      <place id="PGET:/api/v1/stationservice/stations_ts-station-servicePOST:/api/v1/stationservice/stations_ts-station-service_/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+      <place id="PGET:/api/v1/adminbasicservice/adminbasic/configs_ts-admin-basic-info-service_/api/v1/configservice/configs_ts-admin-basic-info-service"/>
+      <place id="P/api/v1/configservice/configs_ts-admin-basic-info-service_GET:/api/v1/configservice/configs_ts-config-service"/>
+      <place id="PGET:/api/v1/configservice/configs_ts-config-service_/api/v1/configservice/configs_ts-admin-basic-info-service_End"/>
+      <place id="PGET:/api/v1/adminbasicservice/adminbasic/trains_ts-admin-basic-info-service_/api/v1/trainservice/trains_ts-admin-basic-info-service"/>
+      <place id="P/api/v1/trainservice/trains_ts-admin-basic-info-service_GET:/api/v1/trainservice/trains_ts-train-service"/>
+      <place id="PGET:/api/v1/trainservice/trains_ts-train-service_/api/v1/trainservice/trains_ts-admin-basic-info-service_End"/>
+      <place id="P/api/v1/priceservice/prices_ts-admin-basic-info-service_/api/v1/priceservice/prices_ts-admin-basic-info-service_End"/>
+      <place id="P/api/v1/stationservice/stations_ts-admin-basic-info-service_/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+      <place id="P/api/v1/configservice/configs_ts-admin-basic-info-service_/api/v1/configservice/configs_ts-admin-basic-info-service_End"/>
+      <place id="P/api/v1/trainservice/trains_ts-admin-basic-info-service_/api/v1/trainservice/trains_ts-admin-basic-info-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="GET:/api/v1/adminbasicservice/adminbasic/prices_ts-admin-basic-info-service"/>
+      <transition id="/api/v1/priceservice/prices_ts-admin-basic-info-service"/>
+      <transition id="GET:/api/v1/priceservice/prices_ts-price-service"/>
+      <transition id="/api/v1/priceservice/prices_ts-admin-basic-info-service_End"/>
+      <transition id="GET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service"/>
+      <transition id="/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+      <transition id="GET:/api/v1/stationservice/stations_ts-station-service"/>
+      <transition id="/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+      <transition id="GET:/api/v1/adminbasicservice/adminbasic/configs_ts-admin-basic-info-service"/>
+      <transition id="/api/v1/configservice/configs_ts-admin-basic-info-service"/>
+      <transition id="GET:/api/v1/configservice/configs_ts-config-service"/>
+      <transition id="/api/v1/configservice/configs_ts-admin-basic-info-service_End"/>
+      <transition id="GET:/api/v1/adminbasicservice/adminbasic/trains_ts-admin-basic-info-service"/>
+      <transition id="/api/v1/trainservice/trains_ts-admin-basic-info-service"/>
+      <transition id="GET:/api/v1/trainservice/trains_ts-train-service"/>
+      <transition id="/api/v1/trainservice/trains_ts-admin-basic-info-service_End"/>
+      <transition id="POST:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service"/>
+      <transition id="POST:/api/v1/stationservice/stations_ts-station-service"/>
+      <arc id="a0" source="GET:/api/v1/adminbasicservice/adminbasic/prices_ts-admin-basic-info-service" target="PGET:/api/v1/adminbasicservice/adminbasic/prices_ts-admin-basic-info-service_/api/v1/priceservice/prices_ts-admin-basic-info-service"/>
+      <arc id="a1" source="PGET:/api/v1/adminbasicservice/adminbasic/prices_ts-admin-basic-info-service_/api/v1/priceservice/prices_ts-admin-basic-info-service" target="/api/v1/priceservice/prices_ts-admin-basic-info-service"/>
+      <arc id="a2" source="/api/v1/priceservice/prices_ts-admin-basic-info-service" target="P/api/v1/priceservice/prices_ts-admin-basic-info-service_GET:/api/v1/priceservice/prices_ts-price-service"/>
+      <arc id="a3" source="P/api/v1/priceservice/prices_ts-admin-basic-info-service_GET:/api/v1/priceservice/prices_ts-price-service" target="GET:/api/v1/priceservice/prices_ts-price-service"/>
+      <arc id="a4" source="GET:/api/v1/priceservice/prices_ts-price-service" target="PGET:/api/v1/priceservice/prices_ts-price-service_/api/v1/priceservice/prices_ts-admin-basic-info-service_End"/>
+      <arc id="a5" source="PGET:/api/v1/priceservice/prices_ts-price-service_/api/v1/priceservice/prices_ts-admin-basic-info-service_End" target="/api/v1/priceservice/prices_ts-admin-basic-info-service_End"/>
+      <arc id="a6" source="/api/v1/stationservice/stations_ts-admin-basic-info-service" target="P/api/v1/stationservice/stations_ts-admin-basic-info-service_GET:/api/v1/stationservice/stations_ts-station-servicePOST:/api/v1/stationservice/stations_ts-station-service"/>
+      <arc id="a7" source="P/api/v1/stationservice/stations_ts-admin-basic-info-service_GET:/api/v1/stationservice/stations_ts-station-servicePOST:/api/v1/stationservice/stations_ts-station-service" target="GET:/api/v1/stationservice/stations_ts-station-service"/>
+      <arc id="a8" source="P/api/v1/stationservice/stations_ts-admin-basic-info-service_GET:/api/v1/stationservice/stations_ts-station-servicePOST:/api/v1/stationservice/stations_ts-station-service" target="POST:/api/v1/stationservice/stations_ts-station-service"/>
+      <arc id="a9" source="GET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service" target="PGET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-servicePOST:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service_/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+      <arc id="a10" source="POST:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service" target="PGET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-servicePOST:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service_/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+      <arc id="a11" source="PGET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-servicePOST:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service_/api/v1/stationservice/stations_ts-admin-basic-info-service" target="/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+      <arc id="a12" source="GET:/api/v1/stationservice/stations_ts-station-service" target="PGET:/api/v1/stationservice/stations_ts-station-servicePOST:/api/v1/stationservice/stations_ts-station-service_/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+      <arc id="a13" source="POST:/api/v1/stationservice/stations_ts-station-service" target="PGET:/api/v1/stationservice/stations_ts-station-servicePOST:/api/v1/stationservice/stations_ts-station-service_/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+      <arc id="a14" source="PGET:/api/v1/stationservice/stations_ts-station-servicePOST:/api/v1/stationservice/stations_ts-station-service_/api/v1/stationservice/stations_ts-admin-basic-info-service_End" target="/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+      <arc id="a15" source="GET:/api/v1/adminbasicservice/adminbasic/configs_ts-admin-basic-info-service" target="PGET:/api/v1/adminbasicservice/adminbasic/configs_ts-admin-basic-info-service_/api/v1/configservice/configs_ts-admin-basic-info-service"/>
+      <arc id="a16" source="PGET:/api/v1/adminbasicservice/adminbasic/configs_ts-admin-basic-info-service_/api/v1/configservice/configs_ts-admin-basic-info-service" target="/api/v1/configservice/configs_ts-admin-basic-info-service"/>
+      <arc id="a17" source="/api/v1/configservice/configs_ts-admin-basic-info-service" target="P/api/v1/configservice/configs_ts-admin-basic-info-service_GET:/api/v1/configservice/configs_ts-config-service"/>
+      <arc id="a18" source="P/api/v1/configservice/configs_ts-admin-basic-info-service_GET:/api/v1/configservice/configs_ts-config-service" target="GET:/api/v1/configservice/configs_ts-config-service"/>
+      <arc id="a19" source="GET:/api/v1/configservice/configs_ts-config-service" target="PGET:/api/v1/configservice/configs_ts-config-service_/api/v1/configservice/configs_ts-admin-basic-info-service_End"/>
+      <arc id="a20" source="PGET:/api/v1/configservice/configs_ts-config-service_/api/v1/configservice/configs_ts-admin-basic-info-service_End" target="/api/v1/configservice/configs_ts-admin-basic-info-service_End"/>
+      <arc id="a21" source="GET:/api/v1/adminbasicservice/adminbasic/trains_ts-admin-basic-info-service" target="PGET:/api/v1/adminbasicservice/adminbasic/trains_ts-admin-basic-info-service_/api/v1/trainservice/trains_ts-admin-basic-info-service"/>
+      <arc id="a22" source="PGET:/api/v1/adminbasicservice/adminbasic/trains_ts-admin-basic-info-service_/api/v1/trainservice/trains_ts-admin-basic-info-service" target="/api/v1/trainservice/trains_ts-admin-basic-info-service"/>
+      <arc id="a23" source="/api/v1/trainservice/trains_ts-admin-basic-info-service" target="P/api/v1/trainservice/trains_ts-admin-basic-info-service_GET:/api/v1/trainservice/trains_ts-train-service"/>
+      <arc id="a24" source="P/api/v1/trainservice/trains_ts-admin-basic-info-service_GET:/api/v1/trainservice/trains_ts-train-service" target="GET:/api/v1/trainservice/trains_ts-train-service"/>
+      <arc id="a25" source="GET:/api/v1/trainservice/trains_ts-train-service" target="PGET:/api/v1/trainservice/trains_ts-train-service_/api/v1/trainservice/trains_ts-admin-basic-info-service_End"/>
+      <arc id="a26" source="PGET:/api/v1/trainservice/trains_ts-train-service_/api/v1/trainservice/trains_ts-admin-basic-info-service_End" target="/api/v1/trainservice/trains_ts-admin-basic-info-service_End"/>
+      <arc id="a27" source="/api/v1/priceservice/prices_ts-admin-basic-info-service" target="P/api/v1/priceservice/prices_ts-admin-basic-info-service_/api/v1/priceservice/prices_ts-admin-basic-info-service_End"/>
+      <arc id="a28" source="P/api/v1/priceservice/prices_ts-admin-basic-info-service_/api/v1/priceservice/prices_ts-admin-basic-info-service_End" target="/api/v1/priceservice/prices_ts-admin-basic-info-service_End"/>
+      <arc id="a29" source="/api/v1/stationservice/stations_ts-admin-basic-info-service" target="P/api/v1/stationservice/stations_ts-admin-basic-info-service_/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+      <arc id="a30" source="P/api/v1/stationservice/stations_ts-admin-basic-info-service_/api/v1/stationservice/stations_ts-admin-basic-info-service_End" target="/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+      <arc id="a31" source="/api/v1/configservice/configs_ts-admin-basic-info-service" target="P/api/v1/configservice/configs_ts-admin-basic-info-service_/api/v1/configservice/configs_ts-admin-basic-info-service_End"/>
+      <arc id="a32" source="P/api/v1/configservice/configs_ts-admin-basic-info-service_/api/v1/configservice/configs_ts-admin-basic-info-service_End" target="/api/v1/configservice/configs_ts-admin-basic-info-service_End"/>
+      <arc id="a33" source="/api/v1/trainservice/trains_ts-admin-basic-info-service" target="P/api/v1/trainservice/trains_ts-admin-basic-info-service_/api/v1/trainservice/trains_ts-admin-basic-info-service_End"/>
+      <arc id="a34" source="P/api/v1/trainservice/trains_ts-admin-basic-info-service_/api/v1/trainservice/trains_ts-admin-basic-info-service_End" target="/api/v1/trainservice/trains_ts-admin-basic-info-service_End"/>
+      <arc id="a35" source="Start" target="GET:/api/v1/adminbasicservice/adminbasic/prices_ts-admin-basic-info-service"/>
+      <arc id="a36" source="/api/v1/priceservice/prices_ts-admin-basic-info-service_End" target="End"/>
+      <arc id="a37" source="Start" target="GET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service"/>
+      <arc id="a38" source="/api/v1/stationservice/stations_ts-admin-basic-info-service_End" target="End"/>
+      <arc id="a39" source="Start" target="GET:/api/v1/adminbasicservice/adminbasic/configs_ts-admin-basic-info-service"/>
+      <arc id="a40" source="/api/v1/configservice/configs_ts-admin-basic-info-service_End" target="End"/>
+      <arc id="a41" source="Start" target="GET:/api/v1/adminbasicservice/adminbasic/trains_ts-admin-basic-info-service"/>
+      <arc id="a42" source="/api/v1/trainservice/trains_ts-admin-basic-info-service_End" target="End"/>
+      <arc id="a43" source="Start" target="POST:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service"/>
+    </page>
+  </net>
+</pnml>

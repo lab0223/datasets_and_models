@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>24cab84211874b0cb8d2d0341c83319c.103.16940741014350001_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="P/api/v1/orderservice/order/{uuid}_ts-execute-service_GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <place id="PGET:/api/v1/executeservice/execute/collected/{orderId}_ts-execute-serviceGET:/api/v1/executeservice/execute/execute/{orderId}_ts-execute-service_/api/v1/orderservice/order/{uuid}_ts-execute-service"/>
+      <place id="PGET:/api/v1/orderservice/order/{orderId}_ts-order-service_/api/v1/orderservice/order/{uuid}_ts-execute-service_End"/>
+      <place id="P/api/v1/orderservice/order/{uuid}_ts-execute-service_End_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service"/>
+      <place id="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <place id="PGET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service"/>
+      <place id="PGET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+      <place id="PGET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service_/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End"/>
+      <place id="P/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+      <place id="P/api/v1/orderservice/order/{uuid}_ts-execute-service_/api/v1/orderservice/order/{uuid}_ts-execute-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End"/>
+      <place id="P/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End"/>
+      <place id="P/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="GET:/api/v1/executeservice/execute/collected/{orderId}_ts-execute-service"/>
+      <transition id="/api/v1/orderservice/order/{uuid}_ts-execute-service"/>
+      <transition id="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <transition id="/api/v1/orderservice/order/{uuid}_ts-execute-service_End"/>
+      <transition id="/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service"/>
+      <transition id="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End"/>
+      <transition id="/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service"/>
+      <transition id="GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End"/>
+      <transition id="/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service"/>
+      <transition id="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+      <transition id="/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End"/>
+      <transition id="GET:/api/v1/executeservice/execute/execute/{orderId}_ts-execute-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End"/>
+      <transition id="/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service"/>
+      <transition id="/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End"/>
+      <arc id="a0" source="/api/v1/orderservice/order/{uuid}_ts-execute-service" target="P/api/v1/orderservice/order/{uuid}_ts-execute-service_GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <arc id="a1" source="P/api/v1/orderservice/order/{uuid}_ts-execute-service_GET:/api/v1/orderservice/order/{orderId}_ts-order-service" target="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <arc id="a2" source="GET:/api/v1/executeservice/execute/collected/{orderId}_ts-execute-service" target="PGET:/api/v1/executeservice/execute/collected/{orderId}_ts-execute-serviceGET:/api/v1/executeservice/execute/execute/{orderId}_ts-execute-service_/api/v1/orderservice/order/{uuid}_ts-execute-service"/>
+      <arc id="a3" source="GET:/api/v1/executeservice/execute/execute/{orderId}_ts-execute-service" target="PGET:/api/v1/executeservice/execute/collected/{orderId}_ts-execute-serviceGET:/api/v1/executeservice/execute/execute/{orderId}_ts-execute-service_/api/v1/orderservice/order/{uuid}_ts-execute-service"/>
+      <arc id="a4" source="PGET:/api/v1/executeservice/execute/collected/{orderId}_ts-execute-serviceGET:/api/v1/executeservice/execute/execute/{orderId}_ts-execute-service_/api/v1/orderservice/order/{uuid}_ts-execute-service" target="/api/v1/orderservice/order/{uuid}_ts-execute-service"/>
+      <arc id="a5" source="GET:/api/v1/orderservice/order/{orderId}_ts-order-service" target="PGET:/api/v1/orderservice/order/{orderId}_ts-order-service_/api/v1/orderservice/order/{uuid}_ts-execute-service_End"/>
+      <arc id="a6" source="PGET:/api/v1/orderservice/order/{orderId}_ts-order-service_/api/v1/orderservice/order/{uuid}_ts-execute-service_End" target="/api/v1/orderservice/order/{uuid}_ts-execute-service_End"/>
+      <arc id="a7" source="/api/v1/orderservice/order/{uuid}_ts-execute-service_End" target="P/api/v1/orderservice/order/{uuid}_ts-execute-service_End_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service"/>
+      <arc id="a8" source="P/api/v1/orderservice/order/{uuid}_ts-execute-service_End_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service" target="/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service"/>
+      <arc id="a9" source="P/api/v1/orderservice/order/{uuid}_ts-execute-service_End_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service" target="/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service"/>
+      <arc id="a10" source="P/api/v1/orderservice/order/{uuid}_ts-execute-service_End_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service" target="/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service"/>
+      <arc id="a11" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service" target="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <arc id="a12" source="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service" target="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <arc id="a13" source="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service" target="PGET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End"/>
+      <arc id="a14" source="PGET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End" target="/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End"/>
+      <arc id="a15" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End" target="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service"/>
+      <arc id="a16" source="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service" target="/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service"/>
+      <arc id="a17" source="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service" target="/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service"/>
+      <arc id="a18" source="GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service" target="PGET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End"/>
+      <arc id="a19" source="PGET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End" target="/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End"/>
+      <arc id="a20" source="PGET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End" target="/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End"/>
+      <arc id="a21" source="/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service" target="P/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+      <arc id="a22" source="/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service" target="P/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+      <arc id="a23" source="P/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service" target="GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+      <arc id="a24" source="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service" target="PGET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service_/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End"/>
+      <arc id="a25" source="PGET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service_/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End" target="/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End"/>
+      <arc id="a26" source="PGET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service_/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End" target="/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End"/>
+      <arc id="a27" source="/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service" target="P/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+      <arc id="a28" source="/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service" target="P/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+      <arc id="a29" source="P/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service" target="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+      <arc id="a30" source="/api/v1/orderservice/order/{uuid}_ts-execute-service" target="P/api/v1/orderservice/order/{uuid}_ts-execute-service_/api/v1/orderservice/order/{uuid}_ts-execute-service_End"/>
+      <arc id="a31" source="P/api/v1/orderservice/order/{uuid}_ts-execute-service_/api/v1/orderservice/order/{uuid}_ts-execute-service_End" target="/api/v1/orderservice/order/{uuid}_ts-execute-service_End"/>
+      <arc id="a32" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service" target="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End"/>
+      <arc id="a33" source="P/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End" target="/api/v1/orderOtherService/orderOther/{uuid}_ts-execute-service_End"/>
+      <arc id="a34" source="/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service" target="P/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End"/>
+      <arc id="a35" source="P/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End" target="/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End"/>
+      <arc id="a36" source="/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service" target="P/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End"/>
+      <arc id="a37" source="P/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End" target="/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End"/>
+      <arc id="a38" source="/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service" target="P/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End"/>
+      <arc id="a39" source="P/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End" target="/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End"/>
+      <arc id="a40" source="/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service" target="P/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End"/>
+      <arc id="a41" source="P/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End" target="/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End"/>
+      <arc id="a42" source="Start" target="GET:/api/v1/executeservice/execute/collected/{orderId}_ts-execute-service"/>
+      <arc id="a43" source="/api/v1/orderOtherService/orderOther/status/{uuid}/2_ts-execute-service_End" target="End"/>
+      <arc id="a44" source="/api/v1/orderservice/order/status/{uuid}/2_ts-execute-service_End" target="End"/>
+      <arc id="a45" source="Start" target="GET:/api/v1/executeservice/execute/execute/{orderId}_ts-execute-service"/>
+      <arc id="a46" source="/api/v1/orderOtherService/orderOther/status/{uuid}/6_ts-execute-service_End" target="End"/>
+      <arc id="a47" source="/api/v1/orderservice/order/status/{uuid}/6_ts-execute-service_End" target="End"/>
+    </page>
+  </net>
+</pnml>

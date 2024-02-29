@@ -1,0 +1,1750 @@
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610000",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537269",
+    "endTime": "1694075537277",
+    "operationName": "/api/v1/orderservice/order/ad557b87-3773-4fff-ae81-9835c51b3a74",
+    "peer": "ts-order-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-order-service/api/v1/orderservice/order/ad557b87-3773-4fff-ae81-9835c51b3a74"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537277",
+    "endTime": "1694075537357",
+    "operationName": "/api/v1/travelservice/trip_detail",
+    "peer": "ts-travel-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-travel-service/api/v1/travelservice/trip_detail"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537358",
+    "endTime": "1694075537372",
+    "operationName": "/api/v1/inside_pay_service/inside_payment/difference",
+    "peer": "ts-inside-payment-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-inside-payment-service/api/v1/inside_pay_service/inside_payment/difference"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694075537372",
+    "endTime": "1694075537380",
+    "operationName": "/api/v1/routeservice/routes/f3d4d4ef-693b-4456-8eed-59c0d717dd08",
+    "peer": "ts-route-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-route-service/api/v1/routeservice/routes/f3d4d4ef-693b-4456-8eed-59c0d717dd08"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694075537382",
+    "endTime": "1694075537388",
+    "operationName": "/api/v1/trainservice/trains/byName/DongCheOne",
+    "peer": "ts-train-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-train-service/api/v1/trainservice/trains/byName/DongCheOne"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694075537389",
+    "endTime": "1694075537400",
+    "operationName": "/api/v1/seatservice/seats",
+    "peer": "ts-seat-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-seat-service/api/v1/seatservice/seats"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 7,
+    "startTime": "1694075537400",
+    "endTime": "1694075537410",
+    "operationName": "/api/v1/orderservice/order",
+    "peer": "ts-order-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-order-service/api/v1/orderservice/order"
+    }, {
+      "key": "http.method",
+      "value": "PUT"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537261",
+    "endTime": "1694075537412",
+    "operationName": "POST:/api/v1/rebookservice/rebook/difference",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/rebookservice/rebook/difference"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-rebook-service",
+  "serviceInstance": "c7325af04426472faf6520619078a5e8@10.100.0.168"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "bfa9e6006cd74ab6b7736607e50da334.102.16940755372710060",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537273",
+    "endTime": "1694075537273",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537274",
+    "endTime": "1694075537274",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select order0_.id as id1_0_0_, order0_.account_id as account_2_0_0_, order0_.bought_date as bought_d3_0_0_, order0_.coach_number as coach_nu4_0_0_, order0_.contacts_document_number as contacts5_0_0_, order0_.contacts_name as contacts6_0_0_, order0_.document_type as document7_0_0_, order0_.from_station as from_sta8_0_0_, order0_.price as price9_0_0_, order0_.seat_class as seat_cl10_0_0_, order0_.seat_number as seat_nu11_0_0_, order0_.status as status12_0_0_, order0_.to_station as to_stat13_0_0_, order0_.train_number as train_n14_0_0_, order0_.travel_date as travel_15_0_0_, order0_.travel_time as travel_16_0_0_ from orders order0_ where order0_.id\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537274",
+    "endTime": "1694075537274",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694075537275",
+    "endTime": "1694075537275",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537271",
+    "endTime": "1694075537276",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610000",
+      "parentSpanId": 1,
+      "parentService": "ts-rebook-service",
+      "parentServiceInstance": "c7325af04426472faf6520619078a5e8@10.100.0.168",
+      "parentEndpoint": "POST:/api/v1/rebookservice/rebook/difference",
+      "networkAddressUsedAtPeer": "ts-order-service:80"
+    }],
+    "operationName": "GET:/api/v1/orderservice/order/{orderId}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.169:12031/api/v1/orderservice/order/ad557b87-3773-4fff-ae81-9835c51b3a74"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-order-service",
+  "serviceInstance": "8e24117b149f4db7a3a89833d45dc0de@10.100.0.169"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "4833f96d5488463992c4954aa46d7971.103.16940755372800014",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537283",
+    "endTime": "1694075537283",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537283",
+    "endTime": "1694075537284",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select trip0_.id as id1_0_, trip0_.end_time as end_time2_0_, trip0_.route_id as route_id3_0_, trip0_.start_station_name as start_st4_0_, trip0_.start_time as start_ti5_0_, trip0_.stations_name as stations6_0_, trip0_.terminal_station_name as terminal7_0_, trip0_.train_type_name as train_ty8_0_, trip0_.number as number9_0_, trip0_.type as type10_0_ from trip trip0_ where (trip0_.number, trip0_.type)\u003d(?, ?)"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537284",
+    "endTime": "1694075537320",
+    "operationName": "/api/v1/basicservice/basic/travel",
+    "peer": "ts-basic-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-basic-service/api/v1/basicservice/basic/travel"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694075537322",
+    "endTime": "1694075537338",
+    "operationName": "/api/v1/seatservice/seats/left_tickets",
+    "peer": "ts-seat-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-seat-service/api/v1/seatservice/seats/left_tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694075537338",
+    "endTime": "1694075537354",
+    "operationName": "/api/v1/seatservice/seats/left_tickets",
+    "peer": "ts-seat-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-seat-service/api/v1/seatservice/seats/left_tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694075537355",
+    "endTime": "1694075537356",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select trip0_.id as id1_0_, trip0_.end_time as end_time2_0_, trip0_.route_id as route_id3_0_, trip0_.start_station_name as start_st4_0_, trip0_.start_time as start_ti5_0_, trip0_.stations_name as stations6_0_, trip0_.terminal_station_name as terminal7_0_, trip0_.train_type_name as train_ty8_0_, trip0_.number as number9_0_, trip0_.type as type10_0_ from trip trip0_ where (trip0_.number, trip0_.type)\u003d(?, ?)"
+    }]
+  }, {
+    "spanId": 7,
+    "startTime": "1694075537357",
+    "endTime": "1694075537357",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537280",
+    "endTime": "1694075537357",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610000",
+      "parentSpanId": 2,
+      "parentService": "ts-rebook-service",
+      "parentServiceInstance": "c7325af04426472faf6520619078a5e8@10.100.0.168",
+      "parentEndpoint": "POST:/api/v1/rebookservice/rebook/difference",
+      "networkAddressUsedAtPeer": "ts-travel-service:80"
+    }],
+    "operationName": "POST:/api/v1/travelservice/trip_detail",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.130:12346/api/v1/travelservice/trip_detail"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-travel-service",
+  "serviceInstance": "634f782615694ec6ab24d18f57ecaf9a@10.100.0.130"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.97.16940755372870022",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537289",
+    "endTime": "1694075537295",
+    "operationName": "/api/v1/stationservice/stations/id/shanghai",
+    "peer": "ts-station-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-station-service/api/v1/stationservice/stations/id/shanghai"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537295",
+    "endTime": "1694075537298",
+    "operationName": "/api/v1/stationservice/stations/id/suzhou",
+    "peer": "ts-station-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-station-service/api/v1/stationservice/stations/id/suzhou"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537299",
+    "endTime": "1694075537304",
+    "operationName": "/api/v1/trainservice/trains/byName/DongCheOne",
+    "peer": "ts-train-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-train-service/api/v1/trainservice/trains/byName/DongCheOne"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694075537305",
+    "endTime": "1694075537311",
+    "operationName": "/api/v1/routeservice/routes/f3d4d4ef-693b-4456-8eed-59c0d717dd08",
+    "peer": "ts-route-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-route-service/api/v1/routeservice/routes/f3d4d4ef-693b-4456-8eed-59c0d717dd08"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694075537312",
+    "endTime": "1694075537318",
+    "operationName": "/api/v1/priceservice/prices/f3d4d4ef-693b-4456-8eed-59c0d717dd08/DongCheOne",
+    "peer": "ts-price-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-price-service/api/v1/priceservice/prices/f3d4d4ef-693b-4456-8eed-59c0d717dd08/DongCheOne"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537287",
+    "endTime": "1694075537320",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4833f96d5488463992c4954aa46d7971.103.16940755372800014",
+      "parentSpanId": 3,
+      "parentService": "ts-travel-service",
+      "parentServiceInstance": "634f782615694ec6ab24d18f57ecaf9a@10.100.0.130",
+      "parentEndpoint": "POST:/api/v1/travelservice/trip_detail",
+      "networkAddressUsedAtPeer": "ts-basic-service:80"
+    }],
+    "operationName": "POST:/api/v1/basicservice/basic/travel",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.254:15680/api/v1/basicservice/basic/travel"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-basic-service",
+  "serviceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "d8b9b1a22a9f405db61b32bdd096d42b.169.16940755372910030",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537292",
+    "endTime": "1694075537293",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537293",
+    "endTime": "1694075537293",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select station0_.id as id1_0_, station0_.name as name2_0_, station0_.stay_time as stay_tim3_0_ from station station0_ where station0_.name\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537294",
+    "endTime": "1694075537294",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537291",
+    "endTime": "1694075537294",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.97.16940755372870022",
+      "parentSpanId": 1,
+      "parentService": "ts-basic-service",
+      "parentServiceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254",
+      "parentEndpoint": "POST:/api/v1/basicservice/basic/travel",
+      "networkAddressUsedAtPeer": "ts-station-service:80"
+    }],
+    "operationName": "GET:/api/v1/stationservice/stations/id/{stationNameForId}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.166:12345/api/v1/stationservice/stations/id/shanghai"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-station-service",
+  "serviceInstance": "f612cdf3781f4d4793009618071a4f80@10.100.0.166"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "d8b9b1a22a9f405db61b32bdd096d42b.170.16940755372960028",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537297",
+    "endTime": "1694075537297",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537297",
+    "endTime": "1694075537297",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select station0_.id as id1_0_, station0_.name as name2_0_, station0_.stay_time as stay_tim3_0_ from station station0_ where station0_.name\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537298",
+    "endTime": "1694075537298",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537296",
+    "endTime": "1694075537298",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.97.16940755372870022",
+      "parentSpanId": 2,
+      "parentService": "ts-basic-service",
+      "parentServiceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254",
+      "parentEndpoint": "POST:/api/v1/basicservice/basic/travel",
+      "networkAddressUsedAtPeer": "ts-station-service:80"
+    }],
+    "operationName": "GET:/api/v1/stationservice/stations/id/{stationNameForId}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.166:12345/api/v1/stationservice/stations/id/suzhou"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-station-service",
+  "serviceInstance": "f612cdf3781f4d4793009618071a4f80@10.100.0.166"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "b6b1c409080b4d7f89d56f6cefd3cd34.98.16940755373010038",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537302",
+    "endTime": "1694075537302",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537302",
+    "endTime": "1694075537303",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select traintype0_.id as id1_0_, traintype0_.average_speed as average_2_0_, traintype0_.confort_class as confort_3_0_, traintype0_.economy_class as economy_4_0_, traintype0_.name as name5_0_ from train_type traintype0_ where traintype0_.name\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537304",
+    "endTime": "1694075537304",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537301",
+    "endTime": "1694075537304",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.97.16940755372870022",
+      "parentSpanId": 3,
+      "parentService": "ts-basic-service",
+      "parentServiceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254",
+      "parentEndpoint": "POST:/api/v1/basicservice/basic/travel",
+      "networkAddressUsedAtPeer": "ts-train-service:80"
+    }],
+    "operationName": "GET:/api/v1/trainservice/trains/byName/{name}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.147:14567/api/v1/trainservice/trains/byName/DongCheOne"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-train-service",
+  "serviceInstance": "b31aaa06c0ed42de8f9ef0cb986c9dde@10.100.0.147"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "ee494ded0c4e423f872c427869ebd1ca.100.16940755373070056",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537308",
+    "endTime": "1694075537308",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537309",
+    "endTime": "1694075537309",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select route0_.id as id1_0_0_, route0_.end_station as end_stat2_0_0_, route0_.start_station as start_st3_0_0_ from route route0_ where route0_.id\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537309",
+    "endTime": "1694075537310",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694075537310",
+    "endTime": "1694075537310",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select stations0_.route_id as route_id1_2_0_, stations0_.stations as stations2_2_0_, stations0_.stations_order as stations3_0_ from route_stations stations0_ where stations0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694075537310",
+    "endTime": "1694075537311",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select distances0_.route_id as route_id1_1_0_, distances0_.distances as distance2_1_0_, distances0_.distances_order as distance3_0_ from route_distances distances0_ where distances0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694075537311",
+    "endTime": "1694075537311",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537307",
+    "endTime": "1694075537311",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.97.16940755372870022",
+      "parentSpanId": 4,
+      "parentService": "ts-basic-service",
+      "parentServiceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254",
+      "parentEndpoint": "POST:/api/v1/basicservice/basic/travel",
+      "networkAddressUsedAtPeer": "ts-route-service:80"
+    }],
+    "operationName": "GET:/api/v1/routeservice/routes/{routeId}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.155:11178/api/v1/routeservice/routes/f3d4d4ef-693b-4456-8eed-59c0d717dd08"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-route-service",
+  "serviceInstance": "18568b4f1fd24484979df9cad0ed9136@10.100.0.155"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "d8b1a47e03e746bbb92e5c8e3b28b47f.91.16940755373140010",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537316",
+    "endTime": "1694075537316",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537316",
+    "endTime": "1694075537317",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select priceconfi0_.id as id1_0_, priceconfi0_.basic_price_rate as basic_pr2_0_, priceconfi0_.first_class_price_rate as first_cl3_0_, priceconfi0_.route_id as route_id4_0_, priceconfi0_.train_type as train_ty5_0_ from price_config priceconfi0_ where priceconfi0_.route_id\u003d? and priceconfi0_.train_type\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537318",
+    "endTime": "1694075537318",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537314",
+    "endTime": "1694075537318",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "32e996d80d6e4ab78cb7d14f84a31494.97.16940755372870022",
+      "parentSpanId": 5,
+      "parentService": "ts-basic-service",
+      "parentServiceInstance": "051666e9e8c9429094f097e48710fbce@10.100.0.254",
+      "parentEndpoint": "POST:/api/v1/basicservice/basic/travel",
+      "networkAddressUsedAtPeer": "ts-price-service:80"
+    }],
+    "operationName": "GET:/api/v1/priceservice/prices/{routeId}/{trainType}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.183:16579/api/v1/priceservice/prices/f3d4d4ef-693b-4456-8eed-59c0d717dd08/DongCheOne"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-price-service",
+  "serviceInstance": "e0bef1daf4d748bb86b16c2c022f21c2@10.100.0.183"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "772a3a4559af4f29bcc0cebd2060c630.92.16940755373240024",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537325",
+    "endTime": "1694075537330",
+    "operationName": "/api/v1/orderservice/order/tickets",
+    "peer": "ts-order-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-order-service/api/v1/orderservice/order/tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537331",
+    "endTime": "1694075537336",
+    "operationName": "/api/v1/configservice/configs/DirectTicketAllocationProportion",
+    "peer": "ts-config-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-config-service/api/v1/configservice/configs/DirectTicketAllocationProportion"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537324",
+    "endTime": "1694075537337",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4833f96d5488463992c4954aa46d7971.103.16940755372800014",
+      "parentSpanId": 4,
+      "parentService": "ts-travel-service",
+      "parentServiceInstance": "634f782615694ec6ab24d18f57ecaf9a@10.100.0.130",
+      "parentEndpoint": "POST:/api/v1/travelservice/trip_detail",
+      "networkAddressUsedAtPeer": "ts-seat-service:80"
+    }],
+    "operationName": "POST:/api/v1/seatservice/seats/left_tickets",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.186:18898/api/v1/seatservice/seats/left_tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-seat-service",
+  "serviceInstance": "394d87e319ea4ec6a71a75def0d6e111@10.100.0.186"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "bfa9e6006cd74ab6b7736607e50da334.111.16940755373270066",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537329",
+    "endTime": "1694075537329",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537329",
+    "endTime": "1694075537329",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select order0_.id as id1_0_, order0_.account_id as account_2_0_, order0_.bought_date as bought_d3_0_, order0_.coach_number as coach_nu4_0_, order0_.contacts_document_number as contacts5_0_, order0_.contacts_name as contacts6_0_, order0_.document_type as document7_0_, order0_.from_station as from_sta8_0_, order0_.price as price9_0_, order0_.seat_class as seat_cl10_0_, order0_.seat_number as seat_nu11_0_, order0_.status as status12_0_, order0_.to_station as to_stat13_0_, order0_.train_number as train_n14_0_, order0_.travel_date as travel_15_0_, order0_.travel_time as travel_16_0_ from orders order0_ where order0_.travel_date\u003d? and order0_.train_number\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537330",
+    "endTime": "1694075537330",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537327",
+    "endTime": "1694075537330",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "772a3a4559af4f29bcc0cebd2060c630.92.16940755373240024",
+      "parentSpanId": 1,
+      "parentService": "ts-seat-service",
+      "parentServiceInstance": "394d87e319ea4ec6a71a75def0d6e111@10.100.0.186",
+      "parentEndpoint": "POST:/api/v1/seatservice/seats/left_tickets",
+      "networkAddressUsedAtPeer": "ts-order-service:80"
+    }],
+    "operationName": "POST:/api/v1/orderservice/order/tickets",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.169:12031/api/v1/orderservice/order/tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-order-service",
+  "serviceInstance": "8e24117b149f4db7a3a89833d45dc0de@10.100.0.169"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "809bd20ab18c48b88f5a43080487aa4c.197.16940755373330022",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537334",
+    "endTime": "1694075537334",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537335",
+    "endTime": "1694075537335",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select config0_.name as name1_0_, config0_.description as descript2_0_, config0_.value as value3_0_ from config config0_ where config0_.name\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537336",
+    "endTime": "1694075537336",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537333",
+    "endTime": "1694075537336",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "772a3a4559af4f29bcc0cebd2060c630.92.16940755373240024",
+      "parentSpanId": 2,
+      "parentService": "ts-seat-service",
+      "parentServiceInstance": "394d87e319ea4ec6a71a75def0d6e111@10.100.0.186",
+      "parentEndpoint": "POST:/api/v1/seatservice/seats/left_tickets",
+      "networkAddressUsedAtPeer": "ts-config-service:80"
+    }],
+    "operationName": "GET:/api/v1/configservice/configs/{configName}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.134:15679/api/v1/configservice/configs/DirectTicketAllocationProportion"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-config-service",
+  "serviceInstance": "05785da083934190a1d07383656c8a34@10.100.0.134"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "772a3a4559af4f29bcc0cebd2060c630.94.16940755373390020",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537340",
+    "endTime": "1694075537344",
+    "operationName": "/api/v1/orderservice/order/tickets",
+    "peer": "ts-order-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-order-service/api/v1/orderservice/order/tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537344",
+    "endTime": "1694075537353",
+    "operationName": "/api/v1/configservice/configs/DirectTicketAllocationProportion",
+    "peer": "ts-config-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-config-service/api/v1/configservice/configs/DirectTicketAllocationProportion"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537339",
+    "endTime": "1694075537354",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4833f96d5488463992c4954aa46d7971.103.16940755372800014",
+      "parentSpanId": 5,
+      "parentService": "ts-travel-service",
+      "parentServiceInstance": "634f782615694ec6ab24d18f57ecaf9a@10.100.0.130",
+      "parentEndpoint": "POST:/api/v1/travelservice/trip_detail",
+      "networkAddressUsedAtPeer": "ts-seat-service:80"
+    }],
+    "operationName": "POST:/api/v1/seatservice/seats/left_tickets",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.186:18898/api/v1/seatservice/seats/left_tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-seat-service",
+  "serviceInstance": "394d87e319ea4ec6a71a75def0d6e111@10.100.0.186"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "bfa9e6006cd74ab6b7736607e50da334.101.16940755373410082",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537342",
+    "endTime": "1694075537342",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537342",
+    "endTime": "1694075537343",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select order0_.id as id1_0_, order0_.account_id as account_2_0_, order0_.bought_date as bought_d3_0_, order0_.coach_number as coach_nu4_0_, order0_.contacts_document_number as contacts5_0_, order0_.contacts_name as contacts6_0_, order0_.document_type as document7_0_, order0_.from_station as from_sta8_0_, order0_.price as price9_0_, order0_.seat_class as seat_cl10_0_, order0_.seat_number as seat_nu11_0_, order0_.status as status12_0_, order0_.to_station as to_stat13_0_, order0_.train_number as train_n14_0_, order0_.travel_date as travel_15_0_, order0_.travel_time as travel_16_0_ from orders order0_ where order0_.travel_date\u003d? and order0_.train_number\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537343",
+    "endTime": "1694075537343",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537341",
+    "endTime": "1694075537344",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "772a3a4559af4f29bcc0cebd2060c630.94.16940755373390020",
+      "parentSpanId": 1,
+      "parentService": "ts-seat-service",
+      "parentServiceInstance": "394d87e319ea4ec6a71a75def0d6e111@10.100.0.186",
+      "parentEndpoint": "POST:/api/v1/seatservice/seats/left_tickets",
+      "networkAddressUsedAtPeer": "ts-order-service:80"
+    }],
+    "operationName": "POST:/api/v1/orderservice/order/tickets",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.169:12031/api/v1/orderservice/order/tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-order-service",
+  "serviceInstance": "8e24117b149f4db7a3a89833d45dc0de@10.100.0.169"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "809bd20ab18c48b88f5a43080487aa4c.195.16940755373490014",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537351",
+    "endTime": "1694075537351",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537351",
+    "endTime": "1694075537352",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select config0_.name as name1_0_, config0_.description as descript2_0_, config0_.value as value3_0_ from config config0_ where config0_.name\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537353",
+    "endTime": "1694075537353",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537349",
+    "endTime": "1694075537353",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "772a3a4559af4f29bcc0cebd2060c630.94.16940755373390020",
+      "parentSpanId": 2,
+      "parentService": "ts-seat-service",
+      "parentServiceInstance": "394d87e319ea4ec6a71a75def0d6e111@10.100.0.186",
+      "parentEndpoint": "POST:/api/v1/seatservice/seats/left_tickets",
+      "networkAddressUsedAtPeer": "ts-config-service:80"
+    }],
+    "operationName": "GET:/api/v1/configservice/configs/{configName}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.134:15679/api/v1/configservice/configs/DirectTicketAllocationProportion"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-config-service",
+  "serviceInstance": "05785da083934190a1d07383656c8a34@10.100.0.134"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "e94e763e604646dca897f2ac742464b5.109.16940755373620002",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537366",
+    "endTime": "1694075537367",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537367",
+    "endTime": "1694075537367",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select payment0_.id as id1_1_, payment0_.order_id as order_id2_1_, payment0_.price as price3_1_, payment0_.type as type4_1_, payment0_.user_id as user_id5_1_ from inside_payment payment0_ where payment0_.user_id\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537368",
+    "endTime": "1694075537368",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select money0_.id as id1_0_, money0_.money as money2_0_, money0_.type as type3_0_, money0_.user_id as user_id4_0_ from inside_money money0_ where money0_.user_id\u003d?"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694075537369",
+    "endTime": "1694075537370",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeUpdate",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "insert into inside_payment (order_id, price, type, user_id, id) values (?, ?, ?, ?, ?)"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694075537370",
+    "endTime": "1694075537370",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694075537371",
+    "endTime": "1694075537371",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537362",
+    "endTime": "1694075537372",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610000",
+      "parentSpanId": 3,
+      "parentService": "ts-rebook-service",
+      "parentServiceInstance": "c7325af04426472faf6520619078a5e8@10.100.0.168",
+      "parentEndpoint": "POST:/api/v1/rebookservice/rebook/difference",
+      "networkAddressUsedAtPeer": "ts-inside-payment-service:80"
+    }],
+    "operationName": "POST:/api/v1/inside_pay_service/inside_payment/difference",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.156:18673/api/v1/inside_pay_service/inside_payment/difference"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-inside-payment-service",
+  "serviceInstance": "e7b438f370a6425ea8118911423ab054@10.100.0.156"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "ee494ded0c4e423f872c427869ebd1ca.102.16940755373740042",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537376",
+    "endTime": "1694075537376",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537377",
+    "endTime": "1694075537378",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select route0_.id as id1_0_0_, route0_.end_station as end_stat2_0_0_, route0_.start_station as start_st3_0_0_ from route route0_ where route0_.id\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537378",
+    "endTime": "1694075537378",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694075537379",
+    "endTime": "1694075537379",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select stations0_.route_id as route_id1_2_0_, stations0_.stations as stations2_2_0_, stations0_.stations_order as stations3_0_ from route_stations stations0_ where stations0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694075537379",
+    "endTime": "1694075537379",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select distances0_.route_id as route_id1_1_0_, distances0_.distances as distance2_1_0_, distances0_.distances_order as distance3_0_ from route_distances distances0_ where distances0_.route_id\u003d?"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694075537380",
+    "endTime": "1694075537380",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537374",
+    "endTime": "1694075537380",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610000",
+      "parentSpanId": 4,
+      "parentService": "ts-rebook-service",
+      "parentServiceInstance": "c7325af04426472faf6520619078a5e8@10.100.0.168",
+      "parentEndpoint": "POST:/api/v1/rebookservice/rebook/difference",
+      "networkAddressUsedAtPeer": "ts-route-service:80"
+    }],
+    "operationName": "GET:/api/v1/routeservice/routes/{routeId}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.155:11178/api/v1/routeservice/routes/f3d4d4ef-693b-4456-8eed-59c0d717dd08"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-route-service",
+  "serviceInstance": "18568b4f1fd24484979df9cad0ed9136@10.100.0.155"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "b6b1c409080b4d7f89d56f6cefd3cd34.106.16940755373840046",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537386",
+    "endTime": "1694075537386",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537386",
+    "endTime": "1694075537386",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select traintype0_.id as id1_0_, traintype0_.average_speed as average_2_0_, traintype0_.confort_class as confort_3_0_, traintype0_.economy_class as economy_4_0_, traintype0_.name as name5_0_ from train_type traintype0_ where traintype0_.name\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537387",
+    "endTime": "1694075537387",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537384",
+    "endTime": "1694075537387",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610000",
+      "parentSpanId": 5,
+      "parentService": "ts-rebook-service",
+      "parentServiceInstance": "c7325af04426472faf6520619078a5e8@10.100.0.168",
+      "parentEndpoint": "POST:/api/v1/rebookservice/rebook/difference",
+      "networkAddressUsedAtPeer": "ts-train-service:80"
+    }],
+    "operationName": "GET:/api/v1/trainservice/trains/byName/{name}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.147:14567/api/v1/trainservice/trains/byName/DongCheOne"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-train-service",
+  "serviceInstance": "b31aaa06c0ed42de8f9ef0cb986c9dde@10.100.0.147"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "772a3a4559af4f29bcc0cebd2060c630.93.16940755373910016",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537394",
+    "endTime": "1694075537399",
+    "operationName": "/api/v1/orderservice/order/tickets",
+    "peer": "ts-order-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-order-service/api/v1/orderservice/order/tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537391",
+    "endTime": "1694075537400",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610000",
+      "parentSpanId": 6,
+      "parentService": "ts-rebook-service",
+      "parentServiceInstance": "c7325af04426472faf6520619078a5e8@10.100.0.168",
+      "parentEndpoint": "POST:/api/v1/rebookservice/rebook/difference",
+      "networkAddressUsedAtPeer": "ts-seat-service:80"
+    }],
+    "operationName": "POST:/api/v1/seatservice/seats",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.186:18898/api/v1/seatservice/seats"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-seat-service",
+  "serviceInstance": "394d87e319ea4ec6a71a75def0d6e111@10.100.0.186"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "bfa9e6006cd74ab6b7736607e50da334.104.16940755373950076",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537397",
+    "endTime": "1694075537397",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537397",
+    "endTime": "1694075537397",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select order0_.id as id1_0_, order0_.account_id as account_2_0_, order0_.bought_date as bought_d3_0_, order0_.coach_number as coach_nu4_0_, order0_.contacts_document_number as contacts5_0_, order0_.contacts_name as contacts6_0_, order0_.document_type as document7_0_, order0_.from_station as from_sta8_0_, order0_.price as price9_0_, order0_.seat_class as seat_cl10_0_, order0_.seat_number as seat_nu11_0_, order0_.status as status12_0_, order0_.to_station as to_stat13_0_, order0_.train_number as train_n14_0_, order0_.travel_date as travel_15_0_, order0_.travel_time as travel_16_0_ from orders order0_ where order0_.travel_date\u003d? and order0_.train_number\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537398",
+    "endTime": "1694075537398",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537395",
+    "endTime": "1694075537398",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "772a3a4559af4f29bcc0cebd2060c630.93.16940755373910016",
+      "parentSpanId": 1,
+      "parentService": "ts-seat-service",
+      "parentServiceInstance": "394d87e319ea4ec6a71a75def0d6e111@10.100.0.186",
+      "parentEndpoint": "POST:/api/v1/seatservice/seats",
+      "networkAddressUsedAtPeer": "ts-order-service:80"
+    }],
+    "operationName": "POST:/api/v1/orderservice/order/tickets",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.169:12031/api/v1/orderservice/order/tickets"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-order-service",
+  "serviceInstance": "8e24117b149f4db7a3a89833d45dc0de@10.100.0.169"
+}
+
+{
+  "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+  "traceSegmentId": "bfa9e6006cd74ab6b7736607e50da334.106.16940755374030070",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075537405",
+    "endTime": "1694075537405",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075537406",
+    "endTime": "1694075537406",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select order0_.id as id1_0_0_, order0_.account_id as account_2_0_0_, order0_.bought_date as bought_d3_0_0_, order0_.coach_number as coach_nu4_0_0_, order0_.contacts_document_number as contacts5_0_0_, order0_.contacts_name as contacts6_0_0_, order0_.document_type as document7_0_0_, order0_.from_station as from_sta8_0_0_, order0_.price as price9_0_0_, order0_.seat_class as seat_cl10_0_0_, order0_.seat_number as seat_nu11_0_0_, order0_.status as status12_0_0_, order0_.to_station as to_stat13_0_0_, order0_.train_number as train_n14_0_0_, order0_.travel_date as travel_15_0_0_, order0_.travel_time as travel_16_0_0_ from orders order0_ where order0_.id\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075537406",
+    "endTime": "1694075537406",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694075537407",
+    "endTime": "1694075537408",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeUpdate",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "update orders set account_id\u003d?, bought_date\u003d?, coach_number\u003d?, contacts_document_number\u003d?, contacts_name\u003d?, document_type\u003d?, from_station\u003d?, price\u003d?, seat_class\u003d?, seat_number\u003d?, status\u003d?, to_station\u003d?, train_number\u003d?, travel_date\u003d?, travel_time\u003d? where id\u003d?"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694075537408",
+    "endTime": "1694075537408",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694075537409",
+    "endTime": "1694075537409",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075537403",
+    "endTime": "1694075537409",
+    "refs": [{
+      "traceId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610001",
+      "parentTraceSegmentId": "4ef795fa30ff4f20b531a44cd498c37c.97.16940755372610000",
+      "parentSpanId": 7,
+      "parentService": "ts-rebook-service",
+      "parentServiceInstance": "c7325af04426472faf6520619078a5e8@10.100.0.168",
+      "parentEndpoint": "POST:/api/v1/rebookservice/rebook/difference",
+      "networkAddressUsedAtPeer": "ts-order-service:80"
+    }],
+    "operationName": "PUT:/api/v1/orderservice/order",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.169:12031/api/v1/orderservice/order"
+    }, {
+      "key": "http.method",
+      "value": "PUT"
+    }]
+  }],
+  "service": "ts-order-service",
+  "serviceInstance": "8e24117b149f4db7a3a89833d45dc0de@10.100.0.169"
+}
+

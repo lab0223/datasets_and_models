@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>f878df02e5a34a348466ac1a809814e9.100.16940746061660001_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="P/api/v1/routeservice/routes_ts-admin-route-service_GET:/api/v1/routeservice/routes_ts-route-servicePOST:/api/v1/routeservice/routes_ts-route-service"/>
+      <place id="PGET:/api/v1/adminrouteservice/adminroute_ts-admin-route-service/api/v1/stationservice/stations/idlist_ts-admin-route-service_End_/api/v1/routeservice/routes_ts-admin-route-service"/>
+      <place id="PGET:/api/v1/routeservice/routes_ts-route-servicePOST:/api/v1/routeservice/routes_ts-route-service_/api/v1/routeservice/routes_ts-admin-route-service_End"/>
+      <place id="PPOST:/api/v1/adminrouteservice/adminroute_ts-admin-route-service_/api/v1/stationservice/stations/idlist_ts-admin-route-service"/>
+      <place id="P/api/v1/stationservice/stations/idlist_ts-admin-route-service_POST:/api/v1/stationservice/stations/idlist_ts-station-service"/>
+      <place id="PPOST:/api/v1/stationservice/stations/idlist_ts-station-service_/api/v1/stationservice/stations/idlist_ts-admin-route-service_End"/>
+      <place id="P/api/v1/routeservice/routes_ts-admin-route-service_/api/v1/routeservice/routes_ts-admin-route-service_End"/>
+      <place id="P/api/v1/stationservice/stations/idlist_ts-admin-route-service_/api/v1/stationservice/stations/idlist_ts-admin-route-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="GET:/api/v1/adminrouteservice/adminroute_ts-admin-route-service"/>
+      <transition id="/api/v1/routeservice/routes_ts-admin-route-service"/>
+      <transition id="GET:/api/v1/routeservice/routes_ts-route-service"/>
+      <transition id="/api/v1/routeservice/routes_ts-admin-route-service_End"/>
+      <transition id="POST:/api/v1/adminrouteservice/adminroute_ts-admin-route-service"/>
+      <transition id="/api/v1/stationservice/stations/idlist_ts-admin-route-service"/>
+      <transition id="POST:/api/v1/stationservice/stations/idlist_ts-station-service"/>
+      <transition id="/api/v1/stationservice/stations/idlist_ts-admin-route-service_End"/>
+      <transition id="POST:/api/v1/routeservice/routes_ts-route-service"/>
+      <arc id="a0" source="/api/v1/routeservice/routes_ts-admin-route-service" target="P/api/v1/routeservice/routes_ts-admin-route-service_GET:/api/v1/routeservice/routes_ts-route-servicePOST:/api/v1/routeservice/routes_ts-route-service"/>
+      <arc id="a1" source="P/api/v1/routeservice/routes_ts-admin-route-service_GET:/api/v1/routeservice/routes_ts-route-servicePOST:/api/v1/routeservice/routes_ts-route-service" target="GET:/api/v1/routeservice/routes_ts-route-service"/>
+      <arc id="a2" source="P/api/v1/routeservice/routes_ts-admin-route-service_GET:/api/v1/routeservice/routes_ts-route-servicePOST:/api/v1/routeservice/routes_ts-route-service" target="POST:/api/v1/routeservice/routes_ts-route-service"/>
+      <arc id="a3" source="GET:/api/v1/adminrouteservice/adminroute_ts-admin-route-service" target="PGET:/api/v1/adminrouteservice/adminroute_ts-admin-route-service/api/v1/stationservice/stations/idlist_ts-admin-route-service_End_/api/v1/routeservice/routes_ts-admin-route-service"/>
+      <arc id="a4" source="/api/v1/stationservice/stations/idlist_ts-admin-route-service_End" target="PGET:/api/v1/adminrouteservice/adminroute_ts-admin-route-service/api/v1/stationservice/stations/idlist_ts-admin-route-service_End_/api/v1/routeservice/routes_ts-admin-route-service"/>
+      <arc id="a5" source="PGET:/api/v1/adminrouteservice/adminroute_ts-admin-route-service/api/v1/stationservice/stations/idlist_ts-admin-route-service_End_/api/v1/routeservice/routes_ts-admin-route-service" target="/api/v1/routeservice/routes_ts-admin-route-service"/>
+      <arc id="a6" source="GET:/api/v1/routeservice/routes_ts-route-service" target="PGET:/api/v1/routeservice/routes_ts-route-servicePOST:/api/v1/routeservice/routes_ts-route-service_/api/v1/routeservice/routes_ts-admin-route-service_End"/>
+      <arc id="a7" source="POST:/api/v1/routeservice/routes_ts-route-service" target="PGET:/api/v1/routeservice/routes_ts-route-servicePOST:/api/v1/routeservice/routes_ts-route-service_/api/v1/routeservice/routes_ts-admin-route-service_End"/>
+      <arc id="a8" source="PGET:/api/v1/routeservice/routes_ts-route-servicePOST:/api/v1/routeservice/routes_ts-route-service_/api/v1/routeservice/routes_ts-admin-route-service_End" target="/api/v1/routeservice/routes_ts-admin-route-service_End"/>
+      <arc id="a9" source="POST:/api/v1/adminrouteservice/adminroute_ts-admin-route-service" target="PPOST:/api/v1/adminrouteservice/adminroute_ts-admin-route-service_/api/v1/stationservice/stations/idlist_ts-admin-route-service"/>
+      <arc id="a10" source="PPOST:/api/v1/adminrouteservice/adminroute_ts-admin-route-service_/api/v1/stationservice/stations/idlist_ts-admin-route-service" target="/api/v1/stationservice/stations/idlist_ts-admin-route-service"/>
+      <arc id="a11" source="/api/v1/stationservice/stations/idlist_ts-admin-route-service" target="P/api/v1/stationservice/stations/idlist_ts-admin-route-service_POST:/api/v1/stationservice/stations/idlist_ts-station-service"/>
+      <arc id="a12" source="P/api/v1/stationservice/stations/idlist_ts-admin-route-service_POST:/api/v1/stationservice/stations/idlist_ts-station-service" target="POST:/api/v1/stationservice/stations/idlist_ts-station-service"/>
+      <arc id="a13" source="POST:/api/v1/stationservice/stations/idlist_ts-station-service" target="PPOST:/api/v1/stationservice/stations/idlist_ts-station-service_/api/v1/stationservice/stations/idlist_ts-admin-route-service_End"/>
+      <arc id="a14" source="PPOST:/api/v1/stationservice/stations/idlist_ts-station-service_/api/v1/stationservice/stations/idlist_ts-admin-route-service_End" target="/api/v1/stationservice/stations/idlist_ts-admin-route-service_End"/>
+      <arc id="a15" source="/api/v1/routeservice/routes_ts-admin-route-service" target="P/api/v1/routeservice/routes_ts-admin-route-service_/api/v1/routeservice/routes_ts-admin-route-service_End"/>
+      <arc id="a16" source="P/api/v1/routeservice/routes_ts-admin-route-service_/api/v1/routeservice/routes_ts-admin-route-service_End" target="/api/v1/routeservice/routes_ts-admin-route-service_End"/>
+      <arc id="a17" source="/api/v1/stationservice/stations/idlist_ts-admin-route-service" target="P/api/v1/stationservice/stations/idlist_ts-admin-route-service_/api/v1/stationservice/stations/idlist_ts-admin-route-service_End"/>
+      <arc id="a18" source="P/api/v1/stationservice/stations/idlist_ts-admin-route-service_/api/v1/stationservice/stations/idlist_ts-admin-route-service_End" target="/api/v1/stationservice/stations/idlist_ts-admin-route-service_End"/>
+      <arc id="a19" source="Start" target="GET:/api/v1/adminrouteservice/adminroute_ts-admin-route-service"/>
+      <arc id="a20" source="/api/v1/routeservice/routes_ts-admin-route-service_End" target="End"/>
+      <arc id="a21" source="Start" target="POST:/api/v1/adminrouteservice/adminroute_ts-admin-route-service"/>
+      <arc id="a22" source="POST:/api/v1/adminrouteservice/adminroute_ts-admin-route-service" target="End"/>
+    </page>
+  </net>
+</pnml>

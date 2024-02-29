@@ -1,0 +1,120 @@
+{
+  "traceId": "cf5c0009be3b4798a3821b8426cf02af.90.16940749254650005",
+  "traceSegmentId": "cf5c0009be3b4798a3821b8426cf02af.90.16940749254650004",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694074925469",
+    "endTime": "1694074925479",
+    "operationName": "/api/v1/stationservice/stations",
+    "peer": "ts-station-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-station-service/api/v1/stationservice/stations"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694074925465",
+    "endTime": "1694074925481",
+    "operationName": "GET:/api/v1/adminbasicservice/adminbasic/stations",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/adminbasicservice/adminbasic/stations"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-admin-basic-info-service",
+  "serviceInstance": "b59db4a91f41421cbd16f9fb5c1a7c1c@10.100.0.133"
+}
+
+{
+  "traceId": "cf5c0009be3b4798a3821b8426cf02af.90.16940749254650005",
+  "traceSegmentId": "d8b9b1a22a9f405db61b32bdd096d42b.164.16940749254710020",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694074925473",
+    "endTime": "1694074925473",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694074925474",
+    "endTime": "1694074925474",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select station0_.id as id1_0_, station0_.name as name2_0_, station0_.stay_time as stay_tim3_0_ from station station0_"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694074925477",
+    "endTime": "1694074925477",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694074925478",
+    "endTime": "1694074925478",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694074925471",
+    "endTime": "1694074925479",
+    "refs": [{
+      "traceId": "cf5c0009be3b4798a3821b8426cf02af.90.16940749254650005",
+      "parentTraceSegmentId": "cf5c0009be3b4798a3821b8426cf02af.90.16940749254650004",
+      "parentSpanId": 1,
+      "parentService": "ts-admin-basic-info-service",
+      "parentServiceInstance": "b59db4a91f41421cbd16f9fb5c1a7c1c@10.100.0.133",
+      "parentEndpoint": "GET:/api/v1/adminbasicservice/adminbasic/stations",
+      "networkAddressUsedAtPeer": "ts-station-service:80"
+    }],
+    "operationName": "GET:/api/v1/stationservice/stations",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/stationservice/stations"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-station-service",
+  "serviceInstance": "f612cdf3781f4d4793009618071a4f80@10.100.0.166"
+}
+

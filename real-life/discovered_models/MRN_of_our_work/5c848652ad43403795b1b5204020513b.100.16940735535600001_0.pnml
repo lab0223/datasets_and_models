@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>5c848652ad43403795b1b5204020513b.100.16940735535600001_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <place id="PGET:/api/v1/cancelservice/cancel/{orderId}/{loginId}_ts-cancel-serviceGET:/api/v1/cancelservice/cancel/refound/{orderId}_ts-cancel-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service"/>
+      <place id="PGET:/api/v1/orderservice/order/{orderId}_ts-order-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service_End"/>
+      <place id="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_End_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service/api/v1/orderservice/order_ts-cancel-service"/>
+      <place id="P/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <place id="PGET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End_/api/v1/orderOtherService/orderOther_ts-cancel-service"/>
+      <place id="P/api/v1/orderOtherService/orderOther_ts-cancel-service_PUT:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <place id="PPUT:/api/v1/orderOtherService/orderOther_ts-order-other-service_/api/v1/orderOtherService/orderOther_ts-cancel-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther_ts-cancel-service_End_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service"/>
+      <place id="P/api/v1/orderOtherService/orderOther_ts-cancel-service_End/api/v1/orderservice/order_ts-cancel-service_End_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service"/>
+      <place id="PGET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End"/>
+      <place id="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_GET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service"/>
+      <place id="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End_/api/v1/userservice/users/id/{uuid}_ts-cancel-service"/>
+      <place id="P/api/v1/orderservice/order_ts-cancel-service_PUT:/api/v1/orderservice/order_ts-order-service"/>
+      <place id="PPUT:/api/v1/orderservice/order_ts-order-service_/api/v1/orderservice/order_ts-cancel-service_End"/>
+      <place id="P/api/v1/userservice/users/id/{uuid}_ts-cancel-service_GET:/api/v1/userservice/users/id/{userId}_ts-user-service"/>
+      <place id="PGET:/api/v1/userservice/users/id/{userId}_ts-user-service_/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End"/>
+      <place id="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther_ts-cancel-service_/api/v1/orderOtherService/orderOther_ts-cancel-service_End"/>
+      <place id="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End"/>
+      <place id="P/api/v1/orderservice/order_ts-cancel-service_/api/v1/orderservice/order_ts-cancel-service_End"/>
+      <place id="P/api/v1/userservice/users/id/{uuid}_ts-cancel-service_/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End"/>
+      <place id="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="GET:/api/v1/cancelservice/cancel/{orderId}/{loginId}_ts-cancel-service"/>
+      <transition id="/api/v1/orderservice/order/{uuid}_ts-cancel-service"/>
+      <transition id="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <transition id="/api/v1/orderservice/order/{uuid}_ts-cancel-service_End"/>
+      <transition id="/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service"/>
+      <transition id="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End"/>
+      <transition id="/api/v1/orderOtherService/orderOther_ts-cancel-service"/>
+      <transition id="PUT:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther_ts-cancel-service_End"/>
+      <transition id="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service"/>
+      <transition id="GET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service"/>
+      <transition id="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End"/>
+      <transition id="GET:/api/v1/cancelservice/cancel/refound/{orderId}_ts-cancel-service"/>
+      <transition id="/api/v1/orderservice/order_ts-cancel-service"/>
+      <transition id="PUT:/api/v1/orderservice/order_ts-order-service"/>
+      <transition id="/api/v1/orderservice/order_ts-cancel-service_End"/>
+      <transition id="/api/v1/userservice/users/id/{uuid}_ts-cancel-service"/>
+      <transition id="GET:/api/v1/userservice/users/id/{userId}_ts-user-service"/>
+      <transition id="/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End"/>
+      <transition id="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service"/>
+      <transition id="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End"/>
+      <arc id="a0" source="/api/v1/orderservice/order/{uuid}_ts-cancel-service" target="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <arc id="a1" source="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_GET:/api/v1/orderservice/order/{orderId}_ts-order-service" target="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <arc id="a2" source="GET:/api/v1/cancelservice/cancel/{orderId}/{loginId}_ts-cancel-service" target="PGET:/api/v1/cancelservice/cancel/{orderId}/{loginId}_ts-cancel-serviceGET:/api/v1/cancelservice/cancel/refound/{orderId}_ts-cancel-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service"/>
+      <arc id="a3" source="GET:/api/v1/cancelservice/cancel/refound/{orderId}_ts-cancel-service" target="PGET:/api/v1/cancelservice/cancel/{orderId}/{loginId}_ts-cancel-serviceGET:/api/v1/cancelservice/cancel/refound/{orderId}_ts-cancel-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service"/>
+      <arc id="a4" source="PGET:/api/v1/cancelservice/cancel/{orderId}/{loginId}_ts-cancel-serviceGET:/api/v1/cancelservice/cancel/refound/{orderId}_ts-cancel-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service" target="/api/v1/orderservice/order/{uuid}_ts-cancel-service"/>
+      <arc id="a5" source="GET:/api/v1/orderservice/order/{orderId}_ts-order-service" target="PGET:/api/v1/orderservice/order/{orderId}_ts-order-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service_End"/>
+      <arc id="a6" source="PGET:/api/v1/orderservice/order/{orderId}_ts-order-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service_End" target="/api/v1/orderservice/order/{uuid}_ts-cancel-service_End"/>
+      <arc id="a7" source="/api/v1/orderservice/order/{uuid}_ts-cancel-service_End" target="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_End_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service/api/v1/orderservice/order_ts-cancel-service"/>
+      <arc id="a8" source="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_End_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service/api/v1/orderservice/order_ts-cancel-service" target="/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service"/>
+      <arc id="a9" source="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_End_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service/api/v1/orderservice/order_ts-cancel-service" target="/api/v1/orderservice/order_ts-cancel-service"/>
+      <arc id="a10" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service" target="P/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <arc id="a11" source="P/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service" target="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <arc id="a12" source="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service" target="PGET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End"/>
+      <arc id="a13" source="PGET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End" target="/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End"/>
+      <arc id="a14" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End" target="P/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End_/api/v1/orderOtherService/orderOther_ts-cancel-service"/>
+      <arc id="a15" source="P/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End_/api/v1/orderOtherService/orderOther_ts-cancel-service" target="/api/v1/orderOtherService/orderOther_ts-cancel-service"/>
+      <arc id="a16" source="/api/v1/orderOtherService/orderOther_ts-cancel-service" target="P/api/v1/orderOtherService/orderOther_ts-cancel-service_PUT:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <arc id="a17" source="P/api/v1/orderOtherService/orderOther_ts-cancel-service_PUT:/api/v1/orderOtherService/orderOther_ts-order-other-service" target="PUT:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <arc id="a18" source="PUT:/api/v1/orderOtherService/orderOther_ts-order-other-service" target="PPUT:/api/v1/orderOtherService/orderOther_ts-order-other-service_/api/v1/orderOtherService/orderOther_ts-cancel-service_End"/>
+      <arc id="a19" source="PPUT:/api/v1/orderOtherService/orderOther_ts-order-other-service_/api/v1/orderOtherService/orderOther_ts-cancel-service_End" target="/api/v1/orderOtherService/orderOther_ts-cancel-service_End"/>
+      <arc id="a20" source="/api/v1/orderOtherService/orderOther_ts-cancel-service_End" target="P/api/v1/orderOtherService/orderOther_ts-cancel-service_End_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service"/>
+      <arc id="a21" source="P/api/v1/orderOtherService/orderOther_ts-cancel-service_End_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service" target="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service"/>
+      <arc id="a22" source="P/api/v1/orderOtherService/orderOther_ts-cancel-service_End_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service" target="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service"/>
+      <arc id="a23" source="/api/v1/orderOtherService/orderOther_ts-cancel-service_End" target="P/api/v1/orderOtherService/orderOther_ts-cancel-service_End/api/v1/orderservice/order_ts-cancel-service_End_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service"/>
+      <arc id="a24" source="/api/v1/orderservice/order_ts-cancel-service_End" target="P/api/v1/orderOtherService/orderOther_ts-cancel-service_End/api/v1/orderservice/order_ts-cancel-service_End_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service"/>
+      <arc id="a25" source="P/api/v1/orderOtherService/orderOther_ts-cancel-service_End/api/v1/orderservice/order_ts-cancel-service_End_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service" target="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service"/>
+      <arc id="a26" source="GET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service" target="PGET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End"/>
+      <arc id="a27" source="PGET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End" target="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End"/>
+      <arc id="a28" source="PGET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End" target="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End"/>
+      <arc id="a29" source="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service" target="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_GET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service"/>
+      <arc id="a30" source="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service" target="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_GET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service"/>
+      <arc id="a31" source="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_GET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service" target="GET:/api/v1/inside_pay_service/inside_payment/drawback/{userId}/{money}_ts-inside-payment-service"/>
+      <arc id="a32" source="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End" target="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End_/api/v1/userservice/users/id/{uuid}_ts-cancel-service"/>
+      <arc id="a33" source="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End_/api/v1/userservice/users/id/{uuid}_ts-cancel-service" target="/api/v1/userservice/users/id/{uuid}_ts-cancel-service"/>
+      <arc id="a34" source="/api/v1/orderservice/order_ts-cancel-service" target="P/api/v1/orderservice/order_ts-cancel-service_PUT:/api/v1/orderservice/order_ts-order-service"/>
+      <arc id="a35" source="P/api/v1/orderservice/order_ts-cancel-service_PUT:/api/v1/orderservice/order_ts-order-service" target="PUT:/api/v1/orderservice/order_ts-order-service"/>
+      <arc id="a36" source="PUT:/api/v1/orderservice/order_ts-order-service" target="PPUT:/api/v1/orderservice/order_ts-order-service_/api/v1/orderservice/order_ts-cancel-service_End"/>
+      <arc id="a37" source="PPUT:/api/v1/orderservice/order_ts-order-service_/api/v1/orderservice/order_ts-cancel-service_End" target="/api/v1/orderservice/order_ts-cancel-service_End"/>
+      <arc id="a38" source="/api/v1/userservice/users/id/{uuid}_ts-cancel-service" target="P/api/v1/userservice/users/id/{uuid}_ts-cancel-service_GET:/api/v1/userservice/users/id/{userId}_ts-user-service"/>
+      <arc id="a39" source="P/api/v1/userservice/users/id/{uuid}_ts-cancel-service_GET:/api/v1/userservice/users/id/{userId}_ts-user-service" target="GET:/api/v1/userservice/users/id/{userId}_ts-user-service"/>
+      <arc id="a40" source="GET:/api/v1/userservice/users/id/{userId}_ts-user-service" target="PGET:/api/v1/userservice/users/id/{userId}_ts-user-service_/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End"/>
+      <arc id="a41" source="PGET:/api/v1/userservice/users/id/{userId}_ts-user-service_/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End" target="/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End"/>
+      <arc id="a42" source="/api/v1/orderservice/order/{uuid}_ts-cancel-service" target="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service_End"/>
+      <arc id="a43" source="P/api/v1/orderservice/order/{uuid}_ts-cancel-service_/api/v1/orderservice/order/{uuid}_ts-cancel-service_End" target="/api/v1/orderservice/order/{uuid}_ts-cancel-service_End"/>
+      <arc id="a44" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service" target="P/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End"/>
+      <arc id="a45" source="P/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End" target="/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End"/>
+      <arc id="a46" source="/api/v1/orderOtherService/orderOther_ts-cancel-service" target="P/api/v1/orderOtherService/orderOther_ts-cancel-service_/api/v1/orderOtherService/orderOther_ts-cancel-service_End"/>
+      <arc id="a47" source="P/api/v1/orderOtherService/orderOther_ts-cancel-service_/api/v1/orderOtherService/orderOther_ts-cancel-service_End" target="/api/v1/orderOtherService/orderOther_ts-cancel-service_End"/>
+      <arc id="a48" source="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service" target="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End"/>
+      <arc id="a49" source="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End" target="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End"/>
+      <arc id="a50" source="/api/v1/orderservice/order_ts-cancel-service" target="P/api/v1/orderservice/order_ts-cancel-service_/api/v1/orderservice/order_ts-cancel-service_End"/>
+      <arc id="a51" source="P/api/v1/orderservice/order_ts-cancel-service_/api/v1/orderservice/order_ts-cancel-service_End" target="/api/v1/orderservice/order_ts-cancel-service_End"/>
+      <arc id="a52" source="/api/v1/userservice/users/id/{uuid}_ts-cancel-service" target="P/api/v1/userservice/users/id/{uuid}_ts-cancel-service_/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End"/>
+      <arc id="a53" source="P/api/v1/userservice/users/id/{uuid}_ts-cancel-service_/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End" target="/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End"/>
+      <arc id="a54" source="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service" target="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End"/>
+      <arc id="a55" source="P/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End" target="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End"/>
+      <arc id="a56" source="Start" target="GET:/api/v1/cancelservice/cancel/{orderId}/{loginId}_ts-cancel-service"/>
+      <arc id="a57" source="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/80.00_ts-cancel-service_End" target="End"/>
+      <arc id="a58" source="Start" target="GET:/api/v1/cancelservice/cancel/refound/{orderId}_ts-cancel-service"/>
+      <arc id="a59" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-cancel-service_End" target="End"/>
+      <arc id="a60" source="/api/v1/orderservice/order/{uuid}_ts-cancel-service_End" target="End"/>
+      <arc id="a61" source="/api/v1/userservice/users/id/{uuid}_ts-cancel-service_End" target="End"/>
+      <arc id="a62" source="/api/v1/inside_pay_service/inside_payment/drawback/{uuid}/98.00_ts-cancel-service_End" target="End"/>
+    </page>
+  </net>
+</pnml>

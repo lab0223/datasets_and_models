@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>1014325bdef04c27b616fa05ac4effbf.94.16940754141450003_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="PPOST:/api/v1/preserveotherservice/preserveOther_ts-preserve-other-service_/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service"/>
+      <place id="P/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_GET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service"/>
+      <place id="PGET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service_/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service"/>
+      <place id="P/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_GET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service"/>
+      <place id="PGET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service_/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End"/>
+      <place id="P/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End_/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service"/>
+      <place id="P/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_GET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service"/>
+      <place id="PGET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End_/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End_/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service"/>
+      <place id="P/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_GET:/api/v1/contactservice/contacts/{id}_ts-contacts-service"/>
+      <place id="PGET:/api/v1/contactservice/contacts/{id}_ts-contacts-service_/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End_/api/v1/travel2service/trip_detail_ts-preserve-other-service"/>
+      <place id="P/api/v1/travel2service/trip_detail_ts-preserve-other-service_POST:/api/v1/travel2service/trip_detail_ts-travel2-service"/>
+      <place id="PPOST:/api/v1/travel2service/trip_detail_ts-travel2-service_/api/v1/basicservice/basic/travel_ts-travel2-service"/>
+      <place id="P/api/v1/basicservice/basic/travel_ts-travel2-service_/api/v1/basicservice/basic/travel_ts-travel2-service_End"/>
+      <place id="PPOST:/api/v1/basicservice/basic/travel_ts-basic-service_/api/v1/stationservice/stations/id/shanghai_ts-basic-service"/>
+      <place id="P/api/v1/basicservice/basic/travel_ts-travel2-service_End/api/v1/basicservice/basic/travel_ts-preserve-other-service_POST:/api/v1/basicservice/basic/travel_ts-basic-service"/>
+      <place id="P/api/v1/stationservice/stations/id/shanghai_ts-basic-service_/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End"/>
+      <place id="PGET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service_/api/v1/stationservice/stations/id/nanjing_ts-basic-service"/>
+      <place id="P/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End_GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service"/>
+      <place id="P/api/v1/stationservice/stations/id/nanjing_ts-basic-service_/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End"/>
+      <place id="P/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End_/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service"/>
+      <place id="P/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_GET:/api/v1/trainservice/trains/byName/{name}_ts-train-service"/>
+      <place id="PGET:/api/v1/trainservice/trains/byName/{name}_ts-train-service_/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End"/>
+      <place id="P/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End_/api/v1/routeservice/routes/{uuid}_ts-basic-service"/>
+      <place id="P/api/v1/routeservice/routes/{uuid}_ts-basic-service_GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+      <place id="PGET:/api/v1/routeservice/routes/{routeId}_ts-route-service_/api/v1/routeservice/routes/{uuid}_ts-basic-service_End"/>
+      <place id="P/api/v1/routeservice/routes/{uuid}_ts-basic-service_End_/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service"/>
+      <place id="P/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End"/>
+      <place id="P/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End_GET:/api/v1/priceservice/prices/{routeId}/{trainType}_ts-price-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service/api/v1/basicservice/basic/travel_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/seatservice/seats/left_tickets_ts-travel2-service_POST:/api/v1/seatservice/seats/left_tickets_ts-seat-service"/>
+      <place id="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+      <place id="PPOST:/api/v1/seatservice/seats/left_tickets_ts-seat-servicePOST:/api/v1/seatservice/seats_ts-seat-service_/api/v1/orderOtherService/orderOther/tickets_ts-seat-service"/>
+      <place id="PPOST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service_/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service/api/v1/seatservice/seats_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+      <place id="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-serviceGET:/api/v1/configservice/configs/{configName}_ts-config-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+      <place id="P/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End_/api/v1/travel2service/trip_detail_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/travel2service/trip_detail_ts-preserve-other-service_End_/api/v1/basicservice/basic/travel_ts-preserve-other-service"/>
+      <place id="P/api/v1/basicservice/basic/travel_ts-preserve-other-service_End_/api/v1/seatservice/seats_ts-preserve-other-service"/>
+      <place id="P/api/v1/seatservice/seats_ts-preserve-other-service_POST:/api/v1/seatservice/seats_ts-seat-service"/>
+      <place id="P/api/v1/seatservice/seats_ts-preserve-other-service_End_/api/v1/orderOtherService/orderOther_ts-preserve-other-service"/>
+      <place id="P/api/v1/orderOtherService/orderOther_ts-preserve-other-service_POST:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <place id="PPOST:/api/v1/orderOtherService/orderOther_ts-order-other-service_/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End_/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service"/>
+      <place id="P/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_GET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service"/>
+      <place id="PGET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service_/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End_/api/v1/foodservice/orders_ts-preserve-other-service"/>
+      <place id="P/api/v1/foodservice/orders_ts-preserve-other-service_POST:/api/v1/foodservice/orders_ts-food-service"/>
+      <place id="PPOST:/api/v1/foodservice/orders_ts-food-service_RabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service"/>
+      <place id="PRabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service_RabbitMQ/Topic/Queue/food_delivery/Consumer_ts-delivery-service"/>
+      <place id="PRabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service_/api/v1/foodservice/orders_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/foodservice/orders_ts-preserve-other-service_End_/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service"/>
+      <place id="P/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_GET:/api/v1/userservice/users/id/{userId}_ts-user-service"/>
+      <place id="PGET:/api/v1/userservice/users/id/{userId}_ts-user-service_/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End"/>
+      <place id="P/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/travel2service/trip_detail_ts-preserve-other-service_/api/v1/travel2service/trip_detail_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End"/>
+      <place id="P/api/v1/routeservice/routes/{uuid}_ts-basic-service_/api/v1/routeservice/routes/{uuid}_ts-basic-service_End"/>
+      <place id="P/api/v1/seatservice/seats/left_tickets_ts-travel2-service_/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End"/>
+      <place id="P/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_End"/>
+      <place id="P/api/v1/basicservice/basic/travel_ts-preserve-other-service_/api/v1/basicservice/basic/travel_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/seatservice/seats_ts-preserve-other-service_/api/v1/seatservice/seats_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther_ts-preserve-other-service_/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/foodservice/orders_ts-preserve-other-service_/api/v1/foodservice/orders_ts-preserve-other-service_End"/>
+      <place id="P/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="POST:/api/v1/preserveotherservice/preserveOther_ts-preserve-other-service"/>
+      <transition id="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service"/>
+      <transition id="GET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service"/>
+      <transition id="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service"/>
+      <transition id="GET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service"/>
+      <transition id="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End"/>
+      <transition id="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service"/>
+      <transition id="GET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End"/>
+      <transition id="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End"/>
+      <transition id="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service"/>
+      <transition id="GET:/api/v1/contactservice/contacts/{id}_ts-contacts-service"/>
+      <transition id="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End"/>
+      <transition id="/api/v1/travel2service/trip_detail_ts-preserve-other-service"/>
+      <transition id="POST:/api/v1/travel2service/trip_detail_ts-travel2-service"/>
+      <transition id="/api/v1/basicservice/basic/travel_ts-travel2-service"/>
+      <transition id="POST:/api/v1/basicservice/basic/travel_ts-basic-service"/>
+      <transition id="/api/v1/stationservice/stations/id/shanghai_ts-basic-service"/>
+      <transition id="GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service"/>
+      <transition id="/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End"/>
+      <transition id="/api/v1/stationservice/stations/id/nanjing_ts-basic-service"/>
+      <transition id="/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End"/>
+      <transition id="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service"/>
+      <transition id="GET:/api/v1/trainservice/trains/byName/{name}_ts-train-service"/>
+      <transition id="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End"/>
+      <transition id="/api/v1/routeservice/routes/{uuid}_ts-basic-service"/>
+      <transition id="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+      <transition id="/api/v1/routeservice/routes/{uuid}_ts-basic-service_End"/>
+      <transition id="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service"/>
+      <transition id="GET:/api/v1/priceservice/prices/{routeId}/{trainType}_ts-price-service"/>
+      <transition id="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End"/>
+      <transition id="/api/v1/basicservice/basic/travel_ts-travel2-service_End"/>
+      <transition id="/api/v1/seatservice/seats/left_tickets_ts-travel2-service"/>
+      <transition id="POST:/api/v1/seatservice/seats/left_tickets_ts-seat-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service"/>
+      <transition id="POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+      <transition id="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service"/>
+      <transition id="GET:/api/v1/configservice/configs/{configName}_ts-config-service"/>
+      <transition id="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_End"/>
+      <transition id="/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End"/>
+      <transition id="/api/v1/travel2service/trip_detail_ts-preserve-other-service_End"/>
+      <transition id="/api/v1/basicservice/basic/travel_ts-preserve-other-service"/>
+      <transition id="/api/v1/basicservice/basic/travel_ts-preserve-other-service_End"/>
+      <transition id="/api/v1/seatservice/seats_ts-preserve-other-service"/>
+      <transition id="POST:/api/v1/seatservice/seats_ts-seat-service"/>
+      <transition id="/api/v1/seatservice/seats_ts-preserve-other-service_End"/>
+      <transition id="/api/v1/orderOtherService/orderOther_ts-preserve-other-service"/>
+      <transition id="POST:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End"/>
+      <transition id="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service"/>
+      <transition id="GET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service"/>
+      <transition id="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End"/>
+      <transition id="/api/v1/foodservice/orders_ts-preserve-other-service"/>
+      <transition id="POST:/api/v1/foodservice/orders_ts-food-service"/>
+      <transition id="RabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service"/>
+      <transition id="RabbitMQ/Topic/Queue/food_delivery/Consumer_ts-delivery-service"/>
+      <transition id="/api/v1/foodservice/orders_ts-preserve-other-service_End"/>
+      <transition id="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service"/>
+      <transition id="GET:/api/v1/userservice/users/id/{userId}_ts-user-service"/>
+      <transition id="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a0" source="POST:/api/v1/preserveotherservice/preserveOther_ts-preserve-other-service" target="PPOST:/api/v1/preserveotherservice/preserveOther_ts-preserve-other-service_/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service"/>
+      <arc id="a1" source="PPOST:/api/v1/preserveotherservice/preserveOther_ts-preserve-other-service_/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service" target="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service"/>
+      <arc id="a2" source="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service" target="P/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_GET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service"/>
+      <arc id="a3" source="P/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_GET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service" target="GET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service"/>
+      <arc id="a4" source="GET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service" target="PGET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service_/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service"/>
+      <arc id="a5" source="PGET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service_/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service" target="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service"/>
+      <arc id="a6" source="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service" target="P/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_GET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service"/>
+      <arc id="a7" source="P/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_GET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service" target="GET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service"/>
+      <arc id="a8" source="GET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service" target="PGET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service_/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End"/>
+      <arc id="a9" source="PGET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service_/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End" target="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End"/>
+      <arc id="a10" source="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End" target="P/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End_/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service"/>
+      <arc id="a11" source="P/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End_/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service" target="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service"/>
+      <arc id="a12" source="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service" target="P/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_GET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service"/>
+      <arc id="a13" source="P/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_GET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service" target="GET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service"/>
+      <arc id="a14" source="GET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service" target="PGET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End"/>
+      <arc id="a15" source="PGET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End" target="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End"/>
+      <arc id="a16" source="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End" target="P/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End_/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a17" source="P/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End_/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End" target="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a18" source="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End" target="P/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End_/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service"/>
+      <arc id="a19" source="P/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End_/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service" target="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service"/>
+      <arc id="a20" source="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service" target="P/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_GET:/api/v1/contactservice/contacts/{id}_ts-contacts-service"/>
+      <arc id="a21" source="P/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_GET:/api/v1/contactservice/contacts/{id}_ts-contacts-service" target="GET:/api/v1/contactservice/contacts/{id}_ts-contacts-service"/>
+      <arc id="a22" source="GET:/api/v1/contactservice/contacts/{id}_ts-contacts-service" target="PGET:/api/v1/contactservice/contacts/{id}_ts-contacts-service_/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a23" source="PGET:/api/v1/contactservice/contacts/{id}_ts-contacts-service_/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End" target="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a24" source="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End" target="P/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End_/api/v1/travel2service/trip_detail_ts-preserve-other-service"/>
+      <arc id="a25" source="P/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End_/api/v1/travel2service/trip_detail_ts-preserve-other-service" target="/api/v1/travel2service/trip_detail_ts-preserve-other-service"/>
+      <arc id="a26" source="/api/v1/travel2service/trip_detail_ts-preserve-other-service" target="P/api/v1/travel2service/trip_detail_ts-preserve-other-service_POST:/api/v1/travel2service/trip_detail_ts-travel2-service"/>
+      <arc id="a27" source="P/api/v1/travel2service/trip_detail_ts-preserve-other-service_POST:/api/v1/travel2service/trip_detail_ts-travel2-service" target="POST:/api/v1/travel2service/trip_detail_ts-travel2-service"/>
+      <arc id="a28" source="POST:/api/v1/travel2service/trip_detail_ts-travel2-service" target="PPOST:/api/v1/travel2service/trip_detail_ts-travel2-service_/api/v1/basicservice/basic/travel_ts-travel2-service"/>
+      <arc id="a29" source="PPOST:/api/v1/travel2service/trip_detail_ts-travel2-service_/api/v1/basicservice/basic/travel_ts-travel2-service" target="/api/v1/basicservice/basic/travel_ts-travel2-service"/>
+      <arc id="a30" source="/api/v1/basicservice/basic/travel_ts-travel2-service" target="P/api/v1/basicservice/basic/travel_ts-travel2-service_/api/v1/basicservice/basic/travel_ts-travel2-service_End"/>
+      <arc id="a31" source="P/api/v1/basicservice/basic/travel_ts-travel2-service_/api/v1/basicservice/basic/travel_ts-travel2-service_End" target="/api/v1/basicservice/basic/travel_ts-travel2-service_End"/>
+      <arc id="a32" source="POST:/api/v1/basicservice/basic/travel_ts-basic-service" target="PPOST:/api/v1/basicservice/basic/travel_ts-basic-service_/api/v1/stationservice/stations/id/shanghai_ts-basic-service"/>
+      <arc id="a33" source="PPOST:/api/v1/basicservice/basic/travel_ts-basic-service_/api/v1/stationservice/stations/id/shanghai_ts-basic-service" target="/api/v1/stationservice/stations/id/shanghai_ts-basic-service"/>
+      <arc id="a34" source="/api/v1/basicservice/basic/travel_ts-travel2-service_End" target="P/api/v1/basicservice/basic/travel_ts-travel2-service_End/api/v1/basicservice/basic/travel_ts-preserve-other-service_POST:/api/v1/basicservice/basic/travel_ts-basic-service"/>
+      <arc id="a35" source="/api/v1/basicservice/basic/travel_ts-preserve-other-service" target="P/api/v1/basicservice/basic/travel_ts-travel2-service_End/api/v1/basicservice/basic/travel_ts-preserve-other-service_POST:/api/v1/basicservice/basic/travel_ts-basic-service"/>
+      <arc id="a36" source="P/api/v1/basicservice/basic/travel_ts-travel2-service_End/api/v1/basicservice/basic/travel_ts-preserve-other-service_POST:/api/v1/basicservice/basic/travel_ts-basic-service" target="POST:/api/v1/basicservice/basic/travel_ts-basic-service"/>
+      <arc id="a37" source="/api/v1/stationservice/stations/id/shanghai_ts-basic-service" target="P/api/v1/stationservice/stations/id/shanghai_ts-basic-service_/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End"/>
+      <arc id="a38" source="P/api/v1/stationservice/stations/id/shanghai_ts-basic-service_/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End" target="/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End"/>
+      <arc id="a39" source="GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service" target="PGET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service_/api/v1/stationservice/stations/id/nanjing_ts-basic-service"/>
+      <arc id="a40" source="PGET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service_/api/v1/stationservice/stations/id/nanjing_ts-basic-service" target="/api/v1/stationservice/stations/id/nanjing_ts-basic-service"/>
+      <arc id="a41" source="/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End" target="P/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End_GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service"/>
+      <arc id="a42" source="P/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End_GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service" target="GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service"/>
+      <arc id="a43" source="/api/v1/stationservice/stations/id/nanjing_ts-basic-service" target="P/api/v1/stationservice/stations/id/nanjing_ts-basic-service_/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End"/>
+      <arc id="a44" source="P/api/v1/stationservice/stations/id/nanjing_ts-basic-service_/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End" target="/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End"/>
+      <arc id="a45" source="/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End" target="P/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End_/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service"/>
+      <arc id="a46" source="P/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End_/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service" target="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service"/>
+      <arc id="a47" source="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service" target="P/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_GET:/api/v1/trainservice/trains/byName/{name}_ts-train-service"/>
+      <arc id="a48" source="P/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_GET:/api/v1/trainservice/trains/byName/{name}_ts-train-service" target="GET:/api/v1/trainservice/trains/byName/{name}_ts-train-service"/>
+      <arc id="a49" source="GET:/api/v1/trainservice/trains/byName/{name}_ts-train-service" target="PGET:/api/v1/trainservice/trains/byName/{name}_ts-train-service_/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End"/>
+      <arc id="a50" source="PGET:/api/v1/trainservice/trains/byName/{name}_ts-train-service_/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End" target="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End"/>
+      <arc id="a51" source="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End" target="P/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End_/api/v1/routeservice/routes/{uuid}_ts-basic-service"/>
+      <arc id="a52" source="P/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End_/api/v1/routeservice/routes/{uuid}_ts-basic-service" target="/api/v1/routeservice/routes/{uuid}_ts-basic-service"/>
+      <arc id="a53" source="/api/v1/routeservice/routes/{uuid}_ts-basic-service" target="P/api/v1/routeservice/routes/{uuid}_ts-basic-service_GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+      <arc id="a54" source="P/api/v1/routeservice/routes/{uuid}_ts-basic-service_GET:/api/v1/routeservice/routes/{routeId}_ts-route-service" target="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+      <arc id="a55" source="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service" target="PGET:/api/v1/routeservice/routes/{routeId}_ts-route-service_/api/v1/routeservice/routes/{uuid}_ts-basic-service_End"/>
+      <arc id="a56" source="PGET:/api/v1/routeservice/routes/{routeId}_ts-route-service_/api/v1/routeservice/routes/{uuid}_ts-basic-service_End" target="/api/v1/routeservice/routes/{uuid}_ts-basic-service_End"/>
+      <arc id="a57" source="/api/v1/routeservice/routes/{uuid}_ts-basic-service_End" target="P/api/v1/routeservice/routes/{uuid}_ts-basic-service_End_/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service"/>
+      <arc id="a58" source="P/api/v1/routeservice/routes/{uuid}_ts-basic-service_End_/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service" target="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service"/>
+      <arc id="a59" source="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service" target="P/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End"/>
+      <arc id="a60" source="P/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End" target="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End"/>
+      <arc id="a61" source="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End" target="P/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End_GET:/api/v1/priceservice/prices/{routeId}/{trainType}_ts-price-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service/api/v1/basicservice/basic/travel_ts-preserve-other-service_End"/>
+      <arc id="a62" source="P/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End_GET:/api/v1/priceservice/prices/{routeId}/{trainType}_ts-price-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service/api/v1/basicservice/basic/travel_ts-preserve-other-service_End" target="GET:/api/v1/priceservice/prices/{routeId}/{trainType}_ts-price-service"/>
+      <arc id="a63" source="P/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End_GET:/api/v1/priceservice/prices/{routeId}/{trainType}_ts-price-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service/api/v1/basicservice/basic/travel_ts-preserve-other-service_End" target="/api/v1/seatservice/seats/left_tickets_ts-travel2-service"/>
+      <arc id="a64" source="P/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End_GET:/api/v1/priceservice/prices/{routeId}/{trainType}_ts-price-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service/api/v1/basicservice/basic/travel_ts-preserve-other-service_End" target="/api/v1/basicservice/basic/travel_ts-preserve-other-service_End"/>
+      <arc id="a65" source="/api/v1/seatservice/seats/left_tickets_ts-travel2-service" target="P/api/v1/seatservice/seats/left_tickets_ts-travel2-service_POST:/api/v1/seatservice/seats/left_tickets_ts-seat-service"/>
+      <arc id="a66" source="P/api/v1/seatservice/seats/left_tickets_ts-travel2-service_POST:/api/v1/seatservice/seats/left_tickets_ts-seat-service" target="POST:/api/v1/seatservice/seats/left_tickets_ts-seat-service"/>
+      <arc id="a67" source="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service" target="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+      <arc id="a68" source="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End" target="POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+      <arc id="a69" source="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End" target="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+      <arc id="a70" source="POST:/api/v1/seatservice/seats/left_tickets_ts-seat-service" target="PPOST:/api/v1/seatservice/seats/left_tickets_ts-seat-servicePOST:/api/v1/seatservice/seats_ts-seat-service_/api/v1/orderOtherService/orderOther/tickets_ts-seat-service"/>
+      <arc id="a71" source="POST:/api/v1/seatservice/seats_ts-seat-service" target="PPOST:/api/v1/seatservice/seats/left_tickets_ts-seat-servicePOST:/api/v1/seatservice/seats_ts-seat-service_/api/v1/orderOtherService/orderOther/tickets_ts-seat-service"/>
+      <arc id="a72" source="PPOST:/api/v1/seatservice/seats/left_tickets_ts-seat-servicePOST:/api/v1/seatservice/seats_ts-seat-service_/api/v1/orderOtherService/orderOther/tickets_ts-seat-service" target="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service"/>
+      <arc id="a73" source="POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service" target="PPOST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service_/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service/api/v1/seatservice/seats_ts-preserve-other-service_End"/>
+      <arc id="a74" source="PPOST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service_/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service/api/v1/seatservice/seats_ts-preserve-other-service_End" target="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service"/>
+      <arc id="a75" source="PPOST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service_/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service/api/v1/seatservice/seats_ts-preserve-other-service_End" target="/api/v1/seatservice/seats_ts-preserve-other-service_End"/>
+      <arc id="a76" source="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service" target="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+      <arc id="a77" source="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End" target="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+      <arc id="a78" source="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service" target="POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+      <arc id="a79" source="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End" target="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-serviceGET:/api/v1/configservice/configs/{configName}_ts-config-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End"/>
+      <arc id="a80" source="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-serviceGET:/api/v1/configservice/configs/{configName}_ts-config-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End" target="POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+      <arc id="a81" source="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-serviceGET:/api/v1/configservice/configs/{configName}_ts-config-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End" target="GET:/api/v1/configservice/configs/{configName}_ts-config-service"/>
+      <arc id="a82" source="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End_POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-serviceGET:/api/v1/configservice/configs/{configName}_ts-config-service/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End" target="/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End"/>
+      <arc id="a83" source="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service" target="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+      <arc id="a84" source="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service" target="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+      <arc id="a85" source="P/api/v1/orderOtherService/orderOther/tickets_ts-seat-service/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End" target="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+      <arc id="a86" source="/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End" target="P/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End_/api/v1/travel2service/trip_detail_ts-preserve-other-service_End"/>
+      <arc id="a87" source="P/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End_/api/v1/travel2service/trip_detail_ts-preserve-other-service_End" target="/api/v1/travel2service/trip_detail_ts-preserve-other-service_End"/>
+      <arc id="a88" source="/api/v1/travel2service/trip_detail_ts-preserve-other-service_End" target="P/api/v1/travel2service/trip_detail_ts-preserve-other-service_End_/api/v1/basicservice/basic/travel_ts-preserve-other-service"/>
+      <arc id="a89" source="P/api/v1/travel2service/trip_detail_ts-preserve-other-service_End_/api/v1/basicservice/basic/travel_ts-preserve-other-service" target="/api/v1/basicservice/basic/travel_ts-preserve-other-service"/>
+      <arc id="a90" source="/api/v1/basicservice/basic/travel_ts-preserve-other-service_End" target="P/api/v1/basicservice/basic/travel_ts-preserve-other-service_End_/api/v1/seatservice/seats_ts-preserve-other-service"/>
+      <arc id="a91" source="P/api/v1/basicservice/basic/travel_ts-preserve-other-service_End_/api/v1/seatservice/seats_ts-preserve-other-service" target="/api/v1/seatservice/seats_ts-preserve-other-service"/>
+      <arc id="a92" source="/api/v1/seatservice/seats_ts-preserve-other-service" target="P/api/v1/seatservice/seats_ts-preserve-other-service_POST:/api/v1/seatservice/seats_ts-seat-service"/>
+      <arc id="a93" source="P/api/v1/seatservice/seats_ts-preserve-other-service_POST:/api/v1/seatservice/seats_ts-seat-service" target="POST:/api/v1/seatservice/seats_ts-seat-service"/>
+      <arc id="a94" source="/api/v1/seatservice/seats_ts-preserve-other-service_End" target="P/api/v1/seatservice/seats_ts-preserve-other-service_End_/api/v1/orderOtherService/orderOther_ts-preserve-other-service"/>
+      <arc id="a95" source="P/api/v1/seatservice/seats_ts-preserve-other-service_End_/api/v1/orderOtherService/orderOther_ts-preserve-other-service" target="/api/v1/orderOtherService/orderOther_ts-preserve-other-service"/>
+      <arc id="a96" source="/api/v1/orderOtherService/orderOther_ts-preserve-other-service" target="P/api/v1/orderOtherService/orderOther_ts-preserve-other-service_POST:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <arc id="a97" source="P/api/v1/orderOtherService/orderOther_ts-preserve-other-service_POST:/api/v1/orderOtherService/orderOther_ts-order-other-service" target="POST:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+      <arc id="a98" source="POST:/api/v1/orderOtherService/orderOther_ts-order-other-service" target="PPOST:/api/v1/orderOtherService/orderOther_ts-order-other-service_/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End"/>
+      <arc id="a99" source="PPOST:/api/v1/orderOtherService/orderOther_ts-order-other-service_/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End" target="/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End"/>
+      <arc id="a100" source="/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End" target="P/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End_/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service"/>
+      <arc id="a101" source="P/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End_/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service" target="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service"/>
+      <arc id="a102" source="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service" target="P/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_GET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service"/>
+      <arc id="a103" source="P/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_GET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service" target="GET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service"/>
+      <arc id="a104" source="GET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service" target="PGET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service_/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a105" source="PGET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service_/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End" target="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a106" source="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End" target="P/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End_/api/v1/foodservice/orders_ts-preserve-other-service"/>
+      <arc id="a107" source="P/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End_/api/v1/foodservice/orders_ts-preserve-other-service" target="/api/v1/foodservice/orders_ts-preserve-other-service"/>
+      <arc id="a108" source="/api/v1/foodservice/orders_ts-preserve-other-service" target="P/api/v1/foodservice/orders_ts-preserve-other-service_POST:/api/v1/foodservice/orders_ts-food-service"/>
+      <arc id="a109" source="P/api/v1/foodservice/orders_ts-preserve-other-service_POST:/api/v1/foodservice/orders_ts-food-service" target="POST:/api/v1/foodservice/orders_ts-food-service"/>
+      <arc id="a110" source="POST:/api/v1/foodservice/orders_ts-food-service" target="PPOST:/api/v1/foodservice/orders_ts-food-service_RabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service"/>
+      <arc id="a111" source="PPOST:/api/v1/foodservice/orders_ts-food-service_RabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service" target="RabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service"/>
+      <arc id="a112" source="RabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service" target="PRabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service_RabbitMQ/Topic/Queue/food_delivery/Consumer_ts-delivery-service"/>
+      <arc id="a113" source="PRabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service_RabbitMQ/Topic/Queue/food_delivery/Consumer_ts-delivery-service" target="RabbitMQ/Topic/Queue/food_delivery/Consumer_ts-delivery-service"/>
+      <arc id="a114" source="RabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service" target="PRabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service_/api/v1/foodservice/orders_ts-preserve-other-service_End"/>
+      <arc id="a115" source="PRabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service_/api/v1/foodservice/orders_ts-preserve-other-service_End" target="/api/v1/foodservice/orders_ts-preserve-other-service_End"/>
+      <arc id="a116" source="/api/v1/foodservice/orders_ts-preserve-other-service_End" target="P/api/v1/foodservice/orders_ts-preserve-other-service_End_/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service"/>
+      <arc id="a117" source="P/api/v1/foodservice/orders_ts-preserve-other-service_End_/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service" target="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service"/>
+      <arc id="a118" source="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service" target="P/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_GET:/api/v1/userservice/users/id/{userId}_ts-user-service"/>
+      <arc id="a119" source="P/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_GET:/api/v1/userservice/users/id/{userId}_ts-user-service" target="GET:/api/v1/userservice/users/id/{userId}_ts-user-service"/>
+      <arc id="a120" source="GET:/api/v1/userservice/users/id/{userId}_ts-user-service" target="PGET:/api/v1/userservice/users/id/{userId}_ts-user-service_/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a121" source="PGET:/api/v1/userservice/users/id/{userId}_ts-user-service_/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End" target="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a122" source="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service" target="P/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a123" source="P/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End" target="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a124" source="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service" target="P/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End"/>
+      <arc id="a125" source="P/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End" target="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End"/>
+      <arc id="a126" source="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service" target="P/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End"/>
+      <arc id="a127" source="P/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End" target="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End"/>
+      <arc id="a128" source="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service" target="P/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a129" source="P/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End" target="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a130" source="/api/v1/travel2service/trip_detail_ts-preserve-other-service" target="P/api/v1/travel2service/trip_detail_ts-preserve-other-service_/api/v1/travel2service/trip_detail_ts-preserve-other-service_End"/>
+      <arc id="a131" source="P/api/v1/travel2service/trip_detail_ts-preserve-other-service_/api/v1/travel2service/trip_detail_ts-preserve-other-service_End" target="/api/v1/travel2service/trip_detail_ts-preserve-other-service_End"/>
+      <arc id="a132" source="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service" target="P/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End"/>
+      <arc id="a133" source="P/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End" target="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End"/>
+      <arc id="a134" source="/api/v1/routeservice/routes/{uuid}_ts-basic-service" target="P/api/v1/routeservice/routes/{uuid}_ts-basic-service_/api/v1/routeservice/routes/{uuid}_ts-basic-service_End"/>
+      <arc id="a135" source="P/api/v1/routeservice/routes/{uuid}_ts-basic-service_/api/v1/routeservice/routes/{uuid}_ts-basic-service_End" target="/api/v1/routeservice/routes/{uuid}_ts-basic-service_End"/>
+      <arc id="a136" source="/api/v1/seatservice/seats/left_tickets_ts-travel2-service" target="P/api/v1/seatservice/seats/left_tickets_ts-travel2-service_/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End"/>
+      <arc id="a137" source="P/api/v1/seatservice/seats/left_tickets_ts-travel2-service_/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End" target="/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End"/>
+      <arc id="a138" source="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service" target="P/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_End"/>
+      <arc id="a139" source="P/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_End" target="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_End"/>
+      <arc id="a140" source="/api/v1/basicservice/basic/travel_ts-preserve-other-service" target="P/api/v1/basicservice/basic/travel_ts-preserve-other-service_/api/v1/basicservice/basic/travel_ts-preserve-other-service_End"/>
+      <arc id="a141" source="P/api/v1/basicservice/basic/travel_ts-preserve-other-service_/api/v1/basicservice/basic/travel_ts-preserve-other-service_End" target="/api/v1/basicservice/basic/travel_ts-preserve-other-service_End"/>
+      <arc id="a142" source="/api/v1/seatservice/seats_ts-preserve-other-service" target="P/api/v1/seatservice/seats_ts-preserve-other-service_/api/v1/seatservice/seats_ts-preserve-other-service_End"/>
+      <arc id="a143" source="P/api/v1/seatservice/seats_ts-preserve-other-service_/api/v1/seatservice/seats_ts-preserve-other-service_End" target="/api/v1/seatservice/seats_ts-preserve-other-service_End"/>
+      <arc id="a144" source="/api/v1/orderOtherService/orderOther_ts-preserve-other-service" target="P/api/v1/orderOtherService/orderOther_ts-preserve-other-service_/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End"/>
+      <arc id="a145" source="P/api/v1/orderOtherService/orderOther_ts-preserve-other-service_/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End" target="/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End"/>
+      <arc id="a146" source="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service" target="P/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a147" source="P/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End" target="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a148" source="/api/v1/foodservice/orders_ts-preserve-other-service" target="P/api/v1/foodservice/orders_ts-preserve-other-service_/api/v1/foodservice/orders_ts-preserve-other-service_End"/>
+      <arc id="a149" source="P/api/v1/foodservice/orders_ts-preserve-other-service_/api/v1/foodservice/orders_ts-preserve-other-service_End" target="/api/v1/foodservice/orders_ts-preserve-other-service_End"/>
+      <arc id="a150" source="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service" target="P/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a151" source="P/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End" target="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End"/>
+      <arc id="a152" source="Start" target="POST:/api/v1/preserveotherservice/preserveOther_ts-preserve-other-service"/>
+      <arc id="a153" source="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End" target="End"/>
+    </page>
+  </net>
+</pnml>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>4833f96d5488463992c4954aa46d7971.100.16940732665010003_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="PPOST:/api/v1/travelservice/trips/left_ts-travel-service_/api/v1/basicservice/basic/travels_ts-travel-service"/>
+      <place id="P/api/v1/basicservice/basic/travels_ts-travel-service_POST:/api/v1/basicservice/basic/travels_ts-basic-service"/>
+      <place id="PPOST:/api/v1/basicservice/basic/travels_ts-basic-service_/api/v1/stationservice/stations/idlist_ts-basic-service"/>
+      <place id="P/api/v1/stationservice/stations/idlist_ts-basic-service_POST:/api/v1/stationservice/stations/idlist_ts-station-service"/>
+      <place id="PPOST:/api/v1/stationservice/stations/idlist_ts-station-service_/api/v1/stationservice/stations/idlist_ts-basic-service_End"/>
+      <place id="P/api/v1/stationservice/stations/idlist_ts-basic-service_End_/api/v1/trainservice/trains/byNames_ts-basic-service"/>
+      <place id="P/api/v1/trainservice/trains/byNames_ts-basic-service_POST:/api/v1/trainservice/trains/byNames_ts-train-service"/>
+      <place id="PPOST:/api/v1/trainservice/trains/byNames_ts-train-service_/api/v1/trainservice/trains/byNames_ts-basic-service_End"/>
+      <place id="P/api/v1/trainservice/trains/byNames_ts-basic-service_End_/api/v1/routeservice/routes/byIds_ts-basic-service"/>
+      <place id="P/api/v1/routeservice/routes/byIds_ts-basic-service_POST:/api/v1/routeservice/routes/byIds_ts-route-service"/>
+      <place id="PPOST:/api/v1/routeservice/routes/byIds_ts-route-service_/api/v1/routeservice/routes/byIds_ts-basic-service_End"/>
+      <place id="P/api/v1/routeservice/routes/byIds_ts-basic-service_End_/api/v1/basicservice/basic/travels_ts-travel-service_End"/>
+      <place id="P/api/v1/basicservice/basic/travels_ts-travel-service_/api/v1/basicservice/basic/travels_ts-travel-service_End"/>
+      <place id="P/api/v1/stationservice/stations/idlist_ts-basic-service_/api/v1/stationservice/stations/idlist_ts-basic-service_End"/>
+      <place id="P/api/v1/trainservice/trains/byNames_ts-basic-service_/api/v1/trainservice/trains/byNames_ts-basic-service_End"/>
+      <place id="P/api/v1/routeservice/routes/byIds_ts-basic-service_/api/v1/routeservice/routes/byIds_ts-basic-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="POST:/api/v1/travelservice/trips/left_ts-travel-service"/>
+      <transition id="/api/v1/basicservice/basic/travels_ts-travel-service"/>
+      <transition id="POST:/api/v1/basicservice/basic/travels_ts-basic-service"/>
+      <transition id="/api/v1/stationservice/stations/idlist_ts-basic-service"/>
+      <transition id="POST:/api/v1/stationservice/stations/idlist_ts-station-service"/>
+      <transition id="/api/v1/stationservice/stations/idlist_ts-basic-service_End"/>
+      <transition id="/api/v1/trainservice/trains/byNames_ts-basic-service"/>
+      <transition id="POST:/api/v1/trainservice/trains/byNames_ts-train-service"/>
+      <transition id="/api/v1/trainservice/trains/byNames_ts-basic-service_End"/>
+      <transition id="/api/v1/routeservice/routes/byIds_ts-basic-service"/>
+      <transition id="POST:/api/v1/routeservice/routes/byIds_ts-route-service"/>
+      <transition id="/api/v1/routeservice/routes/byIds_ts-basic-service_End"/>
+      <transition id="/api/v1/basicservice/basic/travels_ts-travel-service_End"/>
+      <arc id="a0" source="POST:/api/v1/travelservice/trips/left_ts-travel-service" target="PPOST:/api/v1/travelservice/trips/left_ts-travel-service_/api/v1/basicservice/basic/travels_ts-travel-service"/>
+      <arc id="a1" source="PPOST:/api/v1/travelservice/trips/left_ts-travel-service_/api/v1/basicservice/basic/travels_ts-travel-service" target="/api/v1/basicservice/basic/travels_ts-travel-service"/>
+      <arc id="a2" source="/api/v1/basicservice/basic/travels_ts-travel-service" target="P/api/v1/basicservice/basic/travels_ts-travel-service_POST:/api/v1/basicservice/basic/travels_ts-basic-service"/>
+      <arc id="a3" source="P/api/v1/basicservice/basic/travels_ts-travel-service_POST:/api/v1/basicservice/basic/travels_ts-basic-service" target="POST:/api/v1/basicservice/basic/travels_ts-basic-service"/>
+      <arc id="a4" source="POST:/api/v1/basicservice/basic/travels_ts-basic-service" target="PPOST:/api/v1/basicservice/basic/travels_ts-basic-service_/api/v1/stationservice/stations/idlist_ts-basic-service"/>
+      <arc id="a5" source="PPOST:/api/v1/basicservice/basic/travels_ts-basic-service_/api/v1/stationservice/stations/idlist_ts-basic-service" target="/api/v1/stationservice/stations/idlist_ts-basic-service"/>
+      <arc id="a6" source="/api/v1/stationservice/stations/idlist_ts-basic-service" target="P/api/v1/stationservice/stations/idlist_ts-basic-service_POST:/api/v1/stationservice/stations/idlist_ts-station-service"/>
+      <arc id="a7" source="P/api/v1/stationservice/stations/idlist_ts-basic-service_POST:/api/v1/stationservice/stations/idlist_ts-station-service" target="POST:/api/v1/stationservice/stations/idlist_ts-station-service"/>
+      <arc id="a8" source="POST:/api/v1/stationservice/stations/idlist_ts-station-service" target="PPOST:/api/v1/stationservice/stations/idlist_ts-station-service_/api/v1/stationservice/stations/idlist_ts-basic-service_End"/>
+      <arc id="a9" source="PPOST:/api/v1/stationservice/stations/idlist_ts-station-service_/api/v1/stationservice/stations/idlist_ts-basic-service_End" target="/api/v1/stationservice/stations/idlist_ts-basic-service_End"/>
+      <arc id="a10" source="/api/v1/stationservice/stations/idlist_ts-basic-service_End" target="P/api/v1/stationservice/stations/idlist_ts-basic-service_End_/api/v1/trainservice/trains/byNames_ts-basic-service"/>
+      <arc id="a11" source="P/api/v1/stationservice/stations/idlist_ts-basic-service_End_/api/v1/trainservice/trains/byNames_ts-basic-service" target="/api/v1/trainservice/trains/byNames_ts-basic-service"/>
+      <arc id="a12" source="/api/v1/trainservice/trains/byNames_ts-basic-service" target="P/api/v1/trainservice/trains/byNames_ts-basic-service_POST:/api/v1/trainservice/trains/byNames_ts-train-service"/>
+      <arc id="a13" source="P/api/v1/trainservice/trains/byNames_ts-basic-service_POST:/api/v1/trainservice/trains/byNames_ts-train-service" target="POST:/api/v1/trainservice/trains/byNames_ts-train-service"/>
+      <arc id="a14" source="POST:/api/v1/trainservice/trains/byNames_ts-train-service" target="PPOST:/api/v1/trainservice/trains/byNames_ts-train-service_/api/v1/trainservice/trains/byNames_ts-basic-service_End"/>
+      <arc id="a15" source="PPOST:/api/v1/trainservice/trains/byNames_ts-train-service_/api/v1/trainservice/trains/byNames_ts-basic-service_End" target="/api/v1/trainservice/trains/byNames_ts-basic-service_End"/>
+      <arc id="a16" source="/api/v1/trainservice/trains/byNames_ts-basic-service_End" target="P/api/v1/trainservice/trains/byNames_ts-basic-service_End_/api/v1/routeservice/routes/byIds_ts-basic-service"/>
+      <arc id="a17" source="P/api/v1/trainservice/trains/byNames_ts-basic-service_End_/api/v1/routeservice/routes/byIds_ts-basic-service" target="/api/v1/routeservice/routes/byIds_ts-basic-service"/>
+      <arc id="a18" source="/api/v1/routeservice/routes/byIds_ts-basic-service" target="P/api/v1/routeservice/routes/byIds_ts-basic-service_POST:/api/v1/routeservice/routes/byIds_ts-route-service"/>
+      <arc id="a19" source="P/api/v1/routeservice/routes/byIds_ts-basic-service_POST:/api/v1/routeservice/routes/byIds_ts-route-service" target="POST:/api/v1/routeservice/routes/byIds_ts-route-service"/>
+      <arc id="a20" source="POST:/api/v1/routeservice/routes/byIds_ts-route-service" target="PPOST:/api/v1/routeservice/routes/byIds_ts-route-service_/api/v1/routeservice/routes/byIds_ts-basic-service_End"/>
+      <arc id="a21" source="PPOST:/api/v1/routeservice/routes/byIds_ts-route-service_/api/v1/routeservice/routes/byIds_ts-basic-service_End" target="/api/v1/routeservice/routes/byIds_ts-basic-service_End"/>
+      <arc id="a22" source="/api/v1/routeservice/routes/byIds_ts-basic-service_End" target="P/api/v1/routeservice/routes/byIds_ts-basic-service_End_/api/v1/basicservice/basic/travels_ts-travel-service_End"/>
+      <arc id="a23" source="P/api/v1/routeservice/routes/byIds_ts-basic-service_End_/api/v1/basicservice/basic/travels_ts-travel-service_End" target="/api/v1/basicservice/basic/travels_ts-travel-service_End"/>
+      <arc id="a24" source="/api/v1/basicservice/basic/travels_ts-travel-service" target="P/api/v1/basicservice/basic/travels_ts-travel-service_/api/v1/basicservice/basic/travels_ts-travel-service_End"/>
+      <arc id="a25" source="P/api/v1/basicservice/basic/travels_ts-travel-service_/api/v1/basicservice/basic/travels_ts-travel-service_End" target="/api/v1/basicservice/basic/travels_ts-travel-service_End"/>
+      <arc id="a26" source="/api/v1/stationservice/stations/idlist_ts-basic-service" target="P/api/v1/stationservice/stations/idlist_ts-basic-service_/api/v1/stationservice/stations/idlist_ts-basic-service_End"/>
+      <arc id="a27" source="P/api/v1/stationservice/stations/idlist_ts-basic-service_/api/v1/stationservice/stations/idlist_ts-basic-service_End" target="/api/v1/stationservice/stations/idlist_ts-basic-service_End"/>
+      <arc id="a28" source="/api/v1/trainservice/trains/byNames_ts-basic-service" target="P/api/v1/trainservice/trains/byNames_ts-basic-service_/api/v1/trainservice/trains/byNames_ts-basic-service_End"/>
+      <arc id="a29" source="P/api/v1/trainservice/trains/byNames_ts-basic-service_/api/v1/trainservice/trains/byNames_ts-basic-service_End" target="/api/v1/trainservice/trains/byNames_ts-basic-service_End"/>
+      <arc id="a30" source="/api/v1/routeservice/routes/byIds_ts-basic-service" target="P/api/v1/routeservice/routes/byIds_ts-basic-service_/api/v1/routeservice/routes/byIds_ts-basic-service_End"/>
+      <arc id="a31" source="P/api/v1/routeservice/routes/byIds_ts-basic-service_/api/v1/routeservice/routes/byIds_ts-basic-service_End" target="/api/v1/routeservice/routes/byIds_ts-basic-service_End"/>
+      <arc id="a32" source="Start" target="POST:/api/v1/travelservice/trips/left_ts-travel-service"/>
+      <arc id="a33" source="/api/v1/basicservice/basic/travels_ts-travel-service_End" target="End"/>
+    </page>
+  </net>
+</pnml>

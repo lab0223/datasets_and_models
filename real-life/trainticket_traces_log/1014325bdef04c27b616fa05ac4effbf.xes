@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<trace>
+		<string key="traceId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/preserveotherservice/preserveOther_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414145"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414830"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414152"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414180"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/securityservice/securityConfigs/{accountId}_ts-security-service"/>
+			<string key="service" value="ts-security-service"/>
+			<string key="segmentId" value="9aabffed749d462ab3183d69843e0c29.154.16940754141540000"/>
+			<string key="startTime" value="1694075414154"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414180"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service"/>
+			<string key="service" value="ts-security-service"/>
+			<string key="segmentId" value="9aabffed749d462ab3183d69843e0c29.154.16940754141540000"/>
+			<string key="startTime" value="1694075414158"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414166"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/security/{checkDate}/{accountId}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.101.16940754141600076"/>
+			<string key="startTime" value="1694075414160"/>
+			<string key="parentSegmentId" value="9aabffed749d462ab3183d69843e0c29.154.16940754141540000"/>
+			<string key="endTime" value="1694075414166"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/security/{date}/{uuid}_ts-security-service_End"/>
+			<string key="service" value="ts-security-service"/>
+			<string key="segmentId" value="9aabffed749d462ab3183d69843e0c29.154.16940754141540000"/>
+			<string key="startTime" value="1694075414166"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414166"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service"/>
+			<string key="service" value="ts-security-service"/>
+			<string key="segmentId" value="9aabffed749d462ab3183d69843e0c29.154.16940754141540000"/>
+			<string key="startTime" value="1694075414167"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414174"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderOtherService/orderOther/security/{checkDate}/{accountId}_ts-order-other-service"/>
+			<string key="service" value="ts-order-other-service"/>
+			<string key="segmentId" value="1e430c137f2b44f38e97822a7cea87d9.99.16940754141680048"/>
+			<string key="startTime" value="1694075414168"/>
+			<string key="parentSegmentId" value="9aabffed749d462ab3183d69843e0c29.154.16940754141540000"/>
+			<string key="endTime" value="1694075414173"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/security/{date}/{uuid}_ts-security-service_End"/>
+			<string key="service" value="ts-security-service"/>
+			<string key="segmentId" value="9aabffed749d462ab3183d69843e0c29.154.16940754141540000"/>
+			<string key="startTime" value="1694075414173"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414173"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/securityservice/securityConfigs/{uuid}_ts-preserve-other-service_End"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414180"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414180"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414180"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414192"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/contactservice/contacts/{id}_ts-contacts-service"/>
+			<string key="service" value="ts-contacts-service"/>
+			<string key="segmentId" value="d7675447e8d94e4cad9a687e98d0a55c.107.16940754141830004"/>
+			<string key="startTime" value="1694075414183"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414192"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/contactservice/contacts/{uuid}_ts-preserve-other-service_End"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414192"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414192"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/travel2service/trip_detail_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414193"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414330"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/travel2service/trip_detail_ts-travel2-service"/>
+			<string key="service" value="ts-travel2-service"/>
+			<string key="segmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="startTime" value="1694075414195"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414330"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/basicservice/basic/travel_ts-travel2-service"/>
+			<string key="service" value="ts-travel2-service"/>
+			<string key="segmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="startTime" value="1694075414202"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414252"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/basicservice/basic/travel_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414208"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414251"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations/id/shanghai_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414209"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414219"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service"/>
+			<string key="service" value="ts-station-service"/>
+			<string key="segmentId" value="d8b9b1a22a9f405db61b32bdd096d42b.173.16940754142110024"/>
+			<string key="startTime" value="1694075414211"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="endTime" value="1694075414219"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414219"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414219"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations/id/nanjing_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414219"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414223"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service"/>
+			<string key="service" value="ts-station-service"/>
+			<string key="segmentId" value="d8b9b1a22a9f405db61b32bdd096d42b.164.16940754142200024"/>
+			<string key="startTime" value="1694075414220"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="endTime" value="1694075414223"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414223"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414223"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414224"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414229"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainservice/trains/byName/{name}_ts-train-service"/>
+			<string key="service" value="ts-train-service"/>
+			<string key="segmentId" value="b6b1c409080b4d7f89d56f6cefd3cd34.100.16940754142250046"/>
+			<string key="startTime" value="1694075414225"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="endTime" value="1694075414229"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414229"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414229"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="4"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414231"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414239"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.107.16940754142340040"/>
+			<string key="startTime" value="1694075414234"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="endTime" value="1694075414239"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="4"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414239"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414239"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414241"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414249"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/priceservice/prices/{routeId}/{trainType}_ts-price-service"/>
+			<string key="service" value="ts-price-service"/>
+			<string key="segmentId" value="d8b1a47e03e746bbb92e5c8e3b28b47f.96.16940754142430010"/>
+			<string key="startTime" value="1694075414243"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="endTime" value="1694075414248"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.97.16940754142080018"/>
+			<string key="startTime" value="1694075414248"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414248"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/basicservice/basic/travel_ts-travel2-service_End"/>
+			<string key="service" value="ts-travel2-service"/>
+			<string key="segmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="startTime" value="1694075414251"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414251"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="4"/>
+			<string key="concept:name" value="/api/v1/seatservice/seats/left_tickets_ts-travel2-service"/>
+			<string key="service" value="ts-travel2-service"/>
+			<string key="segmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="startTime" value="1694075414253"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414274"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/seatservice/seats/left_tickets_ts-seat-service"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.96.16940754142560018"/>
+			<string key="startTime" value="1694075414256"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414274"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.96.16940754142560018"/>
+			<string key="startTime" value="1694075414258"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414266"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+			<string key="service" value="ts-order-other-service"/>
+			<string key="segmentId" value="1e430c137f2b44f38e97822a7cea87d9.104.16940754142630042"/>
+			<string key="startTime" value="1694075414263"/>
+			<string key="parentSegmentId" value="772a3a4559af4f29bcc0cebd2060c630.96.16940754142560018"/>
+			<string key="endTime" value="1694075414266"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.96.16940754142560018"/>
+			<string key="startTime" value="1694075414266"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414266"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.96.16940754142560018"/>
+			<string key="startTime" value="1694075414266"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414273"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/configservice/configs/{configName}_ts-config-service"/>
+			<string key="service" value="ts-config-service"/>
+			<string key="segmentId" value="809bd20ab18c48b88f5a43080487aa4c.196.16940754142690018"/>
+			<string key="startTime" value="1694075414269"/>
+			<string key="parentSegmentId" value="772a3a4559af4f29bcc0cebd2060c630.96.16940754142560018"/>
+			<string key="endTime" value="1694075414273"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_End"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.96.16940754142560018"/>
+			<string key="startTime" value="1694075414273"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414273"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="4"/>
+			<string key="concept:name" value="/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End"/>
+			<string key="service" value="ts-travel2-service"/>
+			<string key="segmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="startTime" value="1694075414274"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414274"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/seatservice/seats/left_tickets_ts-travel2-service"/>
+			<string key="service" value="ts-travel2-service"/>
+			<string key="segmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="startTime" value="1694075414274"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414325"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/seatservice/seats/left_tickets_ts-seat-service"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.97.16940754142760018"/>
+			<string key="startTime" value="1694075414276"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414324"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.97.16940754142760018"/>
+			<string key="startTime" value="1694075414314"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414319"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+			<string key="service" value="ts-order-other-service"/>
+			<string key="segmentId" value="1e430c137f2b44f38e97822a7cea87d9.103.16940754143150046"/>
+			<string key="startTime" value="1694075414315"/>
+			<string key="parentSegmentId" value="772a3a4559af4f29bcc0cebd2060c630.97.16940754142760018"/>
+			<string key="endTime" value="1694075414319"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.97.16940754142760018"/>
+			<string key="startTime" value="1694075414319"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414319"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.97.16940754142760018"/>
+			<string key="startTime" value="1694075414319"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414324"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/configservice/configs/{configName}_ts-config-service"/>
+			<string key="service" value="ts-config-service"/>
+			<string key="segmentId" value="809bd20ab18c48b88f5a43080487aa4c.197.16940754143200016"/>
+			<string key="startTime" value="1694075414320"/>
+			<string key="parentSegmentId" value="772a3a4559af4f29bcc0cebd2060c630.97.16940754142760018"/>
+			<string key="endTime" value="1694075414324"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/configservice/configs/DirectTicketAllocationProportion_ts-seat-service_End"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.97.16940754142760018"/>
+			<string key="startTime" value="1694075414324"/>
+			<string key="parentSegmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="endTime" value="1694075414324"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/seatservice/seats/left_tickets_ts-travel2-service_End"/>
+			<string key="service" value="ts-travel2-service"/>
+			<string key="segmentId" value="70d7b9bed12b41efaa2ef463122d4ff2.160.16940754141950004"/>
+			<string key="startTime" value="1694075414324"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414324"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/travel2service/trip_detail_ts-preserve-other-service_End"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414330"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414330"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="4"/>
+			<string key="concept:name" value="/api/v1/basicservice/basic/travel_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414330"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414363"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/basicservice/basic/travel_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414333"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414363"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations/id/shanghai_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414336"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414340"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service"/>
+			<string key="service" value="ts-station-service"/>
+			<string key="segmentId" value="d8b9b1a22a9f405db61b32bdd096d42b.168.16940754143370024"/>
+			<string key="startTime" value="1694075414337"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="endTime" value="1694075414340"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations/id/shanghai_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414340"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414340"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations/id/nanjing_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414341"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414344"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/stationservice/stations/id/{stationNameForId}_ts-station-service"/>
+			<string key="service" value="ts-station-service"/>
+			<string key="segmentId" value="d8b9b1a22a9f405db61b32bdd096d42b.166.16940754143410020"/>
+			<string key="startTime" value="1694075414341"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="endTime" value="1694075414344"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations/id/nanjing_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414344"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414344"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414344"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414348"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainservice/trains/byName/{name}_ts-train-service"/>
+			<string key="service" value="ts-train-service"/>
+			<string key="segmentId" value="b6b1c409080b4d7f89d56f6cefd3cd34.99.16940754143450032"/>
+			<string key="startTime" value="1694075414345"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="endTime" value="1694075414348"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/trainservice/trains/byName/ZhiDa_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414348"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414348"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="4"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414349"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414354"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.100.16940754143500052"/>
+			<string key="startTime" value="1694075414350"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="endTime" value="1694075414354"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="4"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414354"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414354"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414355"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414360"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/priceservice/prices/{routeId}/{trainType}_ts-price-service"/>
+			<string key="service" value="ts-price-service"/>
+			<string key="segmentId" value="d8b1a47e03e746bbb92e5c8e3b28b47f.98.16940754143560008"/>
+			<string key="startTime" value="1694075414356"/>
+			<string key="parentSegmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="endTime" value="1694075414360"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/priceservice/prices/{uuid}/ZhiDa_ts-basic-service_End"/>
+			<string key="service" value="ts-basic-service"/>
+			<string key="segmentId" value="32e996d80d6e4ab78cb7d14f84a31494.99.16940754143330012"/>
+			<string key="startTime" value="1694075414360"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414360"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="4"/>
+			<string key="concept:name" value="/api/v1/basicservice/basic/travel_ts-preserve-other-service_End"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414363"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414363"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/seatservice/seats_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414363"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414375"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/seatservice/seats_ts-seat-service"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.98.16940754143660026"/>
+			<string key="startTime" value="1694075414366"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414374"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.98.16940754143660026"/>
+			<string key="startTime" value="1694075414368"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414373"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/orderOtherService/orderOther/tickets_ts-order-other-service"/>
+			<string key="service" value="ts-order-other-service"/>
+			<string key="segmentId" value="1e430c137f2b44f38e97822a7cea87d9.96.16940754143690058"/>
+			<string key="startTime" value="1694075414369"/>
+			<string key="parentSegmentId" value="772a3a4559af4f29bcc0cebd2060c630.98.16940754143660026"/>
+			<string key="endTime" value="1694075414373"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/tickets_ts-seat-service_End"/>
+			<string key="service" value="ts-seat-service"/>
+			<string key="segmentId" value="772a3a4559af4f29bcc0cebd2060c630.98.16940754143660026"/>
+			<string key="startTime" value="1694075414373"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414373"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/seatservice/seats_ts-preserve-other-service_End"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414374"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414374"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="6"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414375"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414388"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/orderOtherService/orderOther_ts-order-other-service"/>
+			<string key="service" value="ts-order-other-service"/>
+			<string key="segmentId" value="1e430c137f2b44f38e97822a7cea87d9.102.16940754143770056"/>
+			<string key="startTime" value="1694075414377"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414387"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="6"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther_ts-preserve-other-service_End"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414387"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414387"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="7"/>
+			<string key="concept:name" value="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414399"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414730"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/assuranceservice/assurances/{typeIndex}/{orderId}_ts-assurance-service"/>
+			<string key="service" value="ts-assurance-service"/>
+			<string key="segmentId" value="18d12d85e36e44b79ab1db53c6245363.161.16940754147170004"/>
+			<string key="startTime" value="1694075414717"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414730"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="7"/>
+			<string key="concept:name" value="/api/v1/assuranceservice/assurances/1/{uuid}_ts-preserve-other-service_End"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414730"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414730"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/foodservice/orders_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414731"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414749"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/foodservice/orders_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.107.16940754147330002"/>
+			<string key="startTime" value="1694075414733"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414747"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="6"/>
+			<string key="concept:name" value="RabbitMQ/Topic/Queue/food_delivery/Producer_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.107.16940754147330002"/>
+			<string key="startTime" value="1694075414746"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414746"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="RabbitMQ/Topic/Queue/food_delivery/Consumer_ts-delivery-service"/>
+			<string key="service" value="ts-delivery-service"/>
+			<string key="segmentId" value="3e8fcefdb7774447ae85695c40a7f6c9.665808.16940754147470000"/>
+			<string key="startTime" value="1694075414747"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.107.16940754147330002"/>
+			<string key="endTime" value="1694075414747"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/foodservice/orders_ts-preserve-other-service_End"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414747"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414747"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="9"/>
+			<string key="concept:name" value="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414750"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414827"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/userservice/users/id/{userId}_ts-user-service"/>
+			<string key="service" value="ts-user-service"/>
+			<string key="segmentId" value="7b480ac1b9dc4733a3e591b33581ca31.161.16940754148140004"/>
+			<string key="startTime" value="1694075414814"/>
+			<string key="parentSegmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="endTime" value="1694075414826"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="9"/>
+			<string key="concept:name" value="/api/v1/userservice/users/id/{uuid}_ts-preserve-other-service_End"/>
+			<string key="service" value="ts-preserve-other-service"/>
+			<string key="segmentId" value="1014325bdef04c27b616fa05ac4effbf.94.16940754141450002"/>
+			<string key="startTime" value="1694075414826"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075414826"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+</log>

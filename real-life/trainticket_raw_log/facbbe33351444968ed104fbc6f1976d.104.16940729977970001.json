@@ -1,0 +1,146 @@
+{
+  "traceId": "facbbe33351444968ed104fbc6f1976d.104.16940729977970001",
+  "traceSegmentId": "facbbe33351444968ed104fbc6f1976d.104.16940729977970000",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694072997802",
+    "endTime": "1694072997809",
+    "operationName": "/api/v1/verifycode/verify/1234",
+    "peer": "ts-verification-code-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-verification-code-service/api/v1/verifycode/verify/1234"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 2,
+    "startTime": "1694072997810",
+    "endTime": "1694072997810",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 3,
+    "startTime": "1694072997811",
+    "endTime": "1694072997826",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select user0_.user_id as user_id1_0_, user0_.password as password2_0_, user0_.user_name as user_nam3_0_ from auth_user user0_ where user0_.user_name\u003d?"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694072997954",
+    "endTime": "1694072997960",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select roles0_.user_id as user_id1_1_0_, roles0_.roles as roles2_1_0_ from user_roles roles0_ where roles0_.user_id\u003d?"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694072997961",
+    "endTime": "1694072997961",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select user0_.user_id as user_id1_0_, user0_.password as password2_0_, user0_.user_name as user_nam3_0_ from auth_user user0_ where user0_.user_name\u003d?"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694072997965",
+    "endTime": "1694072997965",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694072997797",
+    "endTime": "1694072997965",
+    "operationName": "POST:/api/v1/users/login",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/users/login"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-auth-service",
+  "serviceInstance": "e2317908c02443bda5c43d59c90c0816@10.100.0.209"
+}
+
+{
+  "traceId": "facbbe33351444968ed104fbc6f1976d.104.16940729977970001",
+  "traceSegmentId": "ab95d423e56e4c33b77d9321bbc87d07.96.16940729978040002",
+  "spans": [{
+    "parentSpanId": -1,
+    "startTime": "1694072997804",
+    "endTime": "1694072997808",
+    "refs": [{
+      "traceId": "facbbe33351444968ed104fbc6f1976d.104.16940729977970001",
+      "parentTraceSegmentId": "facbbe33351444968ed104fbc6f1976d.104.16940729977970000",
+      "parentSpanId": 1,
+      "parentService": "ts-auth-service",
+      "parentServiceInstance": "e2317908c02443bda5c43d59c90c0816@10.100.0.209",
+      "parentEndpoint": "POST:/api/v1/users/login",
+      "networkAddressUsedAtPeer": "ts-verification-code-service:80"
+    }],
+    "operationName": "GET:/api/v1/verifycode/verify/{verifyCode}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/verifycode/verify/1234"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }, {
+      "key": "output",
+      "value": "true"
+    }, {
+      "key": "status",
+      "value": "unknown"
+    }]
+  }],
+  "service": "ts-verification-code-service",
+  "serviceInstance": "c1ba87b4b29d4bb48735110f0dbd75a4@10.100.0.143"
+}
+

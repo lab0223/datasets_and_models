@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<trace>
+		<string key="traceId" value="facbbe33351444968ed104fbc6f1976d.104.16940729977970001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/users/login_ts-auth-service"/>
+			<string key="service" value="ts-auth-service"/>
+			<string key="segmentId" value="facbbe33351444968ed104fbc6f1976d.104.16940729977970000"/>
+			<string key="startTime" value="1694072997797"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694072997965"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/verifycode/verify/1234_ts-auth-service"/>
+			<string key="service" value="ts-auth-service"/>
+			<string key="segmentId" value="facbbe33351444968ed104fbc6f1976d.104.16940729977970000"/>
+			<string key="startTime" value="1694072997802"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694072997809"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service"/>
+			<string key="service" value="ts-verification-code-service"/>
+			<string key="segmentId" value="ab95d423e56e4c33b77d9321bbc87d07.96.16940729978040002"/>
+			<string key="startTime" value="1694072997804"/>
+			<string key="parentSegmentId" value="facbbe33351444968ed104fbc6f1976d.104.16940729977970000"/>
+			<string key="endTime" value="1694072997808"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/verifycode/verify/1234_ts-auth-service_End"/>
+			<string key="service" value="ts-auth-service"/>
+			<string key="segmentId" value="facbbe33351444968ed104fbc6f1976d.104.16940729977970000"/>
+			<string key="startTime" value="1694072997808"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694072997808"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="facbbe33351444968ed104fbc6f1976d.98.16940741981060003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/users/login_ts-auth-service"/>
+			<string key="service" value="ts-auth-service"/>
+			<string key="segmentId" value="facbbe33351444968ed104fbc6f1976d.98.16940741981060002"/>
+			<string key="startTime" value="1694074198106"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074198255"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+	</trace>
+</log>

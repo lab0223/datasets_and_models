@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.88.16940748595540001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/prices_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.88.16940748595540000"/>
+			<string key="startTime" value="1694074859554"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074859575"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/priceservice/prices_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.88.16940748595540000"/>
+			<string key="startTime" value="1694074859556"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074859572"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/priceservice/prices_ts-price-service"/>
+			<string key="service" value="ts-price-service"/>
+			<string key="segmentId" value="d8b1a47e03e746bbb92e5c8e3b28b47f.97.16940748595590006"/>
+			<string key="startTime" value="1694074859559"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.88.16940748595540000"/>
+			<string key="endTime" value="1694074859570"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/priceservice/prices_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.88.16940748595540000"/>
+			<string key="startTime" value="1694074859570"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074859570"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940742297160001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/prices_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940742297160000"/>
+			<string key="startTime" value="1694074229716"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074235516"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/priceservice/prices_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940742297160000"/>
+			<string key="startTime" value="1694074229817"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074235415"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/priceservice/prices_ts-price-service"/>
+			<string key="service" value="ts-price-service"/>
+			<string key="segmentId" value="d8b1a47e03e746bbb92e5c8e3b28b47f.93.16940742339590006"/>
+			<string key="startTime" value="1694074233959"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940742297160000"/>
+			<string key="endTime" value="1694074235415"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/priceservice/prices_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940742297160000"/>
+			<string key="startTime" value="1694074235415"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074235415"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940747747650003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940747747650002"/>
+			<string key="startTime" value="1694074774765"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074774788"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940747747650002"/>
+			<string key="startTime" value="1694074774769"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074774786"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/stationservice/stations_ts-station-service"/>
+			<string key="service" value="ts-station-service"/>
+			<string key="segmentId" value="d8b9b1a22a9f405db61b32bdd096d42b.173.16940747747720020"/>
+			<string key="startTime" value="1694074774772"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940747747650002"/>
+			<string key="endTime" value="1694074774786"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.89.16940747747650002"/>
+			<string key="startTime" value="1694074774786"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074774786"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940742306850001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/configs_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940742306850000"/>
+			<string key="startTime" value="1694074230685"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074237421"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/configservice/configs_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940742306850000"/>
+			<string key="startTime" value="1694074230718"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074237419"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/configservice/configs_ts-config-service"/>
+			<string key="service" value="ts-config-service"/>
+			<string key="segmentId" value="809bd20ab18c48b88f5a43080487aa4c.191.16940742339480018"/>
+			<string key="startTime" value="1694074233948"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940742306850000"/>
+			<string key="endTime" value="1694074237419"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/configservice/configs_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940742306850000"/>
+			<string key="startTime" value="1694074237419"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074237419"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940748549840003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/trains_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940748549840002"/>
+			<string key="startTime" value="1694074854984"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074854998"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainservice/trains_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940748549840002"/>
+			<string key="startTime" value="1694074854987"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074854996"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainservice/trains_ts-train-service"/>
+			<string key="service" value="ts-train-service"/>
+			<string key="segmentId" value="b6b1c409080b4d7f89d56f6cefd3cd34.102.16940748549890036"/>
+			<string key="startTime" value="1694074854989"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940748549840002"/>
+			<string key="endTime" value="1694074854996"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainservice/trains_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940748549840002"/>
+			<string key="startTime" value="1694074854996"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074854996"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940749254650005"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940749254650004"/>
+			<string key="startTime" value="1694074925465"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074925481"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940749254650004"/>
+			<string key="startTime" value="1694074925469"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074925479"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/stationservice/stations_ts-station-service"/>
+			<string key="service" value="ts-station-service"/>
+			<string key="segmentId" value="d8b9b1a22a9f405db61b32bdd096d42b.164.16940749254710020"/>
+			<string key="startTime" value="1694074925471"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940749254650004"/>
+			<string key="endTime" value="1694074925479"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.90.16940749254650004"/>
+			<string key="startTime" value="1694074925479"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074925479"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748005470001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748005470000"/>
+			<string key="startTime" value="1694074800547"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074800950"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748005470000"/>
+			<string key="startTime" value="1694074800611"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074800947"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/stationservice/stations_ts-station-service"/>
+			<string key="service" value="ts-station-service"/>
+			<string key="segmentId" value="d8b9b1a22a9f405db61b32bdd096d42b.169.16940748006230020"/>
+			<string key="startTime" value="1694074800623"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748005470000"/>
+			<string key="endTime" value="1694074800947"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748005470000"/>
+			<string key="startTime" value="1694074800947"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074800947"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748685020003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/configs_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748685020002"/>
+			<string key="startTime" value="1694074868502"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074868520"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/configservice/configs_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748685020002"/>
+			<string key="startTime" value="1694074868505"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074868518"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/configservice/configs_ts-config-service"/>
+			<string key="service" value="ts-config-service"/>
+			<string key="segmentId" value="809bd20ab18c48b88f5a43080487aa4c.195.16940748685070012"/>
+			<string key="startTime" value="1694074868507"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748685020002"/>
+			<string key="endTime" value="1694074868517"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/configservice/configs_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.92.16940748685020002"/>
+			<string key="startTime" value="1694074868517"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074868517"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.94.16940748022860001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.94.16940748022860000"/>
+			<string key="startTime" value="1694074802286"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074802308"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.94.16940748022860000"/>
+			<string key="startTime" value="1694074802290"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074802301"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/stationservice/stations_ts-station-service"/>
+			<string key="service" value="ts-station-service"/>
+			<string key="segmentId" value="d8b9b1a22a9f405db61b32bdd096d42b.170.16940748022920022"/>
+			<string key="startTime" value="1694074802292"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.94.16940748022860000"/>
+			<string key="endTime" value="1694074802299"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.94.16940748022860000"/>
+			<string key="startTime" value="1694074802299"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074802299"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.96.16940742266690001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.96.16940742266690000"/>
+			<string key="startTime" value="1694074226670"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074235322"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.96.16940742266690000"/>
+			<string key="startTime" value="1694074228918"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074234716"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/stationservice/stations_ts-station-service"/>
+			<string key="service" value="ts-station-service"/>
+			<string key="segmentId" value="d8b9b1a22a9f405db61b32bdd096d42b.167.16940742339200010"/>
+			<string key="startTime" value="1694074233920"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.96.16940742266690000"/>
+			<string key="endTime" value="1694074233929"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/stationservice/stations_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.96.16940742266690000"/>
+			<string key="startTime" value="1694074233929"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074233929"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="cf5c0009be3b4798a3821b8426cf02af.97.16940742283160001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminbasicservice/adminbasic/trains_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.97.16940742283160000"/>
+			<string key="startTime" value="1694074228316"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074235318"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainservice/trains_ts-admin-basic-info-service"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.97.16940742283160000"/>
+			<string key="startTime" value="1694074228918"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074234716"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainservice/trains_ts-train-service"/>
+			<string key="service" value="ts-train-service"/>
+			<string key="segmentId" value="b6b1c409080b4d7f89d56f6cefd3cd34.104.16940742340160020"/>
+			<string key="startTime" value="1694074234016"/>
+			<string key="parentSegmentId" value="cf5c0009be3b4798a3821b8426cf02af.97.16940742283160000"/>
+			<string key="endTime" value="1694074234026"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainservice/trains_ts-admin-basic-info-service_End"/>
+			<string key="service" value="ts-admin-basic-info-service"/>
+			<string key="segmentId" value="cf5c0009be3b4798a3821b8426cf02af.97.16940742283160000"/>
+			<string key="startTime" value="1694074234026"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074234026"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+</log>

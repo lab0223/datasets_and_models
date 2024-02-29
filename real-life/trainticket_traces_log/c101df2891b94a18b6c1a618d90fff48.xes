@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<trace>
+		<string key="traceId" value="c101df2891b94a18b6c1a618d90fff48.103.16940748788960001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminuserservice/users_ts-admin-user-service"/>
+			<string key="service" value="ts-admin-user-service"/>
+			<string key="segmentId" value="c101df2891b94a18b6c1a618d90fff48.103.16940748788960000"/>
+			<string key="startTime" value="1694074878896"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074878916"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/userservice/users_ts-admin-user-service"/>
+			<string key="service" value="ts-admin-user-service"/>
+			<string key="segmentId" value="c101df2891b94a18b6c1a618d90fff48.103.16940748788960000"/>
+			<string key="startTime" value="1694074878900"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074878913"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/userservice/users_ts-user-service"/>
+			<string key="service" value="ts-user-service"/>
+			<string key="segmentId" value="7b480ac1b9dc4733a3e591b33581ca31.157.16940748789020002"/>
+			<string key="startTime" value="1694074878902"/>
+			<string key="parentSegmentId" value="c101df2891b94a18b6c1a618d90fff48.103.16940748788960000"/>
+			<string key="endTime" value="1694074878913"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/userservice/users_ts-admin-user-service_End"/>
+			<string key="service" value="ts-admin-user-service"/>
+			<string key="segmentId" value="c101df2891b94a18b6c1a618d90fff48.103.16940748788960000"/>
+			<string key="startTime" value="1694074878913"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074878913"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="c101df2891b94a18b6c1a618d90fff48.94.16940742242140001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminuserservice/users_ts-admin-user-service"/>
+			<string key="service" value="ts-admin-user-service"/>
+			<string key="segmentId" value="c101df2891b94a18b6c1a618d90fff48.94.16940742242140000"/>
+			<string key="startTime" value="1694074224215"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074230814"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/userservice/users_ts-admin-user-service"/>
+			<string key="service" value="ts-admin-user-service"/>
+			<string key="segmentId" value="c101df2891b94a18b6c1a618d90fff48.94.16940742242140000"/>
+			<string key="startTime" value="1694074226421"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074230615"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/userservice/users_ts-user-service"/>
+			<string key="service" value="ts-user-service"/>
+			<string key="segmentId" value="7b480ac1b9dc4733a3e591b33581ca31.165.16940742302350000"/>
+			<string key="startTime" value="1694074230235"/>
+			<string key="parentSegmentId" value="c101df2891b94a18b6c1a618d90fff48.94.16940742242140000"/>
+			<string key="endTime" value="1694074230242"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/userservice/users_ts-admin-user-service_End"/>
+			<string key="service" value="ts-admin-user-service"/>
+			<string key="segmentId" value="c101df2891b94a18b6c1a618d90fff48.94.16940742242140000"/>
+			<string key="startTime" value="1694074230242"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074230242"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="c101df2891b94a18b6c1a618d90fff48.95.16940747091840001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/adminuserservice/users_ts-admin-user-service"/>
+			<string key="service" value="ts-admin-user-service"/>
+			<string key="segmentId" value="c101df2891b94a18b6c1a618d90fff48.95.16940747091840000"/>
+			<string key="startTime" value="1694074709184"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074709202"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/userservice/users_ts-admin-user-service"/>
+			<string key="service" value="ts-admin-user-service"/>
+			<string key="segmentId" value="c101df2891b94a18b6c1a618d90fff48.95.16940747091840000"/>
+			<string key="startTime" value="1694074709190"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074709199"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/userservice/users_ts-user-service"/>
+			<string key="service" value="ts-user-service"/>
+			<string key="segmentId" value="7b480ac1b9dc4733a3e591b33581ca31.158.16940747091920000"/>
+			<string key="startTime" value="1694074709192"/>
+			<string key="parentSegmentId" value="c101df2891b94a18b6c1a618d90fff48.95.16940747091840000"/>
+			<string key="endTime" value="1694074709198"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/userservice/users_ts-admin-user-service_End"/>
+			<string key="service" value="ts-admin-user-service"/>
+			<string key="segmentId" value="c101df2891b94a18b6c1a618d90fff48.95.16940747091840000"/>
+			<string key="startTime" value="1694074709198"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074709198"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+</log>

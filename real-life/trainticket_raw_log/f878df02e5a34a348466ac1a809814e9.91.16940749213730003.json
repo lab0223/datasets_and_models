@@ -1,0 +1,149 @@
+{
+  "traceId": "f878df02e5a34a348466ac1a809814e9.91.16940749213730003",
+  "traceSegmentId": "f878df02e5a34a348466ac1a809814e9.91.16940749213730002",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694074921377",
+    "endTime": "1694074921924",
+    "operationName": "/api/v1/stationservice/stations/idlist",
+    "peer": "ts-station-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-station-service/api/v1/stationservice/stations/idlist"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 2,
+    "startTime": "1694074921944",
+    "endTime": "1694074922035",
+    "operationName": "/api/v1/routeservice/routes",
+    "peer": "ts-route-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-route-service/api/v1/routeservice/routes"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694074921373",
+    "endTime": "1694074922037",
+    "operationName": "POST:/api/v1/adminrouteservice/adminroute",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/adminrouteservice/adminroute"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-admin-route-service",
+  "serviceInstance": "aceb3c70ed2f434c9a77ba1c34ee394b@10.100.0.190"
+}
+
+{
+  "traceId": "f878df02e5a34a348466ac1a809814e9.91.16940749213730003",
+  "traceSegmentId": "d8b9b1a22a9f405db61b32bdd096d42b.173.16940749219180022",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694074921921",
+    "endTime": "1694074921921",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694074921921",
+    "endTime": "1694074921922",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "SELECT * from station where name in (?, ?)"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694074921923",
+    "endTime": "1694074921923",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694074921918",
+    "endTime": "1694074921923",
+    "refs": [{
+      "traceId": "f878df02e5a34a348466ac1a809814e9.91.16940749213730003",
+      "parentTraceSegmentId": "f878df02e5a34a348466ac1a809814e9.91.16940749213730002",
+      "parentSpanId": 1,
+      "parentService": "ts-admin-route-service",
+      "parentServiceInstance": "aceb3c70ed2f434c9a77ba1c34ee394b@10.100.0.190",
+      "parentEndpoint": "POST:/api/v1/adminrouteservice/adminroute",
+      "networkAddressUsedAtPeer": "ts-station-service:80"
+    }],
+    "operationName": "POST:/api/v1/stationservice/stations/idlist",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.166:12345/api/v1/stationservice/stations/idlist"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-station-service",
+  "serviceInstance": "f612cdf3781f4d4793009618071a4f80@10.100.0.166"
+}
+
+{
+  "traceId": "f878df02e5a34a348466ac1a809814e9.91.16940749213730003",
+  "traceSegmentId": "ee494ded0c4e423f872c427869ebd1ca.108.16940749220250040",
+  "spans": [{
+    "parentSpanId": -1,
+    "startTime": "1694074922025",
+    "endTime": "1694074922034",
+    "refs": [{
+      "traceId": "f878df02e5a34a348466ac1a809814e9.91.16940749213730003",
+      "parentTraceSegmentId": "f878df02e5a34a348466ac1a809814e9.91.16940749213730002",
+      "parentSpanId": 2,
+      "parentService": "ts-admin-route-service",
+      "parentServiceInstance": "aceb3c70ed2f434c9a77ba1c34ee394b@10.100.0.190",
+      "parentEndpoint": "POST:/api/v1/adminrouteservice/adminroute",
+      "networkAddressUsedAtPeer": "ts-route-service:80"
+    }],
+    "operationName": "POST:/api/v1/routeservice/routes",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.155:11178/api/v1/routeservice/routes"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-route-service",
+  "serviceInstance": "18568b4f1fd24484979df9cad0ed9136@10.100.0.155"
+}
+

@@ -1,0 +1,22 @@
+{
+  "traceId": "f878df02e5a34a348466ac1a809814e9.99.16940749065720005",
+  "traceSegmentId": "f878df02e5a34a348466ac1a809814e9.99.16940749065720004",
+  "spans": [{
+    "parentSpanId": -1,
+    "startTime": "1694074906573",
+    "endTime": "1694074906578",
+    "operationName": "POST:/api/v1/adminrouteservice/adminroute",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/adminrouteservice/adminroute"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-admin-route-service",
+  "serviceInstance": "aceb3c70ed2f434c9a77ba1c34ee394b@10.100.0.190"
+}
+

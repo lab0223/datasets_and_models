@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>facbbe33351444968ed104fbc6f1976d.104.16940729977970001_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="PPOST:/api/v1/users/login_ts-auth-service_/api/v1/verifycode/verify/1234_ts-auth-service"/>
+      <place id="P/api/v1/verifycode/verify/1234_ts-auth-service_GET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service"/>
+      <place id="PGET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service_/api/v1/verifycode/verify/1234_ts-auth-service_End"/>
+      <place id="P/api/v1/verifycode/verify/1234_ts-auth-service_/api/v1/verifycode/verify/1234_ts-auth-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="POST:/api/v1/users/login_ts-auth-service"/>
+      <transition id="/api/v1/verifycode/verify/1234_ts-auth-service"/>
+      <transition id="GET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service"/>
+      <transition id="/api/v1/verifycode/verify/1234_ts-auth-service_End"/>
+      <arc id="a0" source="POST:/api/v1/users/login_ts-auth-service" target="PPOST:/api/v1/users/login_ts-auth-service_/api/v1/verifycode/verify/1234_ts-auth-service"/>
+      <arc id="a1" source="PPOST:/api/v1/users/login_ts-auth-service_/api/v1/verifycode/verify/1234_ts-auth-service" target="/api/v1/verifycode/verify/1234_ts-auth-service"/>
+      <arc id="a2" source="/api/v1/verifycode/verify/1234_ts-auth-service" target="P/api/v1/verifycode/verify/1234_ts-auth-service_GET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service"/>
+      <arc id="a3" source="P/api/v1/verifycode/verify/1234_ts-auth-service_GET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service" target="GET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service"/>
+      <arc id="a4" source="GET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service" target="PGET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service_/api/v1/verifycode/verify/1234_ts-auth-service_End"/>
+      <arc id="a5" source="PGET:/api/v1/verifycode/verify/{verifyCode}_ts-verification-code-service_/api/v1/verifycode/verify/1234_ts-auth-service_End" target="/api/v1/verifycode/verify/1234_ts-auth-service_End"/>
+      <arc id="a6" source="/api/v1/verifycode/verify/1234_ts-auth-service" target="P/api/v1/verifycode/verify/1234_ts-auth-service_/api/v1/verifycode/verify/1234_ts-auth-service_End"/>
+      <arc id="a7" source="P/api/v1/verifycode/verify/1234_ts-auth-service_/api/v1/verifycode/verify/1234_ts-auth-service_End" target="/api/v1/verifycode/verify/1234_ts-auth-service_End"/>
+      <arc id="a8" source="Start" target="POST:/api/v1/users/login_ts-auth-service"/>
+      <arc id="a9" source="/api/v1/verifycode/verify/1234_ts-auth-service_End" target="End"/>
+      <arc id="a10" source="POST:/api/v1/users/login_ts-auth-service" target="End"/>
+    </page>
+  </net>
+</pnml>

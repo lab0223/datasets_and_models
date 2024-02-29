@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<trace>
+		<string key="traceId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="startTime" value="1694075466659"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075466724"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="startTime" value="1694075466662"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075466670"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.104.16940754666640072"/>
+			<string key="startTime" value="1694075466664"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="endTime" value="1694075466669"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="startTime" value="1694075466669"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075466669"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="startTime" value="1694075466673"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075466689"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+			<string key="service" value="ts-payment-service"/>
+			<string key="segmentId" value="e1b375437de3438fa1552026edaa0cfe.115.16940754666770000"/>
+			<string key="startTime" value="1694075466677"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="endTime" value="1694075466689"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="startTime" value="1694075466689"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075466689"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="startTime" value="1694075466692"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075466723"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.101.16940754667140078"/>
+			<string key="startTime" value="1694075466714"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="endTime" value="1694075466721"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.100.16940754666590002"/>
+			<string key="startTime" value="1694075466721"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075466721"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="startTime" value="1694073351136"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073351214"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="startTime" value="1694073351140"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073351149"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.107.16940733511430014"/>
+			<string key="startTime" value="1694073351143"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="endTime" value="1694073351149"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="startTime" value="1694073351149"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073351149"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="startTime" value="1694073351153"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073351171"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+			<string key="service" value="ts-payment-service"/>
+			<string key="segmentId" value="e1b375437de3438fa1552026edaa0cfe.114.16940733511560000"/>
+			<string key="startTime" value="1694073351156"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="endTime" value="1694073351171"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="startTime" value="1694073351171"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073351171"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="startTime" value="1694073351175"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073351185"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.106.16940733511760012"/>
+			<string key="startTime" value="1694073351176"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="endTime" value="1694073351184"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940733511360000"/>
+			<string key="startTime" value="1694073351184"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073351184"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060007"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="startTime" value="1694075568206"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075568247"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="startTime" value="1694075568209"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075568216"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.103.16940755682110070"/>
+			<string key="startTime" value="1694075568211"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="endTime" value="1694075568215"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="startTime" value="1694075568215"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075568215"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="startTime" value="1694075568220"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075568234"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+			<string key="service" value="ts-payment-service"/>
+			<string key="segmentId" value="e1b375437de3438fa1552026edaa0cfe.108.16940755682220000"/>
+			<string key="startTime" value="1694075568222"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="endTime" value="1694075568234"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="startTime" value="1694075568234"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075568234"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="startTime" value="1694075568237"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075568245"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.102.16940755682390062"/>
+			<string key="startTime" value="1694075568239"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="endTime" value="1694075568244"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.101.16940755682060006"/>
+			<string key="startTime" value="1694075568244"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075568244"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="startTime" value="1694073970728"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073970815"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="startTime" value="1694073970732"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073970741"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.103.16940739707350028"/>
+			<string key="startTime" value="1694073970735"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="endTime" value="1694073970741"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="startTime" value="1694073970741"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073970741"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="startTime" value="1694073970745"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073970765"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+			<string key="service" value="ts-payment-service"/>
+			<string key="segmentId" value="e1b375437de3438fa1552026edaa0cfe.110.16940739707500000"/>
+			<string key="startTime" value="1694073970750"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="endTime" value="1694073970764"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="startTime" value="1694073970764"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073970764"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="startTime" value="1694073970769"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073970780"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.102.16940739707710030"/>
+			<string key="startTime" value="1694073970771"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="endTime" value="1694073970779"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940739707280002"/>
+			<string key="startTime" value="1694073970779"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073970779"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400005"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="startTime" value="1694075425840"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075426325"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="startTime" value="1694075425845"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075426125"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+			<string key="service" value="ts-order-other-service"/>
+			<string key="segmentId" value="1e430c137f2b44f38e97822a7cea87d9.101.16940754261190048"/>
+			<string key="startTime" value="1694075426119"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="endTime" value="1694075426124"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="startTime" value="1694075426124"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075426124"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="startTime" value="1694075426219"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075426233"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+			<string key="service" value="ts-payment-service"/>
+			<string key="segmentId" value="e1b375437de3438fa1552026edaa0cfe.110.16940754262210002"/>
+			<string key="startTime" value="1694075426221"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="endTime" value="1694075426233"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="startTime" value="1694075426233"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075426233"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="startTime" value="1694075426238"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075426323"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+			<string key="service" value="ts-order-other-service"/>
+			<string key="segmentId" value="1e430c137f2b44f38e97822a7cea87d9.98.16940754263140042"/>
+			<string key="startTime" value="1694075426314"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="endTime" value="1694075426322"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.103.16940754258400004"/>
+			<string key="startTime" value="1694075426322"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075426322"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="startTime" value="1694073207174"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073207313"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="startTime" value="1694073207179"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073207190"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.110.16940732071820008"/>
+			<string key="startTime" value="1694073207182"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="endTime" value="1694073207190"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="startTime" value="1694073207190"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073207190"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="startTime" value="1694073207196"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073207218"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+			<string key="service" value="ts-payment-service"/>
+			<string key="segmentId" value="e1b375437de3438fa1552026edaa0cfe.107.16940732072000000"/>
+			<string key="startTime" value="1694073207201"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="endTime" value="1694073207217"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="startTime" value="1694073207217"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073207217"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="startTime" value="1694073207221"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073207234"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.101.16940732072230012"/>
+			<string key="startTime" value="1694073207223"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="endTime" value="1694073207234"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.106.16940732071740000"/>
+			<string key="startTime" value="1694073207234"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073207234"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490005"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="startTime" value="1694074081149"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074081215"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="startTime" value="1694074081153"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074081162"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.110.16940740811550036"/>
+			<string key="startTime" value="1694074081155"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="endTime" value="1694074081160"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="startTime" value="1694074081160"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074081160"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="startTime" value="1694074081166"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074081181"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+			<string key="service" value="ts-payment-service"/>
+			<string key="segmentId" value="e1b375437de3438fa1552026edaa0cfe.113.16940740811690000"/>
+			<string key="startTime" value="1694074081169"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="endTime" value="1694074081181"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="startTime" value="1694074081181"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074081181"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="startTime" value="1694074081184"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074081194"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.111.16940740811860040"/>
+			<string key="startTime" value="1694074081186"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="endTime" value="1694074081193"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.107.16940740811490004"/>
+			<string key="startTime" value="1694074081193"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074081193"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="startTime" value="1694073055829"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073069985"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="startTime" value="1694073059418"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073065342"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.102.16940730652320002"/>
+			<string key="startTime" value="1694073065232"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="endTime" value="1694073065264"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="startTime" value="1694073065264"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073065264"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="startTime" value="1694073065493"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073069737"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+			<string key="service" value="ts-payment-service"/>
+			<string key="segmentId" value="e1b375437de3438fa1552026edaa0cfe.112.16940730663630000"/>
+			<string key="startTime" value="1694073066368"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="endTime" value="1694073069737"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="startTime" value="1694073069737"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073069737"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="startTime" value="1694073069885"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073069966"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.104.16940730698880004"/>
+			<string key="startTime" value="1694073069888"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="endTime" value="1694073069966"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940730558200000"/>
+			<string key="startTime" value="1694073069966"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073069966"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840009"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="startTime" value="1694073665884"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073665936"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="startTime" value="1694073665891"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073665899"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.102.16940736658940022"/>
+			<string key="startTime" value="1694073665894"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="endTime" value="1694073665899"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="startTime" value="1694073665899"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073665899"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="startTime" value="1694073665903"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073665921"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+			<string key="service" value="ts-payment-service"/>
+			<string key="segmentId" value="e1b375437de3438fa1552026edaa0cfe.107.16940736659060002"/>
+			<string key="startTime" value="1694073665906"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="endTime" value="1694073665921"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="5"/>
+			<string key="concept:name" value="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="startTime" value="1694073665921"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073665921"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="startTime" value="1694073665924"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073665934"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+			<string key="service" value="ts-order-service"/>
+			<string key="segmentId" value="bfa9e6006cd74ab6b7736607e50da334.104.16940736659260024"/>
+			<string key="startTime" value="1694073665926"/>
+			<string key="parentSegmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="endTime" value="1694073665934"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="8"/>
+			<string key="concept:name" value="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+			<string key="service" value="ts-inside-payment-service"/>
+			<string key="segmentId" value="e94e763e604646dca897f2ac742464b5.108.16940736658840008"/>
+			<string key="startTime" value="1694073665934"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073665934"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+</log>

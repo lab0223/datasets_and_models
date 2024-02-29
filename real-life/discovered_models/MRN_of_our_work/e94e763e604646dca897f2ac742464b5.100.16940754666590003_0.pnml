@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>e94e763e604646dca897f2ac742464b5.100.16940754666590003_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="PPOST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service"/>
+      <place id="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <place id="PGET:/api/v1/orderservice/order/{orderId}_ts-order-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+      <place id="P/api/v1/paymentservice/payment_ts-inside-payment-service_POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+      <place id="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End_/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+      <place id="PPOST:/api/v1/paymentservice/payment_ts-payment-service_/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+      <place id="P/api/v1/paymentservice/payment_ts-inside-payment-service_End_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service"/>
+      <place id="P/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+      <place id="PGET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <place id="PGET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+      <place id="PGET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service_/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <place id="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+      <place id="P/api/v1/paymentservice/payment_ts-inside-payment-service_/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+      <place id="P/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End"/>
+      <place id="P/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+      <transition id="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+      <transition id="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <transition id="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+      <transition id="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+      <transition id="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+      <transition id="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+      <transition id="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+      <transition id="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+      <transition id="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <transition id="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service"/>
+      <transition id="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End"/>
+      <transition id="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service"/>
+      <transition id="GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+      <transition id="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <arc id="a0" source="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service" target="PPOST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service"/>
+      <arc id="a1" source="PPOST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service" target="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service"/>
+      <arc id="a2" source="PPOST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service" target="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service"/>
+      <arc id="a3" source="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service" target="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <arc id="a4" source="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_GET:/api/v1/orderservice/order/{orderId}_ts-order-service" target="GET:/api/v1/orderservice/order/{orderId}_ts-order-service"/>
+      <arc id="a5" source="GET:/api/v1/orderservice/order/{orderId}_ts-order-service" target="PGET:/api/v1/orderservice/order/{orderId}_ts-order-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+      <arc id="a6" source="PGET:/api/v1/orderservice/order/{orderId}_ts-order-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End" target="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+      <arc id="a7" source="/api/v1/paymentservice/payment_ts-inside-payment-service" target="P/api/v1/paymentservice/payment_ts-inside-payment-service_POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+      <arc id="a8" source="P/api/v1/paymentservice/payment_ts-inside-payment-service_POST:/api/v1/paymentservice/payment_ts-payment-service" target="POST:/api/v1/paymentservice/payment_ts-payment-service"/>
+      <arc id="a9" source="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End" target="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End_/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+      <arc id="a10" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End" target="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End_/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+      <arc id="a11" source="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End_/api/v1/paymentservice/payment_ts-inside-payment-service" target="/api/v1/paymentservice/payment_ts-inside-payment-service"/>
+      <arc id="a12" source="POST:/api/v1/paymentservice/payment_ts-payment-service" target="PPOST:/api/v1/paymentservice/payment_ts-payment-service_/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+      <arc id="a13" source="PPOST:/api/v1/paymentservice/payment_ts-payment-service_/api/v1/paymentservice/payment_ts-inside-payment-service_End" target="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+      <arc id="a14" source="/api/v1/paymentservice/payment_ts-inside-payment-service_End" target="P/api/v1/paymentservice/payment_ts-inside-payment-service_End_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service"/>
+      <arc id="a15" source="P/api/v1/paymentservice/payment_ts-inside-payment-service_End_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service" target="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service"/>
+      <arc id="a16" source="P/api/v1/paymentservice/payment_ts-inside-payment-service_End_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service" target="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service"/>
+      <arc id="a17" source="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service" target="P/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+      <arc id="a18" source="P/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service" target="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service"/>
+      <arc id="a19" source="GET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service" target="PGET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <arc id="a20" source="PGET:/api/v1/orderservice/order/status/{orderId}/{status}_ts-order-service_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End" target="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <arc id="a21" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service" target="P/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <arc id="a22" source="P/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service" target="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service"/>
+      <arc id="a23" source="GET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service" target="PGET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End"/>
+      <arc id="a24" source="PGET:/api/v1/orderOtherService/orderOther/{orderId}_ts-order-other-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End" target="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End"/>
+      <arc id="a25" source="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service" target="P/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+      <arc id="a26" source="P/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service" target="GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service"/>
+      <arc id="a27" source="GET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service" target="PGET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service_/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <arc id="a28" source="PGET:/api/v1/orderOtherService/orderOther/status/{orderId}/{status}_ts-order-other-service_/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End" target="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <arc id="a29" source="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service" target="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+      <arc id="a30" source="P/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End" target="/api/v1/orderservice/order/{uuid}_ts-inside-payment-service_End"/>
+      <arc id="a31" source="/api/v1/paymentservice/payment_ts-inside-payment-service" target="P/api/v1/paymentservice/payment_ts-inside-payment-service_/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+      <arc id="a32" source="P/api/v1/paymentservice/payment_ts-inside-payment-service_/api/v1/paymentservice/payment_ts-inside-payment-service_End" target="/api/v1/paymentservice/payment_ts-inside-payment-service_End"/>
+      <arc id="a33" source="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service" target="P/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <arc id="a34" source="P/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End" target="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <arc id="a35" source="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service" target="P/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End"/>
+      <arc id="a36" source="P/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End" target="/api/v1/orderOtherService/orderOther/{uuid}_ts-inside-payment-service_End"/>
+      <arc id="a37" source="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service" target="P/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <arc id="a38" source="P/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End" target="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End"/>
+      <arc id="a39" source="Start" target="POST:/api/v1/inside_pay_service/inside_payment_ts-inside-payment-service"/>
+      <arc id="a40" source="/api/v1/orderservice/order/status/{uuid}/1_ts-inside-payment-service_End" target="End"/>
+      <arc id="a41" source="/api/v1/orderOtherService/orderOther/status/{uuid}/1_ts-inside-payment-service_End" target="End"/>
+    </page>
+  </net>
+</pnml>

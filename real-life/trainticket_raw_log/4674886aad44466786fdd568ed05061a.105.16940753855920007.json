@@ -1,0 +1,102 @@
+{
+  "traceId": "4674886aad44466786fdd568ed05061a.105.16940753855920007",
+  "traceSegmentId": "4674886aad44466786fdd568ed05061a.105.16940753855920006",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075385596",
+    "endTime": "1694075385606",
+    "operationName": "/api/v1/trainfoodservice/trainfoods/Z1234",
+    "peer": "ts-train-food-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-train-food-service/api/v1/trainfoodservice/trainfoods/Z1234"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075385592",
+    "endTime": "1694075385608",
+    "operationName": "GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/foodservice/foods/2023-09-14/shanghai/nanjing/Z1234"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-food-service",
+  "serviceInstance": "b7d2ee48ae6a4dbca0dff64622b0714d@10.100.0.136"
+}
+
+{
+  "traceId": "4674886aad44466786fdd568ed05061a.105.16940753855920007",
+  "traceSegmentId": "0819b4b8598b416f9dd2fb76d3a8000a.110.16940753855970004",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694075385601",
+    "endTime": "1694075385603",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694075385603",
+    "endTime": "1694075385603",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select trainfood0_.id as id1_1_, trainfood0_.trip_id as trip_id2_1_ from train_food trainfood0_ where trainfood0_.trip_id\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694075385605",
+    "endTime": "1694075385605",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694075385597",
+    "endTime": "1694075385605",
+    "refs": [{
+      "traceId": "4674886aad44466786fdd568ed05061a.105.16940753855920007",
+      "parentTraceSegmentId": "4674886aad44466786fdd568ed05061a.105.16940753855920006",
+      "parentSpanId": 1,
+      "parentService": "ts-food-service",
+      "parentServiceInstance": "b7d2ee48ae6a4dbca0dff64622b0714d@10.100.0.136",
+      "parentEndpoint": "GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}",
+      "networkAddressUsedAtPeer": "ts-train-food-service:80"
+    }],
+    "operationName": "GET:/api/v1/trainfoodservice/trainfoods/{tripId}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://10.100.0.180:19999/api/v1/trainfoodservice/trainfoods/Z1234"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-train-food-service",
+  "serviceInstance": "df52afce4b6a421cb3c08442a83a94d0@10.100.0.180"
+}
+

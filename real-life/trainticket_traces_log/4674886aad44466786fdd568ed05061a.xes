@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<trace>
+		<string key="traceId" value="4674886aad44466786fdd568ed05061a.101.16940739503410005"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="startTime" value="1694073950341"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073950417"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="startTime" value="1694073950345"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073950356"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+			<string key="service" value="ts-train-food-service"/>
+			<string key="segmentId" value="0819b4b8598b416f9dd2fb76d3a8000a.103.16940739503480000"/>
+			<string key="startTime" value="1694073950348"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="endTime" value="1694073950355"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="startTime" value="1694073950355"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073950355"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/G1234_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="startTime" value="1694073950356"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073950372"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.100.16940739503580008"/>
+			<string key="startTime" value="1694073950358"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="endTime" value="1694073950372"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.100.16940739503580008"/>
+			<string key="startTime" value="1694073950362"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="endTime" value="1694073950370"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.101.16940739503640016"/>
+			<string key="startTime" value="1694073950364"/>
+			<string key="parentSegmentId" value="4833f96d5488463992c4954aa46d7971.100.16940739503580008"/>
+			<string key="endTime" value="1694073950369"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.100.16940739503580008"/>
+			<string key="startTime" value="1694073950369"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="endTime" value="1694073950369"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/G1234_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="startTime" value="1694073950372"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073950372"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="startTime" value="1694073950372"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073950414"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+			<string key="service" value="ts-station-food-service"/>
+			<string key="segmentId" value="a9d87e5bbf4240fa8bba356401d071a5.178.16940739503760000"/>
+			<string key="startTime" value="1694073950376"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="endTime" value="1694073950414"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.101.16940739503410004"/>
+			<string key="startTime" value="1694073950414"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073950414"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="4674886aad44466786fdd568ed05061a.102.16940740034590001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="startTime" value="1694074003459"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074003510"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="startTime" value="1694074003463"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074003475"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+			<string key="service" value="ts-train-food-service"/>
+			<string key="segmentId" value="0819b4b8598b416f9dd2fb76d3a8000a.109.16940740034670000"/>
+			<string key="startTime" value="1694074003467"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="endTime" value="1694074003474"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="startTime" value="1694074003474"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074003474"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/G1235_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="startTime" value="1694074003475"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074003494"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.102.16940740034810014"/>
+			<string key="startTime" value="1694074003481"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="endTime" value="1694074003494"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.102.16940740034810014"/>
+			<string key="startTime" value="1694074003484"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="endTime" value="1694074003492"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.100.16940740034860020"/>
+			<string key="startTime" value="1694074003486"/>
+			<string key="parentSegmentId" value="4833f96d5488463992c4954aa46d7971.102.16940740034810014"/>
+			<string key="endTime" value="1694074003491"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.102.16940740034810014"/>
+			<string key="startTime" value="1694074003491"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="endTime" value="1694074003491"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/G1235_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="startTime" value="1694074003494"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074003494"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="startTime" value="1694074003494"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074003509"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+			<string key="service" value="ts-station-food-service"/>
+			<string key="segmentId" value="a9d87e5bbf4240fa8bba356401d071a5.174.16940740034980002"/>
+			<string key="startTime" value="1694074003498"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="endTime" value="1694074003508"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940740034590000"/>
+			<string key="startTime" value="1694074003508"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694074003508"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="4674886aad44466786fdd568ed05061a.102.16940754382270003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="startTime" value="1694075438227"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075438344"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="startTime" value="1694075438232"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075438243"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+			<string key="service" value="ts-train-food-service"/>
+			<string key="segmentId" value="0819b4b8598b416f9dd2fb76d3a8000a.106.16940754382360004"/>
+			<string key="startTime" value="1694075438236"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="endTime" value="1694075438242"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="startTime" value="1694075438242"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075438242"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="startTime" value="1694075438313"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075438328"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.99.16940754383150010"/>
+			<string key="startTime" value="1694075438315"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="endTime" value="1694075438327"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.99.16940754383150010"/>
+			<string key="startTime" value="1694075438319"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="endTime" value="1694075438326"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.105.16940754383210046"/>
+			<string key="startTime" value="1694075438321"/>
+			<string key="parentSegmentId" value="4833f96d5488463992c4954aa46d7971.99.16940754383150010"/>
+			<string key="endTime" value="1694075438325"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.99.16940754383150010"/>
+			<string key="startTime" value="1694075438325"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="endTime" value="1694075438325"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="startTime" value="1694075438327"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075438327"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="startTime" value="1694075438328"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075438342"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+			<string key="service" value="ts-station-food-service"/>
+			<string key="segmentId" value="a9d87e5bbf4240fa8bba356401d071a5.180.16940754383310000"/>
+			<string key="startTime" value="1694075438331"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="endTime" value="1694075438342"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.102.16940754382270002"/>
+			<string key="startTime" value="1694075438342"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075438342"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="4674886aad44466786fdd568ed05061a.104.16940754834940003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="startTime" value="1694075483494"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075483539"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="startTime" value="1694075483497"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075483507"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+			<string key="service" value="ts-train-food-service"/>
+			<string key="segmentId" value="0819b4b8598b416f9dd2fb76d3a8000a.101.16940754835000002"/>
+			<string key="startTime" value="1694075483500"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="endTime" value="1694075483505"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="startTime" value="1694075483505"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075483505"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="startTime" value="1694075483507"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075483524"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.102.16940754835100022"/>
+			<string key="startTime" value="1694075483510"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="endTime" value="1694075483523"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.102.16940754835100022"/>
+			<string key="startTime" value="1694075483513"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="endTime" value="1694075483522"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.103.16940754835160042"/>
+			<string key="startTime" value="1694075483517"/>
+			<string key="parentSegmentId" value="4833f96d5488463992c4954aa46d7971.102.16940754835100022"/>
+			<string key="endTime" value="1694075483521"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.102.16940754835100022"/>
+			<string key="startTime" value="1694075483521"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="endTime" value="1694075483521"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="startTime" value="1694075483523"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075483523"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="startTime" value="1694075483524"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075483537"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+			<string key="service" value="ts-station-food-service"/>
+			<string key="segmentId" value="a9d87e5bbf4240fa8bba356401d071a5.175.16940754835280000"/>
+			<string key="startTime" value="1694075483528"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="endTime" value="1694075483537"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.104.16940754834940002"/>
+			<string key="startTime" value="1694075483537"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075483537"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="4674886aad44466786fdd568ed05061a.105.16940730188370003"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="startTime" value="1694073018837"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073018936"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="startTime" value="1694073018842"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073018873"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+			<string key="service" value="ts-train-food-service"/>
+			<string key="segmentId" value="0819b4b8598b416f9dd2fb76d3a8000a.102.16940730188460000"/>
+			<string key="startTime" value="1694073018846"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="endTime" value="1694073018871"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="startTime" value="1694073018871"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073018871"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="startTime" value="1694073018873"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073018898"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.106.16940730188760002"/>
+			<string key="startTime" value="1694073018876"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="endTime" value="1694073018898"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.106.16940730188760002"/>
+			<string key="startTime" value="1694073018881"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="endTime" value="1694073018893"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.107.16940730188830004"/>
+			<string key="startTime" value="1694073018883"/>
+			<string key="parentSegmentId" value="4833f96d5488463992c4954aa46d7971.106.16940730188760002"/>
+			<string key="endTime" value="1694073018892"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.106.16940730188760002"/>
+			<string key="startTime" value="1694073018892"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="endTime" value="1694073018892"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="startTime" value="1694073018898"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073018898"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="startTime" value="1694073018898"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073018932"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+			<string key="service" value="ts-station-food-service"/>
+			<string key="segmentId" value="a9d87e5bbf4240fa8bba356401d071a5.177.16940730189010002"/>
+			<string key="startTime" value="1694073018901"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="endTime" value="1694073018931"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940730188370002"/>
+			<string key="startTime" value="1694073018931"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073018931"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="4674886aad44466786fdd568ed05061a.105.16940731753230005"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="startTime" value="1694073175323"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073175415"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="startTime" value="1694073175326"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073175339"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+			<string key="service" value="ts-train-food-service"/>
+			<string key="segmentId" value="0819b4b8598b416f9dd2fb76d3a8000a.110.16940731753290002"/>
+			<string key="startTime" value="1694073175329"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="endTime" value="1694073175338"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="startTime" value="1694073175338"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073175338"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="startTime" value="1694073175339"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073175357"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.100.16940731753410000"/>
+			<string key="startTime" value="1694073175341"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="endTime" value="1694073175356"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.100.16940731753410000"/>
+			<string key="startTime" value="1694073175344"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="endTime" value="1694073175353"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.103.16940731753470000"/>
+			<string key="startTime" value="1694073175347"/>
+			<string key="parentSegmentId" value="4833f96d5488463992c4954aa46d7971.100.16940731753410000"/>
+			<string key="endTime" value="1694073175353"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.100.16940731753410000"/>
+			<string key="startTime" value="1694073175353"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="endTime" value="1694073175353"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="startTime" value="1694073175356"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073175356"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="startTime" value="1694073175357"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073175373"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+			<string key="service" value="ts-station-food-service"/>
+			<string key="segmentId" value="a9d87e5bbf4240fa8bba356401d071a5.174.16940731753610000"/>
+			<string key="startTime" value="1694073175361"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="endTime" value="1694073175371"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940731753230004"/>
+			<string key="startTime" value="1694073175371"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073175371"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="4674886aad44466786fdd568ed05061a.105.16940753855920007"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940753855920006"/>
+			<string key="startTime" value="1694075385592"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075385608"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940753855920006"/>
+			<string key="startTime" value="1694075385596"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075385606"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+			<string key="service" value="ts-train-food-service"/>
+			<string key="segmentId" value="0819b4b8598b416f9dd2fb76d3a8000a.110.16940753855970004"/>
+			<string key="startTime" value="1694075385597"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.105.16940753855920006"/>
+			<string key="endTime" value="1694075385605"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.105.16940753855920006"/>
+			<string key="startTime" value="1694075385605"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694075385605"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="4674886aad44466786fdd568ed05061a.107.16940732795050001"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="startTime" value="1694073279505"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073279555"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="startTime" value="1694073279508"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073279519"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+			<string key="service" value="ts-train-food-service"/>
+			<string key="segmentId" value="0819b4b8598b416f9dd2fb76d3a8000a.102.16940732795110002"/>
+			<string key="startTime" value="1694073279511"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="endTime" value="1694073279518"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="startTime" value="1694073279518"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073279518"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="startTime" value="1694073279519"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073279535"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.101.16940732795210008"/>
+			<string key="startTime" value="1694073279521"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="endTime" value="1694073279535"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.101.16940732795210008"/>
+			<string key="startTime" value="1694073279524"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="endTime" value="1694073279533"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.108.16940732795260012"/>
+			<string key="startTime" value="1694073279526"/>
+			<string key="parentSegmentId" value="4833f96d5488463992c4954aa46d7971.101.16940732795210008"/>
+			<string key="endTime" value="1694073279533"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.101.16940732795210008"/>
+			<string key="startTime" value="1694073279533"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="endTime" value="1694073279533"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="startTime" value="1694073279535"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073279535"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="startTime" value="1694073279536"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073279552"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+			<string key="service" value="ts-station-food-service"/>
+			<string key="segmentId" value="a9d87e5bbf4240fa8bba356401d071a5.177.16940732795380004"/>
+			<string key="startTime" value="1694073279538"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="endTime" value="1694073279550"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.107.16940732795050000"/>
+			<string key="startTime" value="1694073279550"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073279550"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="4674886aad44466786fdd568ed05061a.108.16940736231430005"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="startTime" value="1694073623143"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073623198"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="startTime" value="1694073623148"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073623159"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+			<string key="service" value="ts-train-food-service"/>
+			<string key="segmentId" value="0819b4b8598b416f9dd2fb76d3a8000a.108.16940736231510000"/>
+			<string key="startTime" value="1694073623151"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="endTime" value="1694073623159"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="startTime" value="1694073623159"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073623159"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="startTime" value="1694073623160"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073623178"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.103.16940736231610006"/>
+			<string key="startTime" value="1694073623161"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="endTime" value="1694073623176"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.103.16940736231610006"/>
+			<string key="startTime" value="1694073623166"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="endTime" value="1694073623174"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+			<string key="service" value="ts-route-service"/>
+			<string key="segmentId" value="ee494ded0c4e423f872c427869ebd1ca.99.16940736231680014"/>
+			<string key="startTime" value="1694073623168"/>
+			<string key="parentSegmentId" value="4833f96d5488463992c4954aa46d7971.103.16940736231610006"/>
+			<string key="endTime" value="1694073623173"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+			<string key="service" value="ts-travel-service"/>
+			<string key="segmentId" value="4833f96d5488463992c4954aa46d7971.103.16940736231610006"/>
+			<string key="startTime" value="1694073623173"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="endTime" value="1694073623173"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="startTime" value="1694073623176"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073623176"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="startTime" value="1694073623178"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073623197"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+			<string key="service" value="ts-station-food-service"/>
+			<string key="segmentId" value="a9d87e5bbf4240fa8bba356401d071a5.173.16940736231860002"/>
+			<string key="startTime" value="1694073623186"/>
+			<string key="parentSegmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="endTime" value="1694073623196"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+			<string key="service" value="ts-food-service"/>
+			<string key="segmentId" value="4674886aad44466786fdd568ed05061a.108.16940736231430004"/>
+			<string key="startTime" value="1694073623196"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="endTime" value="1694073623196"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+</log>

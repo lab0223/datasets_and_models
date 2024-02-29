@@ -1,0 +1,480 @@
+{
+  "traceId": "e94e763e604646dca897f2ac742464b5.106.16940732071740001",
+  "traceSegmentId": "e94e763e604646dca897f2ac742464b5.106.16940732071740000",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694073207179",
+    "endTime": "1694073207190",
+    "operationName": "/api/v1/orderservice/order/8d12d45c-f064-433d-8e7c-e85e067720e0",
+    "peer": "ts-order-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-order-service/api/v1/orderservice/order/8d12d45c-f064-433d-8e7c-e85e067720e0"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 2,
+    "startTime": "1694073207192",
+    "endTime": "1694073207193",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 3,
+    "startTime": "1694073207193",
+    "endTime": "1694073207194",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select payment0_.id as id1_1_, payment0_.order_id as order_id2_1_, payment0_.price as price3_1_, payment0_.type as type4_1_, payment0_.user_id as user_id5_1_ from inside_payment payment0_ where payment0_.user_id is null"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694073207195",
+    "endTime": "1694073207195",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select money0_.id as id1_0_, money0_.money as money2_0_, money0_.type as type3_0_, money0_.user_id as user_id4_0_ from inside_money money0_ where money0_.user_id is null"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694073207196",
+    "endTime": "1694073207218",
+    "operationName": "/api/v1/paymentservice/payment",
+    "peer": "ts-payment-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-payment-service/api/v1/paymentservice/payment"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694073207219",
+    "endTime": "1694073207220",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeUpdate",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "insert into inside_payment (order_id, price, type, user_id, id) values (?, ?, ?, ?, ?)"
+    }]
+  }, {
+    "spanId": 7,
+    "startTime": "1694073207220",
+    "endTime": "1694073207221",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 8,
+    "startTime": "1694073207221",
+    "endTime": "1694073207234",
+    "operationName": "/api/v1/orderservice/order/status/8d12d45c-f064-433d-8e7c-e85e067720e0/1",
+    "peer": "ts-order-service:80",
+    "spanType": "Exit",
+    "spanLayer": "Http",
+    "componentId": 13,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-order-service/api/v1/orderservice/order/status/8d12d45c-f064-433d-8e7c-e85e067720e0/1"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }, {
+    "spanId": 9,
+    "startTime": "1694073207236",
+    "endTime": "1694073207236",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694073207174",
+    "endTime": "1694073207313",
+    "operationName": "POST:/api/v1/inside_pay_service/inside_payment",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/inside_pay_service/inside_payment"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-inside-payment-service",
+  "serviceInstance": "e7b438f370a6425ea8118911423ab054@10.100.0.156"
+}
+
+{
+  "traceId": "e94e763e604646dca897f2ac742464b5.106.16940732071740001",
+  "traceSegmentId": "bfa9e6006cd74ab6b7736607e50da334.110.16940732071820008",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694073207184",
+    "endTime": "1694073207185",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694073207186",
+    "endTime": "1694073207186",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select order0_.id as id1_0_0_, order0_.account_id as account_2_0_0_, order0_.bought_date as bought_d3_0_0_, order0_.coach_number as coach_nu4_0_0_, order0_.contacts_document_number as contacts5_0_0_, order0_.contacts_name as contacts6_0_0_, order0_.document_type as document7_0_0_, order0_.from_station as from_sta8_0_0_, order0_.price as price9_0_0_, order0_.seat_class as seat_cl10_0_0_, order0_.seat_number as seat_nu11_0_0_, order0_.status as status12_0_0_, order0_.to_station as to_stat13_0_0_, order0_.train_number as train_n14_0_0_, order0_.travel_date as travel_15_0_0_, order0_.travel_time as travel_16_0_0_ from orders order0_ where order0_.id\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694073207188",
+    "endTime": "1694073207188",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694073207189",
+    "endTime": "1694073207189",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694073207182",
+    "endTime": "1694073207190",
+    "refs": [{
+      "traceId": "e94e763e604646dca897f2ac742464b5.106.16940732071740001",
+      "parentTraceSegmentId": "e94e763e604646dca897f2ac742464b5.106.16940732071740000",
+      "parentSpanId": 1,
+      "parentService": "ts-inside-payment-service",
+      "parentServiceInstance": "e7b438f370a6425ea8118911423ab054@10.100.0.156",
+      "parentEndpoint": "POST:/api/v1/inside_pay_service/inside_payment",
+      "networkAddressUsedAtPeer": "ts-order-service:80"
+    }],
+    "operationName": "GET:/api/v1/orderservice/order/{orderId}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/orderservice/order/8d12d45c-f064-433d-8e7c-e85e067720e0"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-order-service",
+  "serviceInstance": "8e24117b149f4db7a3a89833d45dc0de@10.100.0.169"
+}
+
+{
+  "traceId": "e94e763e604646dca897f2ac742464b5.106.16940732071740001",
+  "traceSegmentId": "e1b375437de3438fa1552026edaa0cfe.107.16940732072000000",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694073207209",
+    "endTime": "1694073207209",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694073207210",
+    "endTime": "1694073207210",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select payment0_.id as id1_1_, payment0_.order_id as order_id2_1_, payment0_.payment_price as payment_3_1_, payment0_.user_id as user_id4_1_ from payment payment0_ where payment0_.order_id\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694073207211",
+    "endTime": "1694073207211",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select payment0_.id as id1_1_0_, payment0_.order_id as order_id2_1_0_, payment0_.payment_price as payment_3_1_0_, payment0_.user_id as user_id4_1_0_ from payment payment0_ where payment0_.id\u003d?"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694073207212",
+    "endTime": "1694073207213",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeUpdate",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "insert into payment (order_id, payment_price, user_id, id) values (?, ?, ?, ?)"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694073207213",
+    "endTime": "1694073207214",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694073207216",
+    "endTime": "1694073207216",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694073207201",
+    "endTime": "1694073207217",
+    "refs": [{
+      "traceId": "e94e763e604646dca897f2ac742464b5.106.16940732071740001",
+      "parentTraceSegmentId": "e94e763e604646dca897f2ac742464b5.106.16940732071740000",
+      "parentSpanId": 5,
+      "parentService": "ts-inside-payment-service",
+      "parentServiceInstance": "e7b438f370a6425ea8118911423ab054@10.100.0.156",
+      "parentEndpoint": "POST:/api/v1/inside_pay_service/inside_payment",
+      "networkAddressUsedAtPeer": "ts-payment-service:80"
+    }],
+    "operationName": "POST:/api/v1/paymentservice/payment",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/paymentservice/payment"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-payment-service",
+  "serviceInstance": "cca1bfa8aad34a0dbe655603752add16@10.100.0.204"
+}
+
+{
+  "traceId": "e94e763e604646dca897f2ac742464b5.106.16940732071740001",
+  "traceSegmentId": "bfa9e6006cd74ab6b7736607e50da334.101.16940732072230012",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694073207226",
+    "endTime": "1694073207226",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694073207227",
+    "endTime": "1694073207227",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select order0_.id as id1_0_0_, order0_.account_id as account_2_0_0_, order0_.bought_date as bought_d3_0_0_, order0_.coach_number as coach_nu4_0_0_, order0_.contacts_document_number as contacts5_0_0_, order0_.contacts_name as contacts6_0_0_, order0_.document_type as document7_0_0_, order0_.from_station as from_sta8_0_0_, order0_.price as price9_0_0_, order0_.seat_class as seat_cl10_0_0_, order0_.seat_number as seat_nu11_0_0_, order0_.status as status12_0_0_, order0_.to_station as to_stat13_0_0_, order0_.train_number as train_n14_0_0_, order0_.travel_date as travel_15_0_0_, order0_.travel_time as travel_16_0_0_ from orders order0_ where order0_.id\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694073207227",
+    "endTime": "1694073207228",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694073207229",
+    "endTime": "1694073207230",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeUpdate",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "update orders set account_id\u003d?, bought_date\u003d?, coach_number\u003d?, contacts_document_number\u003d?, contacts_name\u003d?, document_type\u003d?, from_station\u003d?, price\u003d?, seat_class\u003d?, seat_number\u003d?, status\u003d?, to_station\u003d?, train_number\u003d?, travel_date\u003d?, travel_time\u003d? where id\u003d?"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694073207230",
+    "endTime": "1694073207231",
+    "operationName": "Mysql/JDBI/Connection/commit",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement"
+    }]
+  }, {
+    "spanId": 6,
+    "startTime": "1694073207232",
+    "endTime": "1694073207232",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694073207223",
+    "endTime": "1694073207234",
+    "refs": [{
+      "traceId": "e94e763e604646dca897f2ac742464b5.106.16940732071740001",
+      "parentTraceSegmentId": "e94e763e604646dca897f2ac742464b5.106.16940732071740000",
+      "parentSpanId": 8,
+      "parentService": "ts-inside-payment-service",
+      "parentServiceInstance": "e7b438f370a6425ea8118911423ab054@10.100.0.156",
+      "parentEndpoint": "POST:/api/v1/inside_pay_service/inside_payment",
+      "networkAddressUsedAtPeer": "ts-order-service:80"
+    }],
+    "operationName": "GET:/api/v1/orderservice/order/status/{orderId}/{status}",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/orderservice/order/status/8d12d45c-f064-433d-8e7c-e85e067720e0/1"
+    }, {
+      "key": "http.method",
+      "value": "GET"
+    }]
+  }],
+  "service": "ts-order-service",
+  "serviceInstance": "8e24117b149f4db7a3a89833d45dc0de@10.100.0.169"
+}
+

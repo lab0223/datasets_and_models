@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pnml>
+  <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>4674886aad44466786fdd568ed05061a.101.16940739503410005_0.pnml</text>
+    </name>
+    <page id="n0">
+      <place id="PGET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service"/>
+      <place id="PGET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End"/>
+      <place id="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+      <place id="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End_/api/v1/travelservice/routes/G1234_ts-food-service"/>
+      <place id="PGET:/api/v1/travelservice/routes/{tripId}_ts-travel-service_/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+      <place id="P/api/v1/travelservice/routes/G1234_ts-food-service/api/v1/travelservice/routes/G1235_ts-food-service/api/v1/travelservice/routes/D1345_ts-food-service_GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+      <place id="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+      <place id="PGET:/api/v1/routeservice/routes/{routeId}_ts-route-service_/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+      <place id="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_End_/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+      <place id="P/api/v1/stationfoodservice/stationfoodstores_ts-food-service_POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+      <place id="P/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End_/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+      <place id="PPOST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service_/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+      <place id="P/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End_/api/v1/travelservice/routes/G1235_ts-food-service"/>
+      <place id="P/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End_/api/v1/travelservice/routes/D1345_ts-food-service"/>
+      <place id="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End"/>
+      <place id="P/api/v1/travelservice/routes/G1234_ts-food-service_/api/v1/travelservice/routes/G1234_ts-food-service_End"/>
+      <place id="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+      <place id="P/api/v1/stationfoodservice/stationfoodstores_ts-food-service_/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+      <place id="P/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End"/>
+      <place id="P/api/v1/travelservice/routes/G1235_ts-food-service_/api/v1/travelservice/routes/G1235_ts-food-service_End"/>
+      <place id="P/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+      <place id="P/api/v1/travelservice/routes/D1345_ts-food-service_/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+      <place id="P/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End"/>
+      <place id="Start"/>
+      <place id="End"/>
+      <transition id="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+      <transition id="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service"/>
+      <transition id="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+      <transition id="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End"/>
+      <transition id="/api/v1/travelservice/routes/G1234_ts-food-service"/>
+      <transition id="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+      <transition id="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+      <transition id="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+      <transition id="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+      <transition id="/api/v1/travelservice/routes/G1234_ts-food-service_End"/>
+      <transition id="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+      <transition id="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+      <transition id="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+      <transition id="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service"/>
+      <transition id="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End"/>
+      <transition id="/api/v1/travelservice/routes/G1235_ts-food-service"/>
+      <transition id="/api/v1/travelservice/routes/G1235_ts-food-service_End"/>
+      <transition id="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service"/>
+      <transition id="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+      <transition id="/api/v1/travelservice/routes/D1345_ts-food-service"/>
+      <transition id="/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+      <transition id="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service"/>
+      <transition id="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End"/>
+      <arc id="a0" source="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service" target="PGET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service"/>
+      <arc id="a1" source="PGET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service" target="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service"/>
+      <arc id="a2" source="PGET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service" target="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service"/>
+      <arc id="a3" source="PGET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service" target="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service"/>
+      <arc id="a4" source="PGET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service" target="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service"/>
+      <arc id="a5" source="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service" target="PGET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End"/>
+      <arc id="a6" source="PGET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End" target="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End"/>
+      <arc id="a7" source="PGET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End" target="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End"/>
+      <arc id="a8" source="PGET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End" target="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+      <arc id="a9" source="PGET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End" target="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End"/>
+      <arc id="a10" source="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service" target="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+      <arc id="a11" source="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service" target="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+      <arc id="a12" source="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service" target="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+      <arc id="a13" source="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service" target="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+      <arc id="a14" source="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service" target="GET:/api/v1/trainfoodservice/trainfoods/{tripId}_ts-train-food-service"/>
+      <arc id="a15" source="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End" target="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End_/api/v1/travelservice/routes/G1234_ts-food-service"/>
+      <arc id="a16" source="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End_/api/v1/travelservice/routes/G1234_ts-food-service" target="/api/v1/travelservice/routes/G1234_ts-food-service"/>
+      <arc id="a17" source="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service" target="PGET:/api/v1/travelservice/routes/{tripId}_ts-travel-service_/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+      <arc id="a18" source="PGET:/api/v1/travelservice/routes/{tripId}_ts-travel-service_/api/v1/routeservice/routes/{uuid}_ts-travel-service" target="/api/v1/routeservice/routes/{uuid}_ts-travel-service"/>
+      <arc id="a19" source="/api/v1/travelservice/routes/G1234_ts-food-service" target="P/api/v1/travelservice/routes/G1234_ts-food-service/api/v1/travelservice/routes/G1235_ts-food-service/api/v1/travelservice/routes/D1345_ts-food-service_GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+      <arc id="a20" source="/api/v1/travelservice/routes/G1235_ts-food-service" target="P/api/v1/travelservice/routes/G1234_ts-food-service/api/v1/travelservice/routes/G1235_ts-food-service/api/v1/travelservice/routes/D1345_ts-food-service_GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+      <arc id="a21" source="/api/v1/travelservice/routes/D1345_ts-food-service" target="P/api/v1/travelservice/routes/G1234_ts-food-service/api/v1/travelservice/routes/G1235_ts-food-service/api/v1/travelservice/routes/D1345_ts-food-service_GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+      <arc id="a22" source="P/api/v1/travelservice/routes/G1234_ts-food-service/api/v1/travelservice/routes/G1235_ts-food-service/api/v1/travelservice/routes/D1345_ts-food-service_GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service" target="GET:/api/v1/travelservice/routes/{tripId}_ts-travel-service"/>
+      <arc id="a23" source="/api/v1/routeservice/routes/{uuid}_ts-travel-service" target="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+      <arc id="a24" source="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_GET:/api/v1/routeservice/routes/{routeId}_ts-route-service" target="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service"/>
+      <arc id="a25" source="GET:/api/v1/routeservice/routes/{routeId}_ts-route-service" target="PGET:/api/v1/routeservice/routes/{routeId}_ts-route-service_/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+      <arc id="a26" source="PGET:/api/v1/routeservice/routes/{routeId}_ts-route-service_/api/v1/routeservice/routes/{uuid}_ts-travel-service_End" target="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+      <arc id="a27" source="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End" target="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_End_/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+      <arc id="a28" source="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_End_/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End" target="/api/v1/travelservice/routes/G1234_ts-food-service_End"/>
+      <arc id="a29" source="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_End_/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End" target="/api/v1/travelservice/routes/G1235_ts-food-service_End"/>
+      <arc id="a30" source="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_End_/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End" target="/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+      <arc id="a31" source="/api/v1/stationfoodservice/stationfoodstores_ts-food-service" target="P/api/v1/stationfoodservice/stationfoodstores_ts-food-service_POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+      <arc id="a32" source="P/api/v1/stationfoodservice/stationfoodstores_ts-food-service_POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service" target="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service"/>
+      <arc id="a33" source="/api/v1/travelservice/routes/G1234_ts-food-service_End" target="P/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End_/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+      <arc id="a34" source="/api/v1/travelservice/routes/G1235_ts-food-service_End" target="P/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End_/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+      <arc id="a35" source="/api/v1/travelservice/routes/D1345_ts-food-service_End" target="P/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End_/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+      <arc id="a36" source="P/api/v1/travelservice/routes/G1234_ts-food-service_End/api/v1/travelservice/routes/G1235_ts-food-service_End/api/v1/travelservice/routes/D1345_ts-food-service_End_/api/v1/stationfoodservice/stationfoodstores_ts-food-service" target="/api/v1/stationfoodservice/stationfoodstores_ts-food-service"/>
+      <arc id="a37" source="POST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service" target="PPOST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service_/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+      <arc id="a38" source="PPOST:/api/v1/stationfoodservice/stationfoodstores_ts-station-food-service_/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End" target="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+      <arc id="a39" source="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End" target="P/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End_/api/v1/travelservice/routes/G1235_ts-food-service"/>
+      <arc id="a40" source="P/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End_/api/v1/travelservice/routes/G1235_ts-food-service" target="/api/v1/travelservice/routes/G1235_ts-food-service"/>
+      <arc id="a41" source="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End" target="P/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End_/api/v1/travelservice/routes/D1345_ts-food-service"/>
+      <arc id="a42" source="P/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End_/api/v1/travelservice/routes/D1345_ts-food-service" target="/api/v1/travelservice/routes/D1345_ts-food-service"/>
+      <arc id="a43" source="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service" target="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End"/>
+      <arc id="a44" source="P/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End" target="/api/v1/trainfoodservice/trainfoods/G1234_ts-food-service_End"/>
+      <arc id="a45" source="/api/v1/travelservice/routes/G1234_ts-food-service" target="P/api/v1/travelservice/routes/G1234_ts-food-service_/api/v1/travelservice/routes/G1234_ts-food-service_End"/>
+      <arc id="a46" source="P/api/v1/travelservice/routes/G1234_ts-food-service_/api/v1/travelservice/routes/G1234_ts-food-service_End" target="/api/v1/travelservice/routes/G1234_ts-food-service_End"/>
+      <arc id="a47" source="/api/v1/routeservice/routes/{uuid}_ts-travel-service" target="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+      <arc id="a48" source="P/api/v1/routeservice/routes/{uuid}_ts-travel-service_/api/v1/routeservice/routes/{uuid}_ts-travel-service_End" target="/api/v1/routeservice/routes/{uuid}_ts-travel-service_End"/>
+      <arc id="a49" source="/api/v1/stationfoodservice/stationfoodstores_ts-food-service" target="P/api/v1/stationfoodservice/stationfoodstores_ts-food-service_/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+      <arc id="a50" source="P/api/v1/stationfoodservice/stationfoodstores_ts-food-service_/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End" target="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End"/>
+      <arc id="a51" source="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service" target="P/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End"/>
+      <arc id="a52" source="P/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End" target="/api/v1/trainfoodservice/trainfoods/G1235_ts-food-service_End"/>
+      <arc id="a53" source="/api/v1/travelservice/routes/G1235_ts-food-service" target="P/api/v1/travelservice/routes/G1235_ts-food-service_/api/v1/travelservice/routes/G1235_ts-food-service_End"/>
+      <arc id="a54" source="P/api/v1/travelservice/routes/G1235_ts-food-service_/api/v1/travelservice/routes/G1235_ts-food-service_End" target="/api/v1/travelservice/routes/G1235_ts-food-service_End"/>
+      <arc id="a55" source="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service" target="P/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+      <arc id="a56" source="P/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End" target="/api/v1/trainfoodservice/trainfoods/D1345_ts-food-service_End"/>
+      <arc id="a57" source="/api/v1/travelservice/routes/D1345_ts-food-service" target="P/api/v1/travelservice/routes/D1345_ts-food-service_/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+      <arc id="a58" source="P/api/v1/travelservice/routes/D1345_ts-food-service_/api/v1/travelservice/routes/D1345_ts-food-service_End" target="/api/v1/travelservice/routes/D1345_ts-food-service_End"/>
+      <arc id="a59" source="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service" target="P/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End"/>
+      <arc id="a60" source="P/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End" target="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End"/>
+      <arc id="a61" source="Start" target="GET:/api/v1/foodservice/foods/{date}/{startStation}/{endStation}/{tripId}_ts-food-service"/>
+      <arc id="a62" source="/api/v1/stationfoodservice/stationfoodstores_ts-food-service_End" target="End"/>
+      <arc id="a63" source="/api/v1/trainfoodservice/trainfoods/Z1234_ts-food-service_End" target="End"/>
+    </page>
+  </net>
+</pnml>

@@ -1,0 +1,93 @@
+{
+  "traceId": "facbbe33351444968ed104fbc6f1976d.98.16940741981060003",
+  "traceSegmentId": "facbbe33351444968ed104fbc6f1976d.98.16940741981060002",
+  "spans": [{
+    "spanId": 1,
+    "startTime": "1694074198109",
+    "endTime": "1694074198111",
+    "operationName": "HikariCP/Connection/getConnection",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "spanId": 2,
+    "startTime": "1694074198111",
+    "endTime": "1694074198111",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select user0_.user_id as user_id1_0_, user0_.password as password2_0_, user0_.user_name as user_nam3_0_ from auth_user user0_ where user0_.user_name\u003d?"
+    }]
+  }, {
+    "spanId": 3,
+    "startTime": "1694074198251",
+    "endTime": "1694074198251",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select roles0_.user_id as user_id1_1_0_, roles0_.roles as roles2_1_0_ from user_roles roles0_ where roles0_.user_id\u003d?"
+    }]
+  }, {
+    "spanId": 4,
+    "startTime": "1694074198252",
+    "endTime": "1694074198252",
+    "operationName": "Mysql/JDBI/PreparedStatement/executeQuery",
+    "peer": "tsdb-mysql-leader:3306",
+    "spanType": "Exit",
+    "spanLayer": "Database",
+    "componentId": 33,
+    "tags": [{
+      "key": "db.type",
+      "value": "sql"
+    }, {
+      "key": "db.instance",
+      "value": "ts"
+    }, {
+      "key": "db.statement",
+      "value": "select user0_.user_id as user_id1_0_, user0_.password as password2_0_, user0_.user_name as user_nam3_0_ from auth_user user0_ where user0_.user_name\u003d?"
+    }]
+  }, {
+    "spanId": 5,
+    "startTime": "1694074198255",
+    "endTime": "1694074198255",
+    "operationName": "HikariCP/Connection/close",
+    "spanType": "Local",
+    "componentId": 116
+  }, {
+    "parentSpanId": -1,
+    "startTime": "1694074198106",
+    "endTime": "1694074198255",
+    "operationName": "POST:/api/v1/users/login",
+    "spanLayer": "Http",
+    "componentId": 14,
+    "tags": [{
+      "key": "url",
+      "value": "http://ts-gateway-service:18888/api/v1/users/login"
+    }, {
+      "key": "http.method",
+      "value": "POST"
+    }]
+  }],
+  "service": "ts-auth-service",
+  "serviceInstance": "e2317908c02443bda5c43d59c90c0816@10.100.0.209"
+}
+
