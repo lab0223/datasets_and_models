@@ -492,4 +492,490 @@
 			<string key="tag" value="OTHER"/>
 		</event>
 	</trace>
+	<trace>
+		<string key="traceId" value="TEST14-Trace03"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t00"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="90"/>
+			<string key="endTime" value="221"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t01"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="101"/>
+			<string key="endTime" value="130"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t10"/>
+			<string key="service" value="svc01"/>
+			<string key="startTime" value="105"/>
+			<string key="endTime" value="125"/>
+			<string key="segmentId" value="1"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t01_End"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="125"/>
+			<string key="endTime" value="125"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="t02"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="131"/>
+			<string key="endTime" value="142"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t20"/>
+			<string key="service" value="svc02"/>
+			<string key="startTime" value="132"/>
+			<string key="endTime" value="150"/>
+			<string key="segmentId" value="2"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t21"/>
+			<string key="service" value="svc02"/>
+			<string key="startTime" value="135"/>
+			<string key="endTime" value="148"/>
+			<string key="segmentId" value="2"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t40"/>
+			<string key="service" value="svc04"/>
+			<string key="startTime" value="136"/>
+			<string key="endTime" value="145"/>
+			<string key="segmentId" value="4"/>
+			<string key="parentSegmentId" value="2"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t41"/>
+			<string key="service" value="svc04"/>
+			<string key="startTime" value="139"/>
+			<string key="endTime" value="144"/>
+			<string key="segmentId" value="4"/>
+			<string key="parentSegmentId" value="2"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="t02_End"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="148"/>
+			<string key="endTime" value="148"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t50"/>
+			<string key="service" value="svc05"/>
+			<string key="startTime" value="149"/>
+			<string key="endTime" value="153"/>
+			<string key="segmentId" value="5"/>
+			<string key="parentSegmentId" value="4"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t41_End"/>
+			<string key="service" value="svc04"/>
+			<string key="startTime" value="153"/>
+			<string key="endTime" value="153"/>
+			<string key="segmentId" value="4"/>
+			<string key="parentSegmentId" value="2"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="t03"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="161"/>
+			<string key="endTime" value="199"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t30"/>
+			<string key="service" value="svc03"/>
+			<string key="startTime" value="162"/>
+			<string key="endTime" value="190"/>
+			<string key="segmentId" value="3"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t31"/>
+			<string key="service" value="svc03"/>
+			<string key="startTime" value="163"/>
+			<string key="endTime" value="175"/>
+			<string key="segmentId" value="3"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t60"/>
+			<string key="service" value="svc06"/>
+			<string key="startTime" value="164"/>
+			<string key="endTime" value="174"/>
+			<string key="segmentId" value="6"/>
+			<string key="parentSegmentId" value="3"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t31_End"/>
+			<string key="service" value="svc03"/>
+			<string key="startTime" value="174"/>
+			<string key="endTime" value="174"/>
+			<string key="segmentId" value="3"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="t32"/>
+			<string key="service" value="svc03"/>
+			<string key="startTime" value="176"/>
+			<string key="endTime" value="189"/>
+			<string key="segmentId" value="3"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t70"/>
+			<string key="service" value="svc07"/>
+			<string key="startTime" value="177"/>
+			<string key="endTime" value="188"/>
+			<string key="segmentId" value="7"/>
+			<string key="parentSegmentId" value="3"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t71"/>
+			<string key="service" value="svc07"/>
+			<string key="startTime" value="178"/>
+			<string key="endTime" value="187"/>
+			<string key="segmentId" value="7"/>
+			<string key="parentSegmentId" value="3"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t80"/>
+			<string key="service" value="svc08"/>
+			<string key="startTime" value="179"/>
+			<string key="endTime" value="186"/>
+			<string key="segmentId" value="8"/>
+			<string key="parentSegmentId" value="7"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t81"/>
+			<string key="service" value="svc08"/>
+			<string key="startTime" value="180"/>
+			<string key="endTime" value="185"/>
+			<string key="segmentId" value="8"/>
+			<string key="parentSegmentId" value="7"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t90"/>
+			<string key="service" value="svc09"/>
+			<string key="startTime" value="181"/>
+			<string key="endTime" value="184"/>
+			<string key="segmentId" value="9"/>
+			<string key="parentSegmentId" value="8"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t71_End"/>
+			<string key="service" value="svc07"/>
+			<string key="startTime" value="186"/>
+			<string key="endTime" value="186"/>
+			<string key="segmentId" value="7"/>
+			<string key="parentSegmentId" value="3"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="traceId" value="TEST14-Trace04"/>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t00"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="91"/>
+			<string key="endTime" value="225"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t01"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="102"/>
+			<string key="endTime" value="130"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t10"/>
+			<string key="service" value="svc01"/>
+			<string key="startTime" value="105"/>
+			<string key="endTime" value="125"/>
+			<string key="segmentId" value="1"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t01_End"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="125"/>
+			<string key="endTime" value="125"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="t02"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="130"/>
+			<string key="endTime" value="142"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t20"/>
+			<string key="service" value="svc02"/>
+			<string key="startTime" value="133"/>
+			<string key="endTime" value="150"/>
+			<string key="segmentId" value="2"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t21"/>
+			<string key="service" value="svc02"/>
+			<string key="startTime" value="135"/>
+			<string key="endTime" value="148"/>
+			<string key="segmentId" value="2"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t40"/>
+			<string key="service" value="svc04"/>
+			<string key="startTime" value="136"/>
+			<string key="endTime" value="145"/>
+			<string key="segmentId" value="4"/>
+			<string key="parentSegmentId" value="2"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t41"/>
+			<string key="service" value="svc04"/>
+			<string key="startTime" value="139"/>
+			<string key="endTime" value="144"/>
+			<string key="segmentId" value="4"/>
+			<string key="parentSegmentId" value="2"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="t02_End"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="148"/>
+			<string key="endTime" value="148"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="3"/>
+			<string key="concept:name" value="t03"/>
+			<string key="service" value="svc00"/>
+			<string key="startTime" value="161"/>
+			<string key="endTime" value="199"/>
+			<string key="segmentId" value="0"/>
+			<string key="parentSegmentId" value=""/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t30"/>
+			<string key="service" value="svc03"/>
+			<string key="startTime" value="162"/>
+			<string key="endTime" value="190"/>
+			<string key="segmentId" value="3"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t31"/>
+			<string key="service" value="svc03"/>
+			<string key="startTime" value="163"/>
+			<string key="endTime" value="175"/>
+			<string key="segmentId" value="3"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t60"/>
+			<string key="service" value="svc06"/>
+			<string key="startTime" value="164"/>
+			<string key="endTime" value="174"/>
+			<string key="segmentId" value="6"/>
+			<string key="parentSegmentId" value="3"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t50"/>
+			<string key="service" value="svc05"/>
+			<string key="startTime" value="169"/>
+			<string key="endTime" value="172"/>
+			<string key="segmentId" value="5"/>
+			<string key="parentSegmentId" value="4"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t41_End"/>
+			<string key="service" value="svc04"/>
+			<string key="startTime" value="172"/>
+			<string key="endTime" value="172"/>
+			<string key="segmentId" value="4"/>
+			<string key="parentSegmentId" value="2"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t31_End"/>
+			<string key="service" value="svc03"/>
+			<string key="startTime" value="174"/>
+			<string key="endTime" value="174"/>
+			<string key="segmentId" value="3"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+		<event>
+			<int key="spanId" value="2"/>
+			<string key="concept:name" value="t32"/>
+			<string key="service" value="svc03"/>
+			<string key="startTime" value="176"/>
+			<string key="endTime" value="189"/>
+			<string key="segmentId" value="3"/>
+			<string key="parentSegmentId" value="0"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t70"/>
+			<string key="service" value="svc07"/>
+			<string key="startTime" value="177"/>
+			<string key="endTime" value="188"/>
+			<string key="segmentId" value="7"/>
+			<string key="parentSegmentId" value="3"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t71"/>
+			<string key="service" value="svc07"/>
+			<string key="startTime" value="178"/>
+			<string key="endTime" value="187"/>
+			<string key="segmentId" value="7"/>
+			<string key="parentSegmentId" value="3"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t80"/>
+			<string key="service" value="svc08"/>
+			<string key="startTime" value="179"/>
+			<string key="endTime" value="186"/>
+			<string key="segmentId" value="8"/>
+			<string key="parentSegmentId" value="7"/>
+			<string key="tag" value="HTTP"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t81"/>
+			<string key="service" value="svc08"/>
+			<string key="startTime" value="180"/>
+			<string key="endTime" value="185"/>
+			<string key="segmentId" value="8"/>
+			<string key="parentSegmentId" value="7"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="0"/>
+			<string key="concept:name" value="t90"/>
+			<string key="service" value="svc09"/>
+			<string key="startTime" value="181"/>
+			<string key="endTime" value="184"/>
+			<string key="segmentId" value="9"/>
+			<string key="parentSegmentId" value="8"/>
+			<string key="tag" value="MQ"/>
+		</event>
+		<event>
+			<int key="spanId" value="1"/>
+			<string key="concept:name" value="t71_End"/>
+			<string key="service" value="svc07"/>
+			<string key="startTime" value="186"/>
+			<string key="endTime" value="186"/>
+			<string key="segmentId" value="7"/>
+			<string key="parentSegmentId" value="3"/>
+			<string key="tag" value="OTHER"/>
+		</event>
+	</trace>
 </log>

@@ -12,6 +12,11 @@
       <place id="Pt10_t11"/>
       <place id="Pt11_t20"/>
       <place id="Pt02_t30"/>
+      <place id="Pt02_t03"/>
+      <place id="Pt03_t120"/>
+      <place id="Pt120_t121t122"/>
+      <place id="Pt121t122_t03_End"/>
+      <place id="Pt03_t03_End"/>
       <place id="Start"/>
       <place id="End"/>
       <transition id="t00"/>
@@ -21,6 +26,11 @@
       <transition id="t20"/>
       <transition id="t02"/>
       <transition id="t30"/>
+      <transition id="t03"/>
+      <transition id="t120"/>
+      <transition id="t121"/>
+      <transition id="t122"/>
+      <transition id="t03_End"/>
       <arc id="a0" source="t00" target="Pt00_t01"/>
       <arc id="a1" source="Pt00_t01" target="t01"/>
       <arc id="a2" source="t01" target="Pt01_t10"/>
@@ -33,8 +43,20 @@
       <arc id="a9" source="Pt11_t20" target="t20"/>
       <arc id="a10" source="t02" target="Pt02_t30"/>
       <arc id="a11" source="Pt02_t30" target="t30"/>
-      <arc id="a12" source="Start" target="t00"/>
-      <arc id="a13" source="t02" target="End"/>
+      <arc id="a12" source="t02" target="Pt02_t03"/>
+      <arc id="a13" source="Pt02_t03" target="t03"/>
+      <arc id="a14" source="t03" target="Pt03_t120"/>
+      <arc id="a15" source="Pt03_t120" target="t120"/>
+      <arc id="a16" source="t120" target="Pt120_t121t122"/>
+      <arc id="a17" source="Pt120_t121t122" target="t121"/>
+      <arc id="a18" source="Pt120_t121t122" target="t122"/>
+      <arc id="a19" source="t121" target="Pt121t122_t03_End"/>
+      <arc id="a20" source="t122" target="Pt121t122_t03_End"/>
+      <arc id="a21" source="Pt121t122_t03_End" target="t03_End"/>
+      <arc id="a22" source="t03" target="Pt03_t03_End"/>
+      <arc id="a23" source="Pt03_t03_End" target="t03_End"/>
+      <arc id="a24" source="Start" target="t00"/>
+      <arc id="a25" source="t03_End" target="End"/>
     </page>
   </net>
 </pnml>

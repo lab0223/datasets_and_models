@@ -3,7 +3,7 @@
 <pnml>
   <net id="net0" type="https://www.pnml.org/version-2009/grammar/pnmlcoremodel">
     <name>
-      <text>TEST10-1_2-Trace01_0.pnml</text>
+      <text>TEST12-1_2-Trace01_0.pnml</text>
     </name>
     <page id="n0">
       <place id="Pt00_t01"/>
@@ -20,16 +20,19 @@
       <place id="Pt02_t30"/>
       <place id="Pt30_t31"/>
       <place id="Pt31_t60"/>
-      <place id="Pt60_t31_End"/>
-      <place id="Pt31_End_t32"/>
+      <place id="Pt31_t32"/>
       <place id="Pt32_t70"/>
       <place id="Pt70_t32_End"/>
       <place id="Pt32_End_t02_End"/>
+      <place id="Pt02_End_t03"/>
+      <place id="Pt03_t190"/>
+      <place id="Pt190_t191t192"/>
+      <place id="Pt191t192_t03_End"/>
       <place id="Pt01_t01_End"/>
       <place id="Pt21_t21_End"/>
       <place id="Pt02_t02_End"/>
-      <place id="Pt31_t31_End"/>
       <place id="Pt32_t32_End"/>
+      <place id="Pt03_t03_End"/>
       <place id="Start"/>
       <place id="End"/>
       <transition id="t00"/>
@@ -47,11 +50,15 @@
       <transition id="t30"/>
       <transition id="t31"/>
       <transition id="t60"/>
-      <transition id="t31_End"/>
       <transition id="t32"/>
       <transition id="t70"/>
       <transition id="t32_End"/>
       <transition id="t02_End"/>
+      <transition id="t03"/>
+      <transition id="t190"/>
+      <transition id="t191"/>
+      <transition id="t192"/>
+      <transition id="t03_End"/>
       <arc id="a0" source="t00" target="Pt00_t01"/>
       <arc id="a1" source="Pt00_t01" target="t01"/>
       <arc id="a2" source="t01" target="Pt01_t10"/>
@@ -80,28 +87,37 @@
       <arc id="a25" source="Pt30_t31" target="t31"/>
       <arc id="a26" source="t31" target="Pt31_t60"/>
       <arc id="a27" source="Pt31_t60" target="t60"/>
-      <arc id="a28" source="t60" target="Pt60_t31_End"/>
-      <arc id="a29" source="Pt60_t31_End" target="t31_End"/>
-      <arc id="a30" source="t31_End" target="Pt31_End_t32"/>
-      <arc id="a31" source="Pt31_End_t32" target="t32"/>
-      <arc id="a32" source="t32" target="Pt32_t70"/>
-      <arc id="a33" source="Pt32_t70" target="t70"/>
-      <arc id="a34" source="t70" target="Pt70_t32_End"/>
-      <arc id="a35" source="Pt70_t32_End" target="t32_End"/>
-      <arc id="a36" source="t32_End" target="Pt32_End_t02_End"/>
-      <arc id="a37" source="Pt32_End_t02_End" target="t02_End"/>
-      <arc id="a38" source="t01" target="Pt01_t01_End"/>
-      <arc id="a39" source="Pt01_t01_End" target="t01_End"/>
-      <arc id="a40" source="t21" target="Pt21_t21_End"/>
-      <arc id="a41" source="Pt21_t21_End" target="t21_End"/>
-      <arc id="a42" source="t02" target="Pt02_t02_End"/>
-      <arc id="a43" source="Pt02_t02_End" target="t02_End"/>
-      <arc id="a44" source="t31" target="Pt31_t31_End"/>
-      <arc id="a45" source="Pt31_t31_End" target="t31_End"/>
-      <arc id="a46" source="t32" target="Pt32_t32_End"/>
-      <arc id="a47" source="Pt32_t32_End" target="t32_End"/>
-      <arc id="a48" source="Start" target="t00"/>
-      <arc id="a49" source="t02_End" target="End"/>
+      <arc id="a28" source="t31" target="Pt31_t32"/>
+      <arc id="a29" source="Pt31_t32" target="t32"/>
+      <arc id="a30" source="t32" target="Pt32_t70"/>
+      <arc id="a31" source="Pt32_t70" target="t70"/>
+      <arc id="a32" source="t70" target="Pt70_t32_End"/>
+      <arc id="a33" source="Pt70_t32_End" target="t32_End"/>
+      <arc id="a34" source="t32_End" target="Pt32_End_t02_End"/>
+      <arc id="a35" source="Pt32_End_t02_End" target="t02_End"/>
+      <arc id="a36" source="t02_End" target="Pt02_End_t03"/>
+      <arc id="a37" source="Pt02_End_t03" target="t03"/>
+      <arc id="a38" source="t03" target="Pt03_t190"/>
+      <arc id="a39" source="Pt03_t190" target="t190"/>
+      <arc id="a40" source="t190" target="Pt190_t191t192"/>
+      <arc id="a41" source="Pt190_t191t192" target="t191"/>
+      <arc id="a42" source="Pt190_t191t192" target="t192"/>
+      <arc id="a43" source="t191" target="Pt191t192_t03_End"/>
+      <arc id="a44" source="t192" target="Pt191t192_t03_End"/>
+      <arc id="a45" source="Pt191t192_t03_End" target="t03_End"/>
+      <arc id="a46" source="t01" target="Pt01_t01_End"/>
+      <arc id="a47" source="Pt01_t01_End" target="t01_End"/>
+      <arc id="a48" source="t21" target="Pt21_t21_End"/>
+      <arc id="a49" source="Pt21_t21_End" target="t21_End"/>
+      <arc id="a50" source="t02" target="Pt02_t02_End"/>
+      <arc id="a51" source="Pt02_t02_End" target="t02_End"/>
+      <arc id="a52" source="t32" target="Pt32_t32_End"/>
+      <arc id="a53" source="Pt32_t32_End" target="t32_End"/>
+      <arc id="a54" source="t03" target="Pt03_t03_End"/>
+      <arc id="a55" source="Pt03_t03_End" target="t03_End"/>
+      <arc id="a56" source="Start" target="t00"/>
+      <arc id="a57" source="t03_End" target="End"/>
+      <arc id="a58" source="t02_End" target="End"/>
     </page>
   </net>
 </pnml>
